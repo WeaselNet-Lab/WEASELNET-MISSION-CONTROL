@@ -40,6 +40,7 @@ export function ProjectDossier({ project }: { project: Project }) {
         <p className="max-w-3xl text-lg leading-8 text-muted-foreground">{project.summary}</p>
         <div className="flex flex-wrap gap-2">
           <Button
+            type="button"
             variant={pinned ? "default" : "outline"}
             onClick={() => operator.togglePin(project.slug)}
           >
@@ -47,6 +48,7 @@ export function ProjectDossier({ project }: { project: Project }) {
             {pinned ? "Pinned" : "Pin"}
           </Button>
           <Button
+            type="button"
             variant={flagged ? "default" : "outline"}
             onClick={() =>
               flagged

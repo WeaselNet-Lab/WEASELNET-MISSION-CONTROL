@@ -39,35 +39,40 @@ function parseState(raw: string | null): OperatorState {
   }
 }
 
+function readStoredState(): OperatorState {
+  try {
+    return parseState(window.localStorage.getItem(STORAGE_KEY));
+  } catch {
+    return emptyState;
+  }
+}
+
+function persist(next: OperatorState) {
+  try {
+    window.localStorage.setItem(STORAGE_KEY, JSON.stringify(next));
+  } catch {
+    // Private mode can refuse storage. Keep the in-memory board anyway.
+  }
+}
+
 function emit() {
   version += 1;
   listeners.forEach((listener) => listener());
 }
 
-function loadFromStorage() {
-  if (loaded || typeof window === "undefined") return;
-  loaded = true;
-  cached = parseState(window.localStorage.getItem(STORAGE_KEY));
-  version += 1;
-}
-
 function subscribe(onStoreChange: () => void) {
-  loadFromStorage();
+  if (!loaded) {
+    loaded = true;
+    cached = readStoredState();
+    version += 1;
+  }
   listeners.add(onStoreChange);
-  const onStorage = (event: StorageEvent) => {
-    if (event.key !== STORAGE_KEY) return;
-    cached = parseState(event.newValue);
-    emit();
-  };
-  window.addEventListener("storage", onStorage);
   return () => {
     listeners.delete(onStoreChange);
-    window.removeEventListener("storage", onStorage);
   };
 }
 
 function getSnapshot() {
-  loadFromStorage();
   return version;
 }
 
@@ -77,7 +82,7 @@ function getServerSnapshot() {
 
 function writeState(next: OperatorState) {
   cached = next;
-  window.localStorage.setItem(STORAGE_KEY, JSON.stringify(next));
+  persist(next);
   emit();
 }
 

@@ -44,6 +44,7 @@ function subscribeClock(onStoreChange: () => void) {
 }
 
 function getClock() {
+  if (clockNow === 0) clockNow = Date.now();
   return clockNow;
 }
 

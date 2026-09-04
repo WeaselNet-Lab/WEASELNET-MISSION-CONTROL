@@ -3,7 +3,6 @@
 import { useMemo, useState } from "react";
 
 import { ProjectCard } from "@/components/project-card";
-import { Input } from "@/components/ui/input";
 import { departments } from "@/lib/departments";
 import { searchProjects, statusOrder } from "@/lib/catalog";
 import { projects } from "@/lib/projects";
@@ -45,12 +44,12 @@ export function ProjectCatalog() {
       </section>
 
       <div className="flex flex-col gap-3">
-        <Input
+        <input
           value={query}
-          onValueChange={setQuery}
+          onChange={(event) => setQuery(event.target.value)}
           placeholder="Search callsigns, stacks, daughters, dragons…"
           aria-label="Search projects"
-          className="h-10 bg-card"
+          className="h-10 w-full min-w-0 rounded-lg border border-input bg-card px-2.5 text-base outline-none placeholder:text-muted-foreground focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/50 md:text-sm"
         />
         <div className="flex flex-col gap-2">
           <ChipRow
