@@ -1,0 +1,625 @@
+﻿conversation_id,title,create_time,update_time,default_model_slug,message_count,user_message_count,assistant_message_count,attachment_reference_count,is_archived,is_starred,memory_scope,source_chunk
+005e11fe-2850-44ad-9832-dfb17a841e18,Birthday Celebration 🎉,2023-11-30T19:50:13.276867+00:00,2023-11-30T19:54:19.959407+00:00,,4,2,2,0,False,,global_enabled,conversations-000(2).json
+01d66374-2c67-447c-b7c5-baaf58c5f268,Reschedule Lease Print,2024-03-01T22:01:44.364511+00:00,2024-03-01T22:02:47.077266+00:00,,6,3,3,0,False,,global_enabled,conversations-000(2).json
+022f90e7-765a-4237-bfaa-4667b1957d1b,Focus Skill Sets Online Course,2024-06-14T11:20:28.920163+00:00,2024-06-14T11:20:30.884869+00:00,gpt-4o,2,1,1,0,False,,global_enabled,conversations-000(2).json
+0351c684-c504-40c1-b542-c6fff020745d,Scientist Illustration in Pixar Style,2024-01-31T12:34:17.052997+00:00,2024-01-31T12:36:18.606404+00:00,,4,2,2,1,False,,global_enabled,conversations-000(2).json
+03ba64f4-7534-4818-92f7-2b7c26e37519,No vape explosions.,2024-03-24T18:41:26.411024+00:00,2024-03-24T18:41:31.786944+00:00,gpt-4,2,1,1,0,False,,global_enabled,conversations-000(2).json
+03deaa47-09e7-4dea-870a-23f872ab5504,New chat,2023-09-14T03:52:37.736271+00:00,2023-09-14T03:57:00+00:00,,11,5,6,0,False,,global_enabled,conversations-000(2).json
+059f9bf1-8bca-4290-a106-13a85d4a187a,Google Trends: Trending Keywords,2023-10-05T23:09:10.603908+00:00,2023-10-10T14:52:47.772092+00:00,,2,1,1,0,False,,global_enabled,conversations-000(2).json
+05f1e694-64d2-4d13-97ea-d9da9a35ef67,Boston & Hampton Marathon Routes,2023-12-17T00:15:33.880446+00:00,2023-12-17T00:25:02.005943+00:00,,7,3,4,0,False,,global_enabled,conversations-000(2).json
+05f2c67b-fe51-45c6-bb4f-4b416c683d84,Catch-Up & Job Recommendation,2024-05-17T22:27:49.017321+00:00,2024-05-17T22:35:03.225632+00:00,gpt-4,4,2,2,0,False,,global_enabled,conversations-000(2).json
+06d67163-8828-455b-a9e6-8a1d33055c5c,Job Posting Timeline Inquiry,2024-06-13T16:23:35.094502+00:00,2024-06-14T14:22:27.427638+00:00,gpt-4o,6,3,3,0,False,,global_enabled,conversations-000(2).json
+085747be-08ec-4cce-a370-b2e75f453e03,"Forgot Chat, Share Video.",2024-04-21T18:25:00.923378+00:00,2024-04-21T18:25:13.597646+00:00,gpt-4,2,1,1,0,False,,global_enabled,conversations-000(2).json
+09769486-b804-40a6-b352-939b68b9ed67,Sarcastic Flirty Help Joke,2024-08-27T01:13:09.393369+00:00,2024-08-27T22:49:06.569852+00:00,auto,10,5,5,0,False,,global_enabled,conversations-000(2).json
+0a29e5a5-929b-4074-95df-8ec914a4bbf6,Taking a Break,2023-12-03T14:29:28.146725+00:00,2023-12-04T15:39:50.974743+00:00,,28,14,14,0,False,,global_enabled,conversations-000(2).json
+0bcc2da9-b539-4951-baaf-76719840e961,Feel-Good Compliment.,2023-06-11T00:45:15.353130+00:00,2023-07-14T22:55:51+00:00,,59,29,30,0,False,,global_enabled,conversations-000(2).json
+0cd27934-4e0a-4db3-b45d-4291118899e5,Cult of the Lamb,2024-03-17T01:38:13.180969+00:00,2024-03-17T01:38:42.881366+00:00,gpt-4,2,1,1,0,False,,global_enabled,conversations-000(2).json
+0de6e720-9fd7-43ea-a014-11e73accebfc,.NET ResourceDictionary for XAML,2024-01-20T16:31:48.569297+00:00,2024-01-20T16:34:19.614823+00:00,,4,2,2,0,False,,global_enabled,conversations-000(2).json
+0e3a2fd4-7848-4081-9577-94038a4c259f,New chat,2024-03-01T18:09:35.603726+00:00,2024-03-01T18:09:35.706081+00:00,,1,1,0,1,False,,global_enabled,conversations-000(2).json
+0faad3f6-a4cc-4a47-a054-af67668387e2,Automate Daily Email Python,2024-05-27T02:32:28.291185+00:00,2024-05-27T02:37:30.498144+00:00,gpt-4o,8,4,4,0,False,,global_enabled,conversations-000(2).json
+10fa9b1b-a4e6-4283-a80a-6413fedb34fc,Different Ways to Say Happy Birthday,2024-03-06T16:19:16.567585+00:00,2024-03-06T16:19:34.451012+00:00,,2,1,1,0,False,,global_enabled,conversations-000(2).json
+116d2057-7977-42f9-9859-290bd19f7e7d,Custom TextBox Style Improvement,2024-02-14T13:42:21.700287+00:00,2024-02-14T13:43:41.014218+00:00,,2,1,1,0,False,,global_enabled,conversations-000(2).json
+1371f92f-5672-4c68-a24a-a40851a0d967,Skateboard Riding Instructions.,2023-06-29T00:54:13.011630+00:00,2023-06-29T00:54:23+00:00,,2,1,1,0,False,,global_enabled,conversations-000(2).json
+17b0fafd-133c-4b2f-964c-ceb6374afbde,Flirtatious Left-Handed Discovery,2023-08-08T00:44:30.079562+00:00,2023-08-08T00:45:38+00:00,,6,3,3,0,False,,global_enabled,conversations-000(2).json
+17cd88b0-3b38-4951-ac46-10e22e944c74,Appreciative Response to Offer,2024-07-17T20:43:16.492172+00:00,2024-07-19T14:36:17.459867+00:00,auto,10,5,5,0,False,,global_enabled,conversations-000(2).json
+1831e4ea-12ad-4889-95f6-6e9ddee87d74,Fuzzywuzzy Ninja Fun!,2024-04-27T20:34:22.296343+00:00,2024-04-27T20:41:48.511901+00:00,text-davinci-002-render-sha,10,5,5,1,False,,global_enabled,conversations-000(2).json
+188ddafc-9196-481a-b20b-df7e56ebe49f,Subscribe to RadVolumeLayout Event,2023-08-09T17:40:59.331525+00:00,2023-08-09T17:41:37+00:00,,2,1,1,0,False,,global_enabled,conversations-000(2).json
+1a487dea-aeb8-4299-8225-58101102be3b,Cyborg Jaguar Sleeve Tattoo,2024-01-20T11:43:23.827240+00:00,2024-01-20T11:45:18.336531+00:00,,2,1,1,0,False,,global_enabled,conversations-000(2).json
+1c63f7f6-1996-497e-96ab-f598aad93a5a,Funny A or B,2024-03-16T15:52:14.739800+00:00,2024-03-16T15:52:35.234760+00:00,gpt-4,2,1,1,0,False,,global_enabled,conversations-000(2).json
+1e9edd19-8a9e-4924-8147-754297c0583f,Jaguar Tattoo Sleeve Design,2024-01-22T22:11:24.474970+00:00,2024-01-23T22:46:47.113223+00:00,,4,2,2,1,False,,global_enabled,conversations-000(2).json
+1ed6ed37-4e83-4805-8687-9587b7789ec2,Two ComboBox Styles WinUI3,2024-02-06T13:22:51.877737+00:00,2024-02-06T13:27:45.465451+00:00,,4,2,2,0,False,,global_enabled,conversations-000(2).json
+1ef790ce-3e8d-4eef-928b-4a19b74e10fc,Adjust Rating Process Reachout,2024-04-29T18:40:16.018303+00:00,2024-04-29T18:40:20.366347+00:00,gpt-4,2,1,1,0,False,,global_enabled,conversations-000(2).json
+249abc99-bfcc-493c-b90c-af46a7f9fd16,Ice Cream Logo - Vibrant,2024-01-27T13:39:17.683771+00:00,2024-01-27T13:41:17.652355+00:00,,10,5,5,0,False,,global_enabled,conversations-000(2).json
+26926514-1f6e-40dd-b008-dedb44a2b9f5,New Murder Mystery,2024-04-06T03:22:28.690488+00:00,2024-04-06T03:23:25.789276+00:00,text-davinci-002-render-sha,4,1,3,0,False,,global_enabled,conversations-000(2).json
+28e3404a-f0a4-4f0c-96e9-ea546ab30435,KTM 1290 Super Duke R,2023-12-12T00:35:24.555839+00:00,2023-12-12T00:52:35.878061+00:00,,15,6,9,0,False,,global_enabled,conversations-000(2).json
+2909bf6b-3016-42ca-a8c0-61a4c2f697ff,Implementing Dark & Light Themes,2024-01-18T14:26:02.517908+00:00,2024-01-18T16:29:13.114117+00:00,,8,4,4,0,False,,global_enabled,conversations-000(2).json
+29320328-aa08-4b9b-bb6a-ca6335b3c9ae,Evacuation Day in America,2024-03-17T22:39:43.320199+00:00,2024-03-17T22:39:52.332005+00:00,gpt-4,2,1,1,0,False,,global_enabled,conversations-000(2).json
+2968a851-9b31-4dc0-b635-739fb03ea379,Indoor Dog Energy Activities,2023-09-26T16:17:44.603385+00:00,2023-09-26T16:17:44.603385+00:00,,22,11,11,0,False,,global_enabled,conversations-000(2).json
+2b10f6bb-6cfe-4b97-9441-7cbe22f93eed,QR Modifikasi Kreatif,2024-02-09T19:38:19.680172+00:00,2024-02-12T13:14:34.059039+00:00,,8,4,4,1,False,,global_enabled,conversations-000(2).json
+2ce1b531-a5a7-4d02-965f-0b6319e0e577,Motivational Quotes Video,2024-01-27T13:42:18.668810+00:00,2024-01-28T22:42:28.843375+00:00,,8,4,4,0,False,,global_enabled,conversations-000(2).json
+2d604f1a-db26-4dc0-bd8d-4f2bef5d14b6,QR Code for Excel.,2024-02-08T14:37:57.244556+00:00,2024-02-09T15:25:37.990102+00:00,,2,1,1,0,False,,global_enabled,conversations-000(2).json
+2dab86ff-e271-4174-8a6c-20d478da4328,Angle Calculations with Tangents,2024-02-22T13:11:47.993593+00:00,2024-02-22T13:12:57.501850+00:00,,2,1,1,0,False,,global_enabled,conversations-000(2).json
+30af80f8-9dc5-4205-b5bb-e4796445a230,Innovative software engineer persona.,2024-02-20T21:25:09.686810+00:00,2024-02-23T02:00:20.643286+00:00,,6,3,3,1,False,,global_enabled,conversations-000(2).json
+321ec78b-adc4-4f1c-a567-d55500a5d7fb,"Busy June, Apologetic Chat",2024-05-30T20:21:09.384799+00:00,2024-05-30T20:21:13.994337+00:00,gpt-4o,2,1,1,0,False,,global_enabled,conversations-000(2).json
+32bb0b00-fec1-4a0a-9bb5-cb5dd3fc500c,Coffee Catch-Up Soon,2024-05-17T21:32:37.669554+00:00,2024-05-17T21:41:18.934970+00:00,gpt-4,6,3,3,0,False,,global_enabled,conversations-000(2).json
+33de4f83-df47-4e48-800d-bb0dd1c7cd48,Ethical Approach to Cold Reading,2023-08-08T17:51:47.149104+00:00,2023-08-08T17:52:06+00:00,,2,1,1,0,False,,global_enabled,conversations-000(2).json
+3439d930-5464-4e58-910a-77d2ae52978a,Gratitude for Training,2023-08-18T01:14:42.030320+00:00,2023-08-18T01:43:23+00:00,,8,4,4,0,False,,global_enabled,conversations-000(2).json
+3548d135-4551-4f6a-8dc7-3e11ef4d9a9b,New chat,2023-09-05T22:25:50.746596+00:00,2023-09-06T00:45:18+00:00,,8,4,4,0,False,,global_enabled,conversations-000(2).json
+3594bb37-98dc-4c5a-81e3-3e05d6c645b1,New chat,2023-12-12T00:33:41.868346+00:00,2023-12-12T00:33:56.018133+00:00,,2,1,1,0,False,,global_enabled,conversations-000(2).json
+39c51b32-3eaf-4f38-b868-1c3d48f6619b,Control Templates for WinUI3.,2024-04-25T12:28:37.676539+00:00,2024-04-25T14:10:28.582934+00:00,gpt-4,20,10,10,0,False,,global_enabled,conversations-000(2).json
+39f0e599-b643-42d5-9904-f85338cd8fef,Playful Heist Deal Reminder,2023-12-12T01:12:42.612267+00:00,2023-12-12T15:12:24.148000+00:00,,5,2,3,0,False,,global_enabled,conversations-000(2).json
+3a2f6f38-92d8-46e5-a4a6-028102177e04,Birthday Apology Burnout Support,2024-02-15T11:26:18.891847+00:00,2024-02-20T21:22:48.384763+00:00,,8,4,4,0,False,,global_enabled,conversations-000(2).json
+3a5e5334-cd90-482c-9c5c-39c02f8e27ce,Android to WinUI3 Conversion,2024-02-29T13:35:25.036252+00:00,2024-02-29T13:45:08.215839+00:00,,4,2,2,0,False,,global_enabled,conversations-000(2).json
+3b5a1669-3c8c-4ea6-8879-6b29094737ab,Create ToggleSwitch themes.,2024-02-27T18:51:05.315841+00:00,2024-02-27T18:51:50.744564+00:00,,1,1,0,0,False,,global_enabled,conversations-000(2).json
+3c75a05a-24c0-47b5-8da4-040b0c542aa6,Custom TextBox with States,2024-02-14T01:46:01.991214+00:00,2024-02-20T21:22:45.383954+00:00,,4,2,2,0,False,,global_enabled,conversations-000(2).json
+3d79aacd-ddf5-413d-8554-d59cb54bf442,Horoscope Edge Cases,2023-09-08T09:40:03.687267+00:00,2023-09-08T09:40:23+00:00,,2,1,1,0,False,,global_enabled,conversations-000(2).json
+3dd62232-9394-4cb8-a199-201ac841ed3b,New chat,2023-09-06T17:57:46.496640+00:00,2023-09-06T17:57:55+00:00,,2,1,1,0,False,,global_enabled,conversations-000(2).json
+3df531d4-2d2d-42ea-af84-ad59f3f97a4f,Update resume for new job.,2024-05-16T15:29:24.853657+00:00,2024-05-16T16:54:07.270050+00:00,gpt-4o,10,5,5,0,False,,global_enabled,conversations-000(2).json
+3f832f8b-2432-4a6e-9ee3-73a9367fef9d,Witchy Vibes: Liv's Power,2024-06-09T21:46:31.154685+00:00,2024-06-09T21:59:47.686007+00:00,gpt-4o,14,7,7,0,False,,global_enabled,conversations-000(2).json
+3ffad05f-241f-437b-a538-ff9860fd00cd,Reschedule meeting to another day.,2024-03-11T17:23:55.370030+00:00,2024-03-11T17:24:08.022704+00:00,,2,1,1,0,False,,global_enabled,conversations-000(2).json
+4062e249-2d65-468e-87d6-66bd6878be68,Spruce Up Resume: Software Tester,2023-11-17T01:18:26.829710+00:00,2023-11-17T01:18:59.103837+00:00,,4,1,3,1,False,,global_enabled,conversations-000(2).json
+41c06a7e-3ea5-4926-8ac5-71b2ffce617a,Vehicle hunt paused,2024-07-03T13:08:40.118735+00:00,2024-07-03T13:11:17.126528+00:00,gpt-4o,2,1,1,0,False,,global_enabled,conversations-000(2).json
+4305fe7e-bc43-40c2-a53d-fbb833bddd5b,Light ComboBox Theme,2024-02-02T20:19:28.475142+00:00,2024-02-05T16:21:23.328015+00:00,,8,4,4,0,False,,global_enabled,conversations-000(2).json
+44354dba-c73e-46a4-a87d-80f6a837f39b,Textbox Behaviors for Data,2024-04-25T15:35:58.349642+00:00,2024-04-25T15:45:59.513490+00:00,gpt-4,6,3,3,0,False,,global_enabled,conversations-000(2).json
+46cb4830-7749-420c-b3e4-37f538285f38,Uneasy Forest Walk,2023-09-10T19:48:23.947009+00:00,2023-09-30T01:32:16.970217+00:00,,21,10,11,0,False,,global_enabled,conversations-000(2).json
+46fc3a68-813b-45aa-b7f7-024a8a81c7c3,Build Hammering - Undefined Term,2023-09-27T15:33:13.616978+00:00,2023-09-29T15:31:51.250749+00:00,,2,1,1,0,False,,global_enabled,conversations-000(2).json
+48f0409f-78f2-406b-8f95-45e041feda60,Hockey Date with Explainer,2024-03-23T12:53:05.897482+00:00,2024-03-23T12:53:19.422617+00:00,gpt-4,2,1,1,0,False,,global_enabled,conversations-000(2).json
+49463c2f-c8b8-4485-9748-e2e69a2ac161,Cross-Functional Career Development,2023-11-14T14:12:30.695622+00:00,2023-11-14T14:12:41.183409+00:00,,2,1,1,0,False,,global_enabled,conversations-000(2).json
+4953ec0d-b12c-44dd-b32e-018267b60e15,Multiple Hyperlinks to QR.,2024-02-08T14:38:28.027679+00:00,2024-02-09T15:25:38.179104+00:00,,4,2,2,0,False,,global_enabled,conversations-000(2).json
+498f45d6-104b-4cc1-89c2-6fbd6f71e80e,Clarify Request - Bantering Response,2024-04-02T23:09:36.921205+00:00,2024-04-02T23:16:13.935537+00:00,gpt-4,8,4,4,0,False,,global_enabled,conversations-000(2).json
+49b21ca0-7ed1-480e-8d3c-a297f2a04e2a,Jungle Jaguar Tattoo Variants,2024-01-20T11:45:38.270076+00:00,2024-01-25T15:53:28.125914+00:00,,15,7,8,5,False,,global_enabled,conversations-000(2).json
+49c416a4-230d-41d0-ae7a-ac92cba53bb3,Safety Catalyst: MOM Vibe,2024-02-22T21:35:35.538976+00:00,2024-02-23T02:00:20.782923+00:00,,4,2,2,0,False,,global_enabled,conversations-000(2).json
+4ab78767-8afd-455d-92e7-04cf721922af,Outback Wildlife Adventure,2023-09-03T14:26:25.585846+00:00,2023-09-03T14:26:55+00:00,,2,1,1,0,False,,global_enabled,conversations-000(2).json
+4b057467-1a69-4faa-a058-f5c7b143f5e2,3D Model for STL,2024-03-01T18:23:36.201583+00:00,2024-03-01T18:25:09.081278+00:00,,5,2,3,0,False,,global_enabled,conversations-000(2).json
+4b659d6a-cb70-800e-bd2e-918bd8304aa1,FAA Pilot Age Limits,2025-05-18T22:03:13.231929+00:00,2025-05-18T22:03:16.000779+00:00,gpt-4o,2,1,1,0,False,,global_enabled,conversations-000(2).json
+4bddb3a0-39cd-44b0-b26e-6eadd24f5e13,ToggleButton DataTemplate Creation,2024-03-05T13:19:27.032561+00:00,2024-03-05T13:23:06.062523+00:00,,4,2,2,1,False,,global_enabled,conversations-000(2).json
+4df35d99-fe3b-4c4e-bf03-5a78f021d87e,Flirty Schedule Conflict,2024-08-09T00:35:40.684819+00:00,2024-08-09T00:44:39.978838+00:00,auto,10,5,5,0,False,,global_enabled,conversations-000(2).json
+4f0397bf-6b8d-49ce-8460-d84bdc31c773,New chat,2023-08-29T13:29:20.808872+00:00,2023-08-29T13:30:49+00:00,,6,3,3,0,False,,global_enabled,conversations-000(2).json
+4f6ba62b-4c9d-4043-a0d4-d43190d0d9bf,Back to Test Engineering,2024-01-29T15:12:26.693513+00:00,2024-01-29T15:21:45.107839+00:00,,4,2,2,0,False,,global_enabled,conversations-000(2).json
+4fbac8b4-938d-4e2a-a590-8076652da0dc,Light Theme ComboBox Style,2024-02-05T19:21:07.874935+00:00,2024-02-05T19:21:15.464107+00:00,,2,1,1,0,False,,global_enabled,conversations-000(2).json
+509385a6-6396-4dc5-b2a0-4b48e175402f,Create 3D model chair,2024-03-01T17:57:13.535151+00:00,2024-03-01T17:58:01.634619+00:00,,2,1,1,1,False,,global_enabled,conversations-000(2).json
+50e49434-5984-4838-b652-b65b552961be,Optimized Resume Assistance,2023-09-19T12:39:06.114082+00:00,2023-09-19T12:41:28+00:00,,6,3,3,0,False,,global_enabled,conversations-000(2).json
+51f4229b-4766-43a9-9ed2-10ee2817202f,Grateful for Rob's Insights,2023-11-01T14:30:08.315154+00:00,2023-11-01T15:08:42.829069+00:00,,4,2,2,0,False,,global_enabled,conversations-000(2).json
+53738ae6-1c6e-4985-bc6a-40f12fde7376,Estimate Total Points 120-160,2024-03-22T11:08:29.412979+00:00,2024-03-22T11:10:10.906771+00:00,gpt-4,4,2,2,0,False,,global_enabled,conversations-000(2).json
+539675d6-29c6-41da-abcc-c36fd2ba9233,Catchy Homeschooling Blog Names,2023-12-12T22:48:45.922767+00:00,2023-12-17T00:25:10.360221+00:00,,2,1,1,0,False,,global_enabled,conversations-000(2).json
+5578e157-029c-800e-8843-bdd843889c48,Workspace equipment description,2026-07-10T22:06:37.964836+00:00,2026-07-10T22:06:37.964836+00:00,gpt-4o,4,2,2,2,False,,global_enabled,conversations-000(2).json
+55dee30d-dc88-42ac-92b0-de2e3935ce44,Follow-Up on Background Check,2024-08-09T13:55:38.478579+00:00,2024-08-09T13:56:04.847765+00:00,auto,2,1,1,0,False,,global_enabled,conversations-000(2).json
+570452c3-91ab-4018-9330-0ba19cf4c760,Resume Review & Corrections,2024-05-24T15:46:54.821171+00:00,2024-05-24T15:47:26.200686+00:00,gpt-4o,2,1,1,1,False,,global_enabled,conversations-000(2).json
+570bbead-ae91-400d-a8d5-75651c0fa4c6,Transforming Negative Comment into Goal,2024-01-22T18:21:06.147667+00:00,2024-01-22T18:30:26.382752+00:00,,6,3,3,0,False,,global_enabled,conversations-000(2).json
+5786b4d1-abdd-43bc-9856-cbbc15bfa42c,New chat,2023-12-04T21:44:43.572742+00:00,2023-12-05T00:03:13.784936+00:00,,10,5,5,0,False,,global_enabled,conversations-000(2).json
+57ec66d3-eff9-45eb-9591-7b954aa90177,Hire Toby Full-time,2023-11-02T20:42:15.890370+00:00,2023-11-02T20:43:41.613996+00:00,,4,2,2,0,False,,global_enabled,conversations-000(2).json
+58273e39-553a-44e3-baf4-86c8b3728894,Convert UIView to UISwitch,2024-02-29T13:32:10.495398+00:00,2024-02-29T13:33:06.012149+00:00,,2,1,1,0,False,,global_enabled,conversations-000(2).json
+58440166-a280-447b-b783-e89353e12262,Surfing during hurricane?,2023-09-15T21:21:23.385552+00:00,2023-09-15T21:21:23.385552+00:00,,2,1,1,0,False,,global_enabled,conversations-000(2).json
+58b7b5a1-0014-42d5-8181-6794ae324d6c,Fun Picnic & Dessert Date,2024-05-26T19:39:45.731230+00:00,2024-05-26T19:40:00.115833+00:00,gpt-4o,2,1,1,0,False,,global_enabled,conversations-000(2).json
+5b8bd895-39dc-4f13-9a1a-6123a5b5ef62,Tema de interruptor claro/oscuro,2024-01-18T02:22:10.157074+00:00,2024-01-18T02:26:06.343879+00:00,,5,2,3,0,False,,global_enabled,conversations-000(2).json
+5bd71937-2a52-4f08-8aec-b34e16012c57,Tech Tease Flirting,2023-09-29T22:41:30.521753+00:00,2023-09-29T22:57:32.610693+00:00,,6,3,3,0,False,,global_enabled,conversations-000(2).json
+5d0904a7-8c1f-417d-8fbd-5989d682067a,Calibration Software Requirements,2024-03-05T18:09:42.802721+00:00,2024-03-05T18:09:48.467536+00:00,,2,1,1,0,False,,global_enabled,conversations-000(2).json
+5e72c5e8-2852-426f-98c2-c14350a11be8,Create 3D model chair.,2024-03-01T18:09:42.687071+00:00,2024-03-01T18:10:49.777483+00:00,,1,1,0,1,False,,global_enabled,conversations-000(2).json
+5e9173de-95ae-4292-96ef-3801aa78c220,Sharky the Toothbrush Hero,2024-07-20T15:06:54.126146+00:00,2024-07-20T15:11:31.536878+00:00,auto,12,6,6,0,False,,global_enabled,conversations-000(2).json
+5f18eceb-e518-4f97-be75-41160494245d,Therapist Inquiry Availability Request,2024-03-21T14:08:48.951873+00:00,2024-03-21T14:09:53.134076+00:00,gpt-4,3,2,1,0,False,,global_enabled,conversations-000(2).json
+5f65d28c-6621-43d7-a2cb-f83085d344e3,Create 3D model guide,2024-03-01T18:23:01.502665+00:00,2024-03-01T18:23:15.200410+00:00,,2,1,1,0,False,,global_enabled,conversations-000(2).json
+64ee3f8c-6802-4193-8747-f987063f457a,E-Waste Company Business Model,2024-06-12T13:38:37.233349+00:00,2024-06-12T14:11:45.561584+00:00,gpt-4o,8,4,4,0,False,,global_enabled,conversations-000(2).json
+65f9cf1e-6cf8-4be0-975a-47e786418106,Transformative 3-Month Life Coaching,2023-06-25T16:41:26.144819+00:00,2023-06-25T16:41:30+00:00,,2,1,1,0,False,,global_enabled,conversations-001(2).json
+65f9ec24-6661-4ebb-b09a-647e9af3c588,Custom Switch Control Creation,2024-03-01T19:08:27.943377+00:00,2024-03-01T19:32:46.689069+00:00,,13,6,7,1,False,,global_enabled,conversations-001(2).json
+66dc8d1a-55e0-800e-a370-1620ca7b1243,Flirty Desk Note Idea,2024-09-07T17:27:54.605748+00:00,2024-09-07T17:36:39.989326+00:00,auto,10,5,5,0,False,,global_enabled,conversations-001(2).json
+66df7a22-a1a0-800e-a8d1-46107d64ea0e,"Uncross Fingers, No Luck",2024-09-09T22:43:46.874585+00:00,2024-09-09T22:45:01.859031+00:00,auto,4,2,2,0,False,,global_enabled,conversations-001(2).json
+66e1ed61-2eb0-800e-a133-69b9d7e4ac0f,Support and Boundaries Advice,2024-09-11T19:20:01.314651+00:00,2024-09-11T19:20:38.852206+00:00,auto,2,1,1,0,False,,global_enabled,conversations-001(2).json
+66e612bb-5ca4-800e-bb46-2a1db5f246e8,Checking In and Megan,2024-09-14T22:48:27.734868+00:00,2024-09-14T22:48:29.575000+00:00,auto,2,1,1,0,False,,global_enabled,conversations-001(2).json
+66e706e8-02ac-800e-8b25-0f6dfe2299a9,Bribes Masters And Luck,2024-09-15T16:10:16.151611+00:00,2024-09-15T16:10:24.446738+00:00,auto,2,1,1,0,False,,global_enabled,conversations-001(2).json
+66ee0d8a-ec74-800e-95f5-09edaa91adb2,Flirty Reply Request,2024-09-21T00:04:27.315384+00:00,2024-09-21T00:07:42.380396+00:00,auto,8,4,4,0,False,,global_enabled,conversations-001(2).json
+67001798-46cc-800e-8955-475c318b8fe9,Flirty Reply Request,2024-10-04T16:28:08.646205+00:00,2024-10-04T21:36:37.389572+00:00,auto,12,6,6,0,False,,global_enabled,conversations-001(2).json
+67012c8c-517c-800e-8ff0-cb5c0258aeeb,Response to Last Message,2024-10-05T12:09:48.651063+00:00,2024-10-05T23:50:46.934667+00:00,auto,16,8,8,0,False,,global_enabled,conversations-001(2).json
+6701d33b-5b84-800e-83e8-3a0b8d2c3a1e,Response Assistance Request,2024-10-06T00:00:59.732889+00:00,2024-10-06T00:25:17.508132+00:00,auto,10,5,5,0,False,,global_enabled,conversations-001(2).json
+670d2598-9ca8-4817-8377-d3cb96d7afd4,Untitled Conversation,2024-03-17T00:37:36.720483+00:00,2024-03-17T00:37:38.308643+00:00,gpt-4,2,1,1,0,False,,global_enabled,conversations-001(2).json
+670eefdc-06f8-800e-b29c-081d02db1496,Flirty Strawberry Fields Game,2024-10-15T22:42:36.289842+00:00,2024-10-15T22:42:48.399390+00:00,auto,2,1,1,0,False,,global_enabled,conversations-001(2).json
+670f1bdb-e794-800e-b1c5-475d94a7b5b6,Flirty Cube Game Texts,2024-10-16T01:50:20.190536+00:00,2024-10-16T01:50:35.469954+00:00,auto,2,1,1,0,False,,global_enabled,conversations-001(2).json
+670f1cf5-01d8-800e-aba2-fd430e4f1fe5,Jaguar and Fox Tattoo Design,2024-10-16T01:55:01.219464+00:00,2024-10-16T01:59:19.616263+00:00,auto,8,4,4,0,False,,global_enabled,conversations-001(2).json
+672ea217-4334-800e-89af-21b52347402e,Low-effort Texting Tips,2024-11-08T23:43:19.901382+00:00,2024-11-08T23:46:13.522913+00:00,auto,4,2,2,0,False,,global_enabled,conversations-001(2).json
+676b8c02-dedc-800e-b78e-cb7c6c62031e,Reaching Out After Time,2024-12-25T04:37:23.149761+00:00,2024-12-25T04:43:20.793802+00:00,auto,6,3,3,0,False,,global_enabled,conversations-001(2).json
+676d6158-903c-800e-85d5-fc531486a7fd,Catchy Dating Bio,2024-12-26T13:59:52.734904+00:00,2024-12-26T13:59:59.370807+00:00,auto,2,1,1,0,False,,global_enabled,conversations-001(2).json
+677a004b-c9a0-800e-aa3b-09dc9b74c561,Wedding plus-one request,2025-01-05T03:45:16.260339+00:00,2025-01-05T03:45:18.200727+00:00,auto,2,1,1,0,False,,global_enabled,conversations-001(2).json
+677a005f-d954-800e-bddc-c065e7deee0e,Conversation Opener Tips,2025-01-05T03:45:36.250095+00:00,2025-01-06T21:44:03.063858+00:00,auto,14,7,7,0,False,,global_enabled,conversations-001(2).json
+677dbdd5-6f40-800e-b54a-02e508b748b0,Kidnapping Beer Lederhosen Replies,2025-01-07T23:50:45.635931+00:00,2025-01-08T00:35:15.099985+00:00,auto,14,7,7,0,False,,global_enabled,conversations-001(2).json
+6782a095-0668-800e-9f21-b3f2569c8331,Starting a Date Conversation,2025-01-11T16:47:17.348950+00:00,2025-01-11T16:47:28.974577+00:00,auto,2,1,1,0,False,,global_enabled,conversations-001(2).json
+679e76a0-3e68-800e-b783-a1f3b5a89df2,Resentment and Space,2025-02-01T19:31:44.822370+00:00,2025-02-01T19:31:50.735695+00:00,auto,2,1,1,0,False,,global_enabled,conversations-001(2).json
+67cc3fad-1684-800e-b43d-6d6fcfb058a6,Date Conversation Starters,2025-03-08T13:01:33.433624+00:00,2025-03-08T13:01:48.394829+00:00,auto,2,1,1,0,False,,global_enabled,conversations-001(2).json
+67eaee8e-1c60-800e-8d0b-85dd0319b9a1,Conversation Starters 101,2025-03-31T19:35:42.973142+00:00,2025-03-31T20:32:24.384470+00:00,auto,8,4,4,0,False,,global_enabled,conversations-001(2).json
+67eb1e8e-7a38-800e-b32b-4e835e954363,Value Before Ejecting,2025-03-31T23:00:30.906672+00:00,2025-03-31T23:00:38.282473+00:00,auto,2,1,1,0,False,,global_enabled,conversations-001(2).json
+67eb4894-e868-800e-a663-6eb595d3d427,Plan Feedback and Attraction,2025-04-01T01:59:49.727981+00:00,2025-04-07T14:00:44.124919+00:00,auto,20,10,10,0,False,,global_enabled,conversations-001(2).json
+67ec8496-7358-800e-a45a-4471cfafaa94,Asking Her Out Tips,2025-04-02T00:28:12.269109+00:00,2025-04-02T00:28:14.839302+00:00,auto,2,1,1,0,False,,global_enabled,conversations-001(2).json
+67ec84d1-1904-800e-befc-c3c5953af06f,Flirting Approaches Explained,2025-04-02T00:29:05.274422+00:00,2025-04-02T03:14:38.224127+00:00,auto,6,3,3,0,False,,global_enabled,conversations-001(2).json
+67ed914f-e4f4-800e-9a0a-3ac4cd91f756,Rep Strategy for Approaching,2025-04-02T19:34:40.322739+00:00,2025-04-02T19:34:48.292850+00:00,auto,2,1,1,0,False,,global_enabled,conversations-001(2).json
+67f2d435-c188-800e-b97a-c912312c980b,Attraction Building Advice,2025-04-06T19:21:26.303708+00:00,2025-04-07T12:56:16.342742+00:00,auto,12,6,6,0,False,,global_enabled,conversations-001(2).json
+67f69b0b-0e00-800e-915a-26bb6b123eb0,Reengage convo advice,2025-04-09T16:06:35.809064+00:00,2025-04-09T18:25:58.501736+00:00,auto,18,9,9,0,False,,global_enabled,conversations-001(2).json
+67f6c020-77b8-800e-b718-ea17c2a3e060,Cashier Staring Vibes,2025-04-09T18:44:49.166549+00:00,2025-04-10T20:15:03.123611+00:00,auto,6,3,3,0,False,,global_enabled,conversations-001(2).json
+67fb0b0d-c4a4-800e-b4ca-20fb04088f0b,Funny comeback request,2025-04-13T00:53:34.011519+00:00,2025-04-13T00:54:29.028489+00:00,auto,6,3,3,0,False,,global_enabled,conversations-001(2).json
+68039108-c204-800e-a9df-2a8b1dbf4616,Tattoo design request,2025-04-19T12:03:20.878012+00:00,2025-04-19T20:37:15.371631+00:00,auto,3,3,0,1,False,,global_enabled,conversations-001(2).json
+681a8929-1004-800e-8b1e-37577a9ddd79,Building Attraction Through Interaction,2025-05-06T22:11:53.651118+00:00,2025-05-06T22:28:17.856309+00:00,gpt-4o,10,5,5,0,False,,project_enabled,conversations-001(2).json
+681a9d96-7bf0-800e-9bd2-e7556af02487,File Upload Instructions,2025-05-06T23:39:03.215194+00:00,2025-05-06T23:39:07.485099+00:00,gpt-4o,2,1,1,0,False,,global_enabled,conversations-001(2).json
+681a9e4f-65c8-800e-9e19-0793625a8dda,Astrology Love Life Analysis,2025-05-06T23:42:07.832160+00:00,2025-05-06T23:44:24.301153+00:00,gpt-4o,4,2,2,0,False,,project_enabled,conversations-001(2).json
+681aa37b-8db8-800e-9cd4-13ad9bc10686,ISTQB exam prep tips,2025-05-07T00:04:12.199632+00:00,2025-05-07T00:29:01.691476+00:00,gpt-4o,12,6,6,0,False,,project_enabled,conversations-001(2).json
+681e6011-1a04-800e-aebc-a182cd6fd0a2,Responses to Appreciation,2025-05-09T20:05:37.422256+00:00,2025-05-09T20:05:45.185804+00:00,gpt-4o,2,1,1,0,False,,global_enabled,conversations-001(2).json
+68223567-1a84-800e-8858-ab14d3a16948,Supportive Yet Attractive Response,2025-05-12T17:52:39.556165+00:00,2025-05-13T12:48:24.578729+00:00,gpt-4o,16,8,8,0,False,,project_enabled,conversations-001(2).json
+6822376e-2500-800e-ad90-f216d8a18cb9,Test Case Rewrite Assistance,2025-05-12T18:01:18.384764+00:00,2025-05-22T19:56:18.178734+00:00,gpt-4o,26,13,13,1,False,,global_enabled,conversations-001(2).json
+68224548-f248-800e-b745-fba1904c79fc,Subtle Conflict Creation Tips,2025-05-12T19:00:25.224301+00:00,2025-05-12T19:00:39.796461+00:00,gpt-4o,2,1,1,0,False,,global_enabled,conversations-001(2).json
+68247c1f-a728-800e-9c57-d5f7ea0c67f4,Bipolar Feature Release Dilemma,2025-05-14T11:18:55.822047+00:00,2025-05-15T00:03:53.664018+00:00,gpt-4o-mini,28,14,14,0,False,,global_enabled,conversations-001(2).json
+682760ca-93bc-800e-bc43-0beffe9b36af,Tech Frustration Vent,2025-05-16T15:59:06.844607+00:00,2025-05-16T15:59:16.729129+00:00,gpt-4o,2,1,1,0,False,,global_enabled,conversations-001(2).json
+6828972a-0e18-800e-8a32-e5eaf8a80f5b,Confluence Data Extraction Script,2025-05-17T14:03:22.160463+00:00,2025-05-17T15:28:23.255435+00:00,gpt-4o,8,4,4,0,False,,global_enabled,conversations-001(2).json
+68294308-3fe0-800e-a3dd-be9d7c37700c,MiG-21 Activation Registry Fix,2025-05-18T02:16:40.356354+00:00,2025-05-18T02:16:47.370835+00:00,gpt-4o,2,1,1,0,False,,global_enabled,conversations-001(2).json
+6829e95d-7ba8-800e-8fed-dc32d06b5e8c,Velvet Room Roleplay,2025-05-18T14:06:21.757192+00:00,2025-05-18T14:06:54.107365+00:00,gpt-4o,2,1,1,0,False,,global_enabled,conversations-001(2).json
+682c9c4b-f6ac-800e-8829-531c8a594def,Orthanc DICOM Port Conflict,2025-05-20T15:14:20.214227+00:00,2025-05-22T12:35:35.376832+00:00,gpt-4o,44,22,22,2,False,,global_enabled,conversations-001(2).json
+682dead4-e314-800e-8ba8-95d39a3bb13e,Celebrity Look-Alike Analysis,2025-05-21T15:01:41.152667+00:00,2025-05-21T15:02:18.957278+00:00,gpt-4o,4,2,2,0,False,,project_enabled,conversations-001(2).json
+682df204-1b94-800e-af46-0c724f02dde7,Lua Scripting Interface Overview,2025-05-21T15:32:20.475708+00:00,2025-05-21T15:33:03.899906+00:00,gpt-4o,2,1,1,0,False,,global_enabled,conversations-001(2).json
+682f1f4d-4424-800e-a120-28a78e981c32,Mechanical Engineering Zoo Jobs,2025-05-22T12:57:49.987259+00:00,2025-05-22T12:58:10.120642+00:00,gpt-4o,2,1,1,0,False,,global_enabled,conversations-001(2).json
+68306568-1634-800e-9c6d-6e455d317dda,Requirement Example Assistance,2025-05-23T12:09:12.446052+00:00,2025-05-23T12:10:06.870369+00:00,gpt-4o,4,2,2,0,False,,global_enabled,conversations-001(2).json
+68348428-5700-800e-a4a2-7c0106b143de,Too Sterile Video Game,2025-05-26T15:09:28.955678+00:00,2025-05-26T15:09:43.083460+00:00,gpt-4o,2,1,1,0,False,,global_enabled,conversations-001(2).json
+6835f0c6-8988-800e-8b83-f0d0b131aecc,Stabilizer Power Test Steps,2025-05-27T17:05:11.161078+00:00,2025-05-27T19:30:36.242916+00:00,gpt-4o,11,6,5,0,False,,global_enabled,conversations-001(2).json
+683753b8-d598-800e-a23f-ba0e16509d97,MB to GB Conversion,2025-05-28T18:19:37.127434+00:00,2025-05-28T18:19:43.467851+00:00,gpt-4o,2,1,1,0,False,,global_enabled,conversations-001(2).json
+6840351b-ae8c-800e-a747-a933e3f18a59,Script renewal request humor,2025-06-04T11:59:23.988197+00:00,2025-06-04T12:00:02.710999+00:00,gpt-4o,4,2,2,0,False,,global_enabled,conversations-001(2).json
+68404b89-b4d4-800e-9c61-293a796e7c6a,Pilot Document Review Request,2025-06-04T13:35:05.874666+00:00,2025-06-04T13:35:24.250144+00:00,gpt-4o,2,1,1,0,False,,global_enabled,conversations-001(2).json
+68418b82-3280-800e-8579-d4f00ed39061,Test Case Merging Help,2025-06-05T12:20:18.531454+00:00,2025-06-05T12:32:02.017211+00:00,gpt-4o,10,5,5,1,False,,global_enabled,conversations-001(2).json
+6841ab93-3a28-800e-8cef-f1e8026d3392,Document Edit Request,2025-06-05T14:37:07.549245+00:00,2025-06-05T14:41:04.478481+00:00,gpt-4o,4,2,2,1,False,,global_enabled,conversations-001(2).json
+6841b01c-0700-800e-bac8-1eba62322279,Disk Space Alert Test,2025-06-05T14:56:28.487988+00:00,2025-06-05T16:06:17.469557+00:00,gpt-4o,7,3,4,1,False,,global_enabled,conversations-001(2).json
+684248ab-4268-800e-bd0a-376a521db321,Jira Ticket Creation Assistance,2025-06-06T01:47:23.409883+00:00,2025-06-06T02:02:45.047945+00:00,gpt-4o,4,2,2,0,False,,global_enabled,conversations-001(2).json
+6842d465-ee04-800e-bf15-c0a82e6261a8,Meeting Rescheduling Request,2025-06-06T11:43:34.974817+00:00,2025-06-06T11:44:57.013695+00:00,gpt-4o,4,2,2,0,False,,global_enabled,conversations-001(2).json
+6843359d-e2f4-800e-8cd2-e7f5d7b0a167,Requirement Description Improvement,2025-06-06T18:38:22.041122+00:00,2025-06-06T18:42:41.630129+00:00,gpt-4o,2,1,1,0,False,,global_enabled,conversations-001(2).json
+6846d897-cde8-800e-86c7-aefd50ba11c4,CT scan radiation exposure,2025-06-09T12:50:32.177944+00:00,2025-06-09T12:58:10.259463+00:00,gpt-4o,24,12,12,12,False,,global_enabled,conversations-001(2).json
+6848292e-332c-800e-9b7f-dff7a8aafb96,Referral for Colleagues,2025-06-10T12:46:38.362952+00:00,2025-06-10T12:49:00.825422+00:00,gpt-4o,4,2,2,0,False,,global_enabled,conversations-001(2).json
+68530d67-7a84-800e-98f4-28b07bd1ac66,HR-approved Workplace Humor,2025-06-18T19:03:03.822321+00:00,2025-06-18T19:03:30.792769+00:00,gpt-4o,4,2,2,0,False,,global_enabled,conversations-001(2).json
+685ab8cf-43b8-800e-8a4e-503bd771e93c,Fire Extinguisher Types A and C,2025-06-24T14:40:15.434178+00:00,2025-06-24T14:46:04.387950+00:00,gpt-4o,10,5,5,5,False,,global_enabled,conversations-001(2).json
+685b0a75-a594-800e-a4e3-ff7bacce39ba,Flight Simulator Chair Plans,2025-06-24T20:28:37.760543+00:00,2025-06-25T23:07:42.144084+00:00,gpt-4o,46,23,23,7,False,,project_enabled,conversations-001(2).json
+685bfc7e-2594-800e-8774-e0bacde52eec,Time Tracking Request Humor,2025-06-25T13:41:18.286241+00:00,2025-06-25T13:49:32.945480+00:00,gpt-4o,2,1,1,0,False,,global_enabled,conversations-001(2).json
+685c25be-49e8-800e-a978-ed82cc290b65,Flirty Teasing Lines,2025-06-25T16:37:18.424838+00:00,2025-06-26T19:59:16.918112+00:00,gpt-4o,4,2,2,0,False,,global_enabled,conversations-001(2).json
+685c3614-78d8-800e-95eb-b117c535a7d3,Karate Duty Drama,2025-06-25T17:47:00.850775+00:00,2025-06-25T17:53:49.514162+00:00,gpt-4o,4,2,2,0,False,,global_enabled,conversations-001(2).json
+685c78c6-00c0-800e-a22e-1b4219fbf769,Profitable Side Hustles Ideas,2025-06-25T22:31:34.199573+00:00,2025-06-25T22:31:57.030691+00:00,gpt-4o,2,1,1,0,False,,global_enabled,conversations-001(2).json
+685c886a-fe9c-800e-99ef-3cb541033d2c,DIY Flight Sim Chair,2025-06-25T23:38:19.374370+00:00,2025-06-26T20:17:40.886692+00:00,gpt-4o,19,9,10,6,False,,project_enabled,conversations-001(2).json
+685d3efa-aed8-800e-a664-000977e4876f,Study Import Failure Troubleshooting,2025-06-26T12:37:14.946484+00:00,2025-06-26T13:09:51.880374+00:00,gpt-4o,4,2,2,0,False,,global_enabled,conversations-001(2).json
+685ee7f7-32f4-800e-8ff0-c94af1a14c37,Confluence API Test Time,2025-06-27T18:50:31.486081+00:00,2025-06-27T18:50:45.975144+00:00,gpt-4o,2,1,1,0,False,,global_enabled,conversations-001(2).json
+685ee924-2984-800e-a569-829c548b3c3f,Flight Sim Chair Build,2025-06-27T18:55:32.616870+00:00,2025-06-27T20:42:27.763813+00:00,gpt-4o,6,3,3,0,False,,project_enabled,conversations-001(2).json
+685eff88-8bb8-800e-83a8-270ef76f0036,DIY Flight Sim Chair,2025-06-27T20:31:05.129191+00:00,2025-06-27T20:34:51.702476+00:00,gpt-4o,4,2,2,5,False,,project_enabled,conversations-001(2).json
+686005e9-89f0-800e-8be6-c77f7f58634c,Creative Side Hustles Ideas,2025-06-28T15:10:33.879765+00:00,2025-06-28T15:10:58.604060+00:00,gpt-4o,2,1,1,0,False,,global_enabled,conversations-001(2).json
+68616cfa-d9d8-800e-abbd-864aae464d76,Passionate About Innovation Draft,2025-06-29T16:42:35.010101+00:00,2025-06-29T19:17:49.130529+00:00,gpt-4o,34,17,17,0,False,,global_enabled,conversations-001(2).json
+68629895-0a44-800e-804b-3fd63c07a0c6,Avatar fighter jet design,2025-06-30T14:00:53.222979+00:00,2025-06-30T14:02:18.004618+00:00,gpt-4o,2,1,1,0,False,,global_enabled,conversations-001(2).json
+6862b4bc-63fc-800e-8ed1-9e9bdf6451cd,Disable Firewall CMD Methods,2025-06-30T16:01:00.694869+00:00,2025-06-30T16:01:18.431629+00:00,gpt-4o,2,1,1,0,False,,global_enabled,conversations-001(2).json
+68633848-8690-800e-bdb6-7a928d742f79,Linear Actuator Usage Guide,2025-07-01T01:22:16.905478+00:00,2025-07-01T01:27:03.487161+00:00,gpt-4o,4,2,2,3,False,,project_enabled,conversations-001(2).json
+68640cea-8450-800e-9cf3-c5678197039e,Yoke Gimbal Design Tips,2025-07-01T16:29:30.983631+00:00,2025-07-01T16:44:19.988135+00:00,gpt-4o,4,2,2,0,False,,project_enabled,conversations-001(2).json
+68653a1a-d6c8-800e-828e-f07b29977594,Orthanc Setup with Humor,2025-07-02T13:54:34.969036+00:00,2025-07-02T14:25:02.679855+00:00,gpt-4o,8,4,4,1,False,,global_enabled,conversations-001(2).json
+68658213-c2dc-800e-b3ef-29de22bb4930,Jira Ticket Humor Ideas,2025-07-02T19:01:39.943774+00:00,2025-07-02T19:17:00.207470+00:00,gpt-4o,8,4,4,0,False,,global_enabled,conversations-001(2).json
+68670929-2634-800e-a7cb-802dfc4e56cf,Coworker Docs Request Message,2025-07-03T22:50:17.439632+00:00,2025-07-07T13:03:29.238893+00:00,gpt-4o,7,3,4,0,False,,global_enabled,conversations-001(2).json
+68670d11-aa34-800e-805f-4f83b6458932,Stepper motor wiring help,2025-07-03T23:06:58.156200+00:00,2025-07-03T23:13:10.630958+00:00,gpt-4o,10,4,6,1,False,,global_enabled,conversations-001(2).json
+68682f34-b468-800e-a54e-94a2f1715ae8,Motor Lift Capacity Calculation,2025-07-04T19:44:53.168208+00:00,2025-07-04T20:06:34.106460+00:00,gpt-4o,12,6,6,1,False,,project_enabled,conversations-001(2).json
+686bb9d8-316c-800e-89f5-30bc7d9e107c,OKR Presentation Rewrite,2025-07-07T12:13:12.429314+00:00,2025-07-07T12:55:38.040995+00:00,gpt-4o,10,5,5,0,False,,global_enabled,conversations-001(2).json
+686bd083-0140-800e-b847-4b005a2ac741,Cios Spin Setup Help,2025-07-07T13:49:55.230673+00:00,2025-07-07T16:48:33.102122+00:00,gpt-4o,6,3,3,0,False,,global_enabled,conversations-001(2).json
+686e6cd2-d184-800e-9b9b-034d36ad7a64,Referral Email Draft,2025-07-09T13:21:22.955104+00:00,2025-07-09T13:33:32.851880+00:00,gpt-4o,6,3,3,0,False,,global_enabled,conversations-001(2).json
+68710231-9580-800e-a864-2c1275d4b8fc,CNC Seat Template Dimensions,2025-07-11T12:23:13.949681+00:00,2025-07-11T15:33:01.427361+00:00,gpt-4o,11,4,7,1,False,,project_enabled,conversations-001(2).json
+68711853-b74c-800e-9696-a462a91f2c08,Allergist Specialty Explained,2025-07-11T13:57:39.852636+00:00,2025-07-11T14:35:26.003344+00:00,gpt-4o,10,5,5,0,False,,global_enabled,conversations-001(2).json
+687149d0-d530-800e-bbc0-5006c1743169,ChatGPT Architecture Visualization,2025-07-11T17:28:50.217042+00:00,2025-07-11T17:28:57.644928+00:00,gpt-4o,2,1,1,0,False,,global_enabled,conversations-001(2).json
+68714a47-b490-800e-9355-e3e9deed288d,Nose Dive Squadron Emblem,2025-07-11T17:30:48.692358+00:00,2025-07-11T17:31:37.789343+00:00,gpt-4o,2,1,1,0,False,,global_enabled,conversations-001(2).json
+68724b20-5454-800e-8e90-94806e49ca0c,Epitaph Creation Ideas,2025-07-12T11:46:40.505768+00:00,2025-07-12T11:46:44.806492+00:00,gpt-4o,2,1,1,0,False,,global_enabled,conversations-001(2).json
+68765f30-5a24-800e-8f5d-31bbb6cf6e11,LinkedIn Headline Suggestions,2025-07-15T14:01:20.653106+00:00,2025-07-16T18:45:19.993443+00:00,gpt-4o,6,3,3,0,False,,global_enabled,conversations-001(2).json
+68771a02-f378-800e-be6a-a480cb8d609d,Teasing Banter Ideas,2025-07-16T03:18:27.100649+00:00,2025-07-16T03:21:26.271826+00:00,gpt-4o,6,3,3,1,False,,global_enabled,conversations-001(2).json
+68771b3c-6394-800e-8b9c-100e98ffac77,Strategic Networking Advice,2025-07-16T03:23:40.596108+00:00,2025-08-29T11:09:30.838391+00:00,gpt-4o,68,34,34,8,False,,global_enabled,conversations-001(2).json
+687a3ac5-5cb0-800e-837d-1c3fd7982843,Itemized list creation,2025-07-18T12:15:01.512206+00:00,2025-07-18T12:17:30.061560+00:00,gpt-4o,4,2,2,1,False,,global_enabled,conversations-002(2).json
+687a4569-c1e0-800e-bc64-4d9e23c8bc1f,Late signature email humor,2025-07-18T13:00:26.055685+00:00,2025-07-21T12:35:29.532078+00:00,gpt-4o,3,2,1,0,False,,global_enabled,conversations-002(2).json
+687a7274-5528-800e-8f9a-c0fc7c1ea166,Custom 3D Printed Insoles,2025-07-18T16:12:36.502365+00:00,2025-07-30T18:48:07.686756+00:00,gpt-4o,8,4,4,0,False,,global_enabled,conversations-002(2).json
+687e303a-94e0-800e-bf71-b6ed748f62f0,Humorous military terms,2025-07-21T12:19:06.829658+00:00,2025-07-21T12:22:34.605090+00:00,gpt-4o,4,2,2,0,False,,global_enabled,conversations-002(2).json
+687e341b-f120-800e-8aa7-9cd5ac1184eb,Humorous signature request,2025-07-21T12:35:40.131004+00:00,2025-09-22T14:07:52.545756+00:00,gpt-4o,22,11,11,0,False,,global_enabled,conversations-002(2).json
+687f7ed2-718c-800e-ad3d-79110dba2c9b,Audit document formatting,2025-07-22T12:06:42.648060+00:00,2025-07-22T13:39:16.007190+00:00,gpt-4o,8,4,4,2,False,,global_enabled,conversations-002(2).json
+68802131-ec88-800e-b73b-36afa7ef0924,PPL Career Opportunities,2025-07-22T23:39:30.141344+00:00,2025-07-22T23:39:44.822443+00:00,gpt-4o,2,1,1,0,False,,global_enabled,conversations-002(2).json
+68811b62-862c-800e-b14f-2b3d23187b9c,LW_Breakdown,2025-07-23T17:26:59.072900+00:00,2025-12-14T20:17:24.847464+00:00,gpt-5-2,989,483,506,73,False,,global_enabled,conversations-002(2).json
+68824a13-d994-800e-8502-da74153b4515,Building Attraction Tension,2025-07-24T14:58:28.397076+00:00,2025-07-29T21:57:00.305773+00:00,gpt-4o,22,11,11,1,False,,global_enabled,conversations-002(2).json
+688377b1-5fb4-8325-94c3-70f9ecf4360e,Improve appendix content,2025-07-25T12:25:21.867752+00:00,2025-07-25T12:27:12.532135+00:00,gpt-4o,2,1,1,1,False,,global_enabled,conversations-002(2).json
+68863900-47e8-8331-8319-4c8c32defc8a,Adrenaline Experience Proposal,2025-07-27T14:34:40.872210+00:00,2025-08-06T11:43:59.319048+00:00,gpt-4o,10,5,5,0,False,,global_enabled,conversations-002(2).json
+68868e80-5298-8326-b019-2119e2824b21,Tattoo Design Concept,2025-07-27T20:39:28.943320+00:00,2025-07-28T01:19:25.304128+00:00,gpt-4o,12,6,6,0,False,,global_enabled,conversations-002(2).json
+688752a3-8de8-8322-a73e-5d2da3b68173,Out Sick Message Ideas,2025-07-28T10:36:20.984006+00:00,2025-07-28T10:36:27.311973+00:00,gpt-4o,2,1,1,0,False,,global_enabled,conversations-002(2).json
+68876a0a-9a54-832d-8ba0-e85e6946f1a7,Teasing Flirty Banter,2025-07-28T12:16:10.933742+00:00,2025-07-28T12:18:18.096732+00:00,gpt-4o,4,2,2,0,False,,global_enabled,conversations-002(2).json
+688829d8-0798-8330-b1a5-a6260b0fb302,Robotic Systems PM Support,2025-07-29T01:54:32.794538+00:00,2025-07-29T02:01:40.655969+00:00,gpt-4o,6,3,3,0,False,,global_enabled,conversations-002(2).json
+68893d38-abf0-8320-96f9-2379ee8556bb,teams Rewrite-f,2025-07-29T21:29:29.448825+00:00,2025-08-11T04:53:15.095472+00:00,gpt-5,62,31,31,3,False,,global_enabled,conversations-002(2).json
+688a654b-4f2c-8328-b4ef-d400f23c1221,Response tone suggestion,2025-07-30T18:32:43.864907+00:00,2025-07-30T18:41:14.329777+00:00,gpt-4o,6,3,3,0,False,,global_enabled,conversations-002(2).json
+688d547a-452c-8324-afd0-33dde92d0dd0,Neighbor conversation starters,2025-08-01T23:57:47.219183+00:00,2025-08-02T00:30:48.927593+00:00,gpt-4o,10,5,5,0,False,,global_enabled,conversations-002(2).json
+68913335-8488-8323-81c0-e8845f858d19,Aces,2025-08-04T22:24:54.366693+00:00,2025-08-06T21:16:20.922471+00:00,gpt-4o,82,41,41,3,False,,global_enabled,conversations-002(2).json
+689135d4-ddd4-8326-a405-7dd9b4ef07fc,Scammed by text signs,2025-08-04T22:36:29.654275+00:00,2025-08-04T22:36:39.554294+00:00,gpt-4o,2,1,1,0,False,,global_enabled,conversations-002(2).json
+68978f4b-1884-8332-974f-f705b25788da,Gutting mountain bike forks,2025-08-09T18:14:10.698965+00:00,2025-08-23T13:19:46.893407+00:00,gpt-5,58,24,34,12,False,,global_enabled,conversations-002(2).json
+689872ff-874c-832a-b526-387803c2d703,Tattoo concept jungle jaguar,2025-08-10T10:25:24.243950+00:00,2025-08-10T10:26:37.583288+00:00,gpt-5,2,1,1,0,False,,global_enabled,conversations-002(2).json
+6899f27e-7efc-8324-b700-598e7ebfe5a5,Banter escalation tips,2025-08-11T13:39:15.038821+00:00,2025-08-11T13:50:10.198489+00:00,gpt-5,4,2,2,1,False,,global_enabled,conversations-002(2).json
+689b55e3-5118-832e-afcc-6ebadb794c06,Flirting with boundaries,2025-08-12T14:55:34.388396+00:00,2025-08-12T15:53:28.775823+00:00,gpt-5,18,9,9,0,False,,global_enabled,conversations-002(2).json
+689b677e-d85c-8321-b35c-569a54e1cbce,Re-engagement campaign strategy,2025-08-12T16:10:41.845557+00:00,2025-08-12T16:10:54.890429+00:00,gpt-5,2,1,1,1,False,,global_enabled,conversations-002(2).json
+689ea5fc-5554-8326-a0ac-d1eea841dd77,Flirty neighbor responses,2025-08-15T03:14:06.727148+00:00,2026-06-09T02:39:19.706919+00:00,gpt-5-5,8,4,4,0,False,,global_enabled,conversations-002(2).json
+689fbe6f-dd1c-8327-8573-fd632e5afbba,Roth IRA for down payment,2025-08-15T23:11:00.977884+00:00,2025-08-15T23:11:11.239478+00:00,gpt-5,2,1,1,0,False,,global_enabled,conversations-002(2).json
+689fc94e-7c28-8326-bd0d-1d23d242347e,Benefits for first-time buyers,2025-08-15T23:57:51.712762+00:00,2025-08-15T23:58:01.867693+00:00,gpt-5,2,1,1,0,False,,global_enabled,conversations-002(2).json
+68a09c85-46f4-8324-8ed1-93a2c9f6aaf2,Sexy rating offer,2025-08-16T14:58:13.988428+00:00,2025-08-17T11:19:42.642713+00:00,gpt-5,26,13,13,7,False,,global_enabled,conversations-002(2).json
+68a0f30c-899c-8333-8c1c-13ac09357a13,Find celeb look alike,2025-08-16T21:07:26.946886+00:00,2025-08-16T21:10:46.849619+00:00,gpt-5,4,2,2,10,False,,global_enabled,conversations-002(2).json
+68a1aa08-f05c-8331-9c8f-e3a9fcd39e69,Response suggestions analysis,2025-08-17T10:08:10.507134+00:00,2025-08-17T10:08:20.763172+00:00,gpt-5,2,1,1,0,False,,global_enabled,conversations-002(2).json
+68a23b03-b1e0-8321-aa29-f654c2ee6b30,Direct and mysterious tips,2025-08-17T20:26:44.894673+00:00,2025-08-17T20:43:25.394747+00:00,gpt-5,16,8,8,0,False,,global_enabled,conversations-002(2).json
+68a240a2-b5c8-832e-8501-d0aefd2ef298,Reconnect video script,2025-08-17T20:50:43.382100+00:00,2025-08-21T01:03:42.850982+00:00,gpt-5,56,29,27,0,False,,global_enabled,conversations-002(2).json
+68a33ce0-a47c-8329-9011-789cd3ad2295,Configure SSD as removable,2025-08-18T14:47:48.745356+00:00,2025-08-18T18:51:40.073082+00:00,gpt-5,2,1,1,0,False,,global_enabled,conversations-002(2).json
+68a3c901-95c8-8333-add0-346133faf4f7,Supermarket opener tips,2025-08-19T00:44:52.335747+00:00,2025-08-19T00:50:27.444053+00:00,gpt-5,8,4,4,1,False,,global_enabled,conversations-002(2).json
+68a3de10-a3f0-8331-9c73-6ad7a085c7ec,Gym openers for women,2025-08-19T02:14:43.555341+00:00,2025-08-19T12:09:38.225614+00:00,gpt-5,10,5,5,1,False,,global_enabled,conversations-002(2).json
+68a4abfe-4428-8321-98aa-15dffefb4626,New chat,2025-08-19T16:53:24.584226+00:00,2025-08-19T17:02:50.929104+00:00,gpt-5,4,2,2,0,False,,global_enabled,conversations-002(2).json
+68a4cd2b-5944-8328-bdc1-5e948faeab53,Jira ticket draft,2025-08-19T19:15:20.742943+00:00,2025-08-19T19:16:01.000146+00:00,gpt-5,2,1,1,0,False,,global_enabled,conversations-002(2).json
+68a63384-c448-8332-8f79-070182bbcd04,Message rewrite suggestions,2025-08-20T20:43:49.995981+00:00,2025-08-21T13:56:11.765778+00:00,gpt-5,4,2,2,1,False,,global_enabled,conversations-002(2).json
+68a88e80-cd38-8323-87fa-954b0cf4ee37,Rewrite for co-worker,2025-08-22T15:36:35.487435+00:00,2025-10-15T14:00:26.771533+00:00,gpt-5,16,8,8,2,False,,global_enabled,conversations-002(2).json
+68a9ac47-4630-832d-8f49-aadfbf35e009,Tattoo concept design,2025-08-23T11:56:00.735627+00:00,2025-08-23T12:00:28.110136+00:00,gpt-5,6,3,3,0,False,,global_enabled,conversations-002(2).json
+68ac6d21-1abc-8332-a97a-93f759c8bcf3,Funny signature request,2025-08-25T14:04:10.618062+00:00,2025-08-25T17:28:45.014924+00:00,gpt-5,8,4,4,0,False,,global_enabled,conversations-002(2).json
+68acafe4-f718-832d-b1f9-9e9762786e29,Manager explanation advice,2025-08-25T18:49:20.935334+00:00,2025-08-25T18:49:51.273304+00:00,gpt-5,3,1,2,0,False,,global_enabled,conversations-002(2).json
+68af107e-e664-8323-8f85-2e3548d5dd84,Response options for friend,2025-08-27T14:04:50.600394+00:00,2026-01-02T16:17:41.524972+00:00,gpt-4o,8,4,4,1,False,,global_enabled,conversations-002(2).json
+68b18c17-8188-8328-9eab-0983e6f6ee36,Good response suggestion,2025-08-29T11:16:41.666669+00:00,2025-08-29T11:16:50.909396+00:00,gpt-4o,2,1,1,1,False,,global_enabled,conversations-002(2).json
+68b1a8f3-ff60-8323-9ba5-dc278c113d26,Chill hangout suggestions,2025-08-29T13:19:48.495290+00:00,2025-09-03T13:35:28.013477+00:00,gpt-4o,10,5,5,0,False,,global_enabled,conversations-002(2).json
+68b1e7cf-3530-8332-b85e-3af04a287d29,Funny digital signature ask,2025-08-29T17:48:29.908267+00:00,2025-09-03T12:06:25.547709+00:00,gpt-5,2,1,1,0,False,,global_enabled,conversations-002(2).json
+68b22860-82e4-8321-b3bd-6e1e7af6e88e,New chat,2025-08-29T22:23:31.311012+00:00,2025-08-29T22:25:51.836963+00:00,gpt-4o,4,2,2,1,False,,global_enabled,conversations-002(2).json
+68b61fa2-e194-8326-a83d-04c1e0393139,Transcribe audio file,2025-09-01T22:35:40.153207+00:00,2025-09-01T22:43:57.065811+00:00,gpt-5,4,2,2,0,False,,global_enabled,conversations-002(2).json
+68b8e90f-aebc-832d-b887-a6fcc219a1fb,Create message for friend,2025-09-04T01:19:13.144390+00:00,2025-09-04T01:22:15.630338+00:00,gpt-4o,8,4,4,1,False,,global_enabled,conversations-002(2).json
+68c2b9e4-39bc-8332-93c0-0ef953765efe,Release plan questions,2025-09-11T12:04:35.519273+00:00,2025-09-11T12:15:59.224935+00:00,gpt-5,2,1,1,0,False,,global_enabled,conversations-002(2).json
+68c40dd8-9ad8-8333-826d-fc7cb76734af,Art and animatronics ideas,2025-09-12T12:11:06.038208+00:00,2025-11-11T04:18:18.573480+00:00,gpt-5,26,13,13,0,False,,global_enabled,conversations-002(2).json
+68c40f34-c8f8-832b-abc1-8db59d04b597,New chat,2025-09-12T12:16:53.297776+00:00,2025-09-12T12:17:06.272015+00:00,gpt-4o,2,1,1,0,False,,global_enabled,conversations-002(2).json
+68c4104c-5220-832a-a726-ae12b1ddf002,Art cafe viability,2025-09-12T12:21:33.377297+00:00,2025-09-12T12:23:10.512805+00:00,gpt-5-thinking,7,1,6,0,False,,global_enabled,conversations-002(2).json
+68c42678-2fb4-8327-8034-29557cdd7e1a,Business viability analysis,2025-09-12T13:56:09.135428+00:00,2025-09-12T13:57:57.528372+00:00,gpt-5,2,1,1,0,False,,global_enabled,conversations-002(2).json
+68c45bdb-eecc-8328-90cc-20b2bc2f0e2b,Art and Adrenaline Experience,2025-09-12T17:43:56.566239+00:00,2025-09-12T17:49:06.403474+00:00,gpt-5,4,2,2,0,False,,global_enabled,conversations-002(2).json
+68cc08f7-761c-832c-94f2-05d5abf1fcb7,Remote VR Flight Sim,2025-09-18T13:33:23.913582+00:00,2025-09-18T13:36:40.211426+00:00,gpt-5,4,1,3,0,False,,global_enabled,conversations-002(2).json
+68cc1bea-2e14-8331-8c68-6ee1d6d3b9ab,Response to Sam,2025-09-18T14:49:14.829658+00:00,2025-09-18T17:33:50.328875+00:00,gpt-5,10,5,5,0,False,,global_enabled,conversations-002(2).json
+68d2856e-eac8-832e-91ca-f697fcdc16f5,Sick day message help,2025-09-23T11:34:39.999913+00:00,2025-09-23T11:37:26.248718+00:00,gpt-5,6,3,3,0,False,,global_enabled,conversations-002(2).json
+68d5272e-03cc-8333-b086-5ab8925c63c6,Chill hangout ideas,2025-09-25T11:27:54.819979+00:00,2025-09-25T11:28:02.617917+00:00,gpt-5,2,1,1,0,False,,global_enabled,conversations-002(2).json
+68d5c42a-9ddc-8327-8958-38a540bec7c5,Camping trip cancellation response,2025-09-25T22:38:57.406714+00:00,2025-09-26T03:00:16.212972+00:00,gpt-5,6,3,3,0,False,,global_enabled,conversations-002(2).json
+68d685e1-c834-832d-8cdd-9e20ba34ab77,Check data leak causes,2025-09-26T12:24:42.118497+00:00,2025-09-26T12:24:59.200438+00:00,gpt-5,2,1,1,0,False,,global_enabled,conversations-002(2).json
+68d804b8-0134-832b-8376-60681c6df973,Systolic healthy limit,2025-09-27T15:37:53.042282+00:00,2025-09-27T15:39:14.029163+00:00,gpt-5,4,2,2,1,False,,global_enabled,conversations-002(2).json
+68d8113c-24dc-8322-9905-0204c14a82f3,Game instance distribution,2025-09-27T16:32:13.776068+00:00,2025-10-05T09:41:33.344274+00:00,gpt-5,32,16,16,7,False,,global_enabled,conversations-002(2).json
+68da52e9-8c88-8331-a81d-5ce3d31e1953,Contrasts for jealousy banter,2025-09-29T09:36:35.808315+00:00,2025-09-29T09:39:53.284929+00:00,gpt-5,6,3,3,0,False,,global_enabled,conversations-002(2).json
+68dc656b-ee84-832e-a070-1beb146f27ad,Response suggestion for banter,2025-09-30T23:19:08.942865+00:00,2025-10-07T15:13:48.078774+00:00,gpt-5,54,27,27,2,False,,global_enabled,conversations-002(2).json
+68de6bba-25d4-8325-bb65-c7facb5c8957,Dell Precision 7680 support,2025-10-02T12:14:22.328818+00:00,2025-10-02T13:05:40.437840+00:00,gpt-5,10,5,5,3,False,,global_enabled,conversations-002(2).json
+68e4379f-ff30-8326-9df2-a1fef891ffe0,Prime factorization breakdown,2025-10-06T21:42:03.204584+00:00,2025-10-06T21:42:10.411081+00:00,gpt-5,2,1,1,1,False,,global_enabled,conversations-002(2).json
+68e52055-d6e0-8332-9d8b-f399241522eb,Reaching out to FWB,2025-10-07T14:14:48.614923+00:00,2025-10-08T02:56:46.481754+00:00,gpt-5,6,3,3,2,False,,global_enabled,conversations-002(2).json
+68e5d3df-3340-832a-a966-ec3c94cc95cf,Banter ideas for hippie chick,2025-10-08T03:00:47.712642+00:00,2025-10-21T01:07:39.808970+00:00,gpt-5,20,10,10,2,False,,global_enabled,conversations-002(2).json
+68e7cfba-38d4-8327-92f9-dcb05b976db1,Tighten tease response,2025-10-09T15:07:38.712979+00:00,2025-10-13T14:37:34.736803+00:00,gpt-5,66,33,33,1,False,,global_enabled,conversations-002(2).json
+68f23764-9258-8328-8182-085c2fcfaaf0,Reach out to co-worker,2025-10-17T12:32:37.159679+00:00,2025-10-17T15:28:47.716927+00:00,gpt-4o,10,5,5,0,False,,global_enabled,conversations-002(2).json
+68f28001-6b44-8325-9304-10e6b3cce8d7,OKR goal rewording,2025-10-17T17:44:23.670067+00:00,2025-10-17T17:45:58.061829+00:00,gpt-5,2,1,1,0,False,,global_enabled,conversations-002(2).json
+68f3bed7-4ad4-8326-9a18-9922c8a30ac7,Chill hangout ideas,2025-10-18T16:23:50.367804+00:00,2025-10-18T16:25:27.773518+00:00,gpt-5,4,2,2,0,False,,global_enabled,conversations-002(2).json
+68f6da41-dd28-8329-8108-bd7d66e91218,Relationship banter analysis,2025-10-21T00:56:34.214317+00:00,2025-10-21T01:03:10.171097+00:00,gpt-4o,10,5,5,0,False,,global_enabled,conversations-002(2).json
+68f7b977-3d74-8330-b1e0-1549e48c6a69,Clarifying pre-game review,2025-10-21T16:48:56.471627+00:00,2025-10-21T17:23:35.560286+00:00,gpt-5,4,2,2,0,False,,global_enabled,conversations-002(2).json
+68f8af0a-b65c-8331-aea5-a8be75d4ea15,Messages for manager and team,2025-10-22T10:16:45.518241+00:00,2025-10-22T10:16:51.621437+00:00,gpt-4o,2,1,1,0,False,,global_enabled,conversations-002(2).json
+68fd7c50-2054-832c-a43e-715d34e5ca9a,Response tone suggestions,2025-10-26T01:41:38.930609+00:00,2025-10-26T12:32:39.214611+00:00,gpt-5,16,8,8,0,False,,global_enabled,conversations-002(2).json
+6901771b-f320-8328-a7a3-b6e4af272502,Motherboard battery drain fix,2025-10-29T02:08:36.953187+00:00,2025-10-29T13:13:31.712826+00:00,gpt-5,4,2,2,0,False,,global_enabled,conversations-002(2).json
+690177f1-4a64-832f-b093-8abbbbbbdf1e,DICOM and Worklist server hardware,2025-10-29T02:14:14.584807+00:00,2025-10-29T13:24:18.260491+00:00,gpt-5,8,3,5,0,False,,global_enabled,conversations-002(2).json
+69038ee6-7b40-8325-a27a-cc46bc001a35,Responding to a friend,2025-10-30T16:15:26.208451+00:00,2025-10-30T18:39:21.096007+00:00,gpt-5,8,4,4,2,False,,global_enabled,conversations-002(2).json
+69075e81-663c-8328-9a06-2eb0e094387b,Re-engagement strategy advice,2025-11-02T13:37:05.679365+00:00,2025-11-07T04:22:38.646296+00:00,gpt-4o,30,15,15,0,False,,global_enabled,conversations-002(2).json
+6907f58e-8854-8333-883a-b3d857f55e76,Girl scout comic questions,2025-11-03T00:23:37.475137+00:00,2025-11-03T00:25:06.408366+00:00,gpt-5,4,2,2,0,False,,global_enabled,conversations-002(2).json
+6908ba27-3518-8330-ae8a-b8af4f1fcab0,Camera detection troubleshooting,2025-11-03T14:20:41.579104+00:00,2025-11-03T14:20:58.857026+00:00,gpt-5,2,1,1,1,False,,global_enabled,conversations-002(2).json
+690a1662-4df4-832c-b830-652f54d3a31a,Innuendo call sign ideas,2025-11-04T15:10:43.353548+00:00,2025-11-17T14:06:26.019669+00:00,gpt-5-1,46,23,23,1,False,,global_enabled,conversations-002(2).json
+690b4fe1-62fc-832a-af64-8af67df5525e,Mystery symbol interpretation,2025-11-05T13:23:46.329058+00:00,2025-11-05T13:23:55.568495+00:00,gpt-5,2,1,1,0,False,,global_enabled,conversations-002(2).json
+690ca15b-a204-832f-af04-1f959a9f1926,Fearful-avoidant attachment description,2025-11-06T13:24:20.340545+00:00,2025-11-06T13:24:32.128256+00:00,gpt-5,2,1,1,0,False,,global_enabled,conversations-002(2).json
+690cd84f-0184-8328-96f1-c2dfa0b177ad,Apology message writing,2025-11-06T17:18:29.360049+00:00,2025-11-06T17:19:35.003242+00:00,gpt-5,2,1,1,0,False,,global_enabled,conversations-002(2).json
+690e36c6-8128-8330-a302-11b717eacaac,Translate to English,2025-11-07T18:13:49.187735+00:00,2025-11-07T18:13:54.910447+00:00,gpt-5,2,1,1,1,False,,global_enabled,conversations-002(2).json
+690e8f49-ef34-832a-9553-80c853478e25,Multicrew aircraft requirements,2025-11-08T00:31:52.294169+00:00,2026-01-21T21:30:00.106499+00:00,gpt-5-2,162,75,87,28,False,,global_enabled,conversations-002(2).json
+6912c63a-cd28-8327-bc7b-b654025495a7,Heist date ideas,2025-11-11T05:14:35.541144+00:00,2025-12-10T17:50:51.996552+00:00,gpt-4o,228,114,114,10,False,,global_enabled,conversations-002(2).json
+691340ba-3960-8329-9607-79b7ab8f3605,Altered numbers check,2025-11-11T13:58:39.506314+00:00,2025-11-12T15:00:47.670451+00:00,gpt-5,14,6,8,0,False,,global_enabled,conversations-002(2).json
+691383fc-fda0-8332-97b5-db90fdc91636,Email cancellation template,2025-11-11T18:44:13.408128+00:00,2025-11-11T18:45:25.580263+00:00,gpt-5,2,1,1,0,False,,global_enabled,conversations-002(2).json
+6915dbd3-19e0-8329-a982-cd4454aade7f,Apology message help,2025-11-13T13:25:04.992615+00:00,2025-11-13T13:28:36.026697+00:00,gpt-5-1,6,3,3,0,False,,global_enabled,conversations-002(2).json
+69160a45-7840-832c-b2b9-6bea70637591,File input setup,2025-11-13T16:41:43.731511+00:00,2026-01-27T15:16:12.728766+00:00,gpt-5-2,98,36,62,45,False,,global_enabled,conversations-002(2).json
+6916b568-b800-832a-8c58-3c596d49ca44,Low-pressure hangout ideas,2025-11-14T04:52:05.369666+00:00,2025-11-14T04:53:22.563427+00:00,gpt-5-1,4,2,2,0,False,,global_enabled,conversations-002(2).json
+6917725a-4f50-832e-a409-672d71fe666e,Email draft for EHub failure,2025-11-14T18:18:27.502107+00:00,2025-11-14T18:19:51.344124+00:00,gpt-5-1,2,1,1,0,False,,global_enabled,conversations-002(2).json
+6917c63e-4d40-8329-b620-96bbf6d2a6dc,Respond to coworker,2025-11-15T00:17:32.067538+00:00,2025-12-04T16:04:29.962298+00:00,gpt-5-1,16,8,8,2,False,,global_enabled,conversations-002(2).json
+691895fc-8380-832b-b85e-08f1a09c4e7c,Convert image to SVG,2025-11-15T15:02:21.492694+00:00,2025-11-15T15:03:06.159431+00:00,gpt-5-1,4,1,3,1,False,,global_enabled,conversations-002(2).json
+691c906b-f790-832a-a6aa-1f6c97e3d402,Message rewrite request,2025-11-18T15:28:01.305726+00:00,2025-11-24T18:33:49.435874+00:00,gpt-5-1,6,3,3,0,False,,global_enabled,conversations-002(2).json
+692090dc-09e8-832e-90d7-c3cdea35ea07,Test steps for upgrade,2025-11-21T16:18:37.415966+00:00,2025-11-21T18:05:49.004044+00:00,gpt-5-1,4,1,3,2,False,,global_enabled,conversations-003(1).json
+6924a7ef-ac90-832f-ac3a-0072ea56b3af,Answering corporate training questions,2025-11-24T18:46:27.684719+00:00,2025-11-24T18:47:24.005173+00:00,gpt-5-1,4,2,2,2,False,,global_enabled,conversations-003(1).json
+692b869d-8518-8331-92e9-bcd9a88e03b7,Steam DCS VR support,2025-11-29T23:51:56.765454+00:00,2025-12-01T00:42:17.982344+00:00,gpt-5-1,6,3,3,0,False,,global_enabled,conversations-003(1).json
+69304920-cc94-8325-8717-ef3ae74b4997,BDD Given When Then,2025-12-03T14:29:58.955686+00:00,2025-12-03T15:24:20.135465+00:00,gpt-5-1,18,9,9,0,False,,global_enabled,conversations-003(1).json
+6931d526-9704-8333-ae60-f0f5b50a8754,USB removable behavior options,2025-12-04T18:39:37.151170+00:00,2025-12-05T13:41:37.923045+00:00,gpt-5-1,8,4,4,0,False,,global_enabled,conversations-003(1).json
+6932e535-5934-832b-950a-fced8c1ec96e,Playful tension messages,2025-12-05T13:59:17.934844+00:00,2025-12-08T16:42:53.704886+00:00,gpt-5-1,4,2,2,1,False,,global_enabled,conversations-003(1).json
+69387c68-d6cc-8329-b333-5f16541f7b2e,Create change report Confluence,2025-12-09T19:46:00.197350+00:00,2025-12-09T19:46:28.943063+00:00,gpt-5-1,2,1,1,0,False,,global_enabled,conversations-003(1).json
+6938a5fd-e4c4-8327-a1e5-c6092b8eb90d,Logo design request,2025-12-09T22:43:10.277596+00:00,2025-12-09T22:43:13.531396+00:00,gpt-4o,1,1,0,0,False,,global_enabled,conversations-003(1).json
+6939a6a2-e66c-8330-b3f7-2fc307bb27b8,Rewrite for attractiveness,2025-12-10T16:58:11.692884+00:00,2026-05-12T00:32:53.115053+00:00,gpt-5-5,190,94,96,24,False,,global_enabled,conversations-003(1).json
+6939d6a0-c024-8333-bd11-7146ed4dfdba,Creative writing options,2025-12-10T20:22:57.434814+00:00,2026-06-24T00:35:32.263095+00:00,gpt-5-5,1060,530,530,33,False,,global_enabled,conversations-003(1).json
+694056a0-b45c-8333-930d-75a550951f81,Meeting minutes creation,2025-12-15T18:43:23.879811+00:00,2025-12-15T18:45:23.088495+00:00,gpt-5-2,2,1,1,1,False,,global_enabled,conversations-003(1).json
+69416d88-ade8-8327-b351-a5b03200ed40,Formulate response options,2025-12-16T14:33:43.674773+00:00,2025-12-16T14:41:39.923876+00:00,gpt-5-2,6,3,3,1,False,,global_enabled,conversations-003(1).json
+6941e685-7f5c-832b-baa7-eb810688e2e8,Quest 2 Xbox pairing issue,2025-12-16T23:12:03.014401+00:00,2025-12-16T23:12:24.538748+00:00,gpt-5-2,2,1,1,0,False,,global_enabled,conversations-003(1).json
+694291c7-1030-8330-a71a-a38ad8ef2ff6,Calling out of work messages,2025-12-17T11:22:13.094668+00:00,2026-06-08T12:11:00.272807+00:00,gpt-5-5,48,24,24,0,False,,global_enabled,conversations-003(1).json
+69442610-bd18-8331-9681-b9eb0f676b76,Co-located multiplayer VR setup,2025-12-18T16:06:16.852620+00:00,2026-01-21T21:29:45.485019+00:00,gpt-5-2,295,116,179,65,False,,global_enabled,conversations-003(1).json
+694570e8-8288-832b-bb32-620d4fa44465,Shared VR Date Setup,2025-12-19T15:36:11.950244+00:00,2025-12-19T16:52:24.457129+00:00,gpt-5-2,6,3,3,0,False,,global_enabled,conversations-003(1).json
+694beba4-3d54-832a-b85a-7512adfbc291,Document-Based Testing Approach,2025-12-24T13:35:33.925064+00:00,2025-12-24T14:03:28.025058+00:00,gpt-5-2,8,3,5,2,False,,global_enabled,conversations-003(1).json
+6952c451-50b4-8332-9a74-d69e87eac59d,Performance Review Help,2025-12-29T18:12:07.915789+00:00,2026-01-15T15:55:55.897329+00:00,gpt-5-2,25,12,13,0,False,,global_enabled,conversations-003(1).json
+6953f15d-9fc8-832e-a46a-226a8fc5e9c3,Weasel Squad Patch Design,2025-12-30T15:37:00.206325+00:00,2025-12-30T15:37:55.884963+00:00,gpt-5-2,2,1,1,1,False,,global_enabled,conversations-003(1).json
+6957c746-3dd8-832a-99aa-fa6f20fb9026,Branch · Multicrew aircraft requirements,2026-01-02T13:25:27.908606+00:00,2026-01-21T21:30:05.474507+00:00,gpt-5-2,10,3,7,0,False,,global_enabled,conversations-003(1).json
+695bba34-de10-8333-b721-2b84d2f8595f,Girl Scouts Comic Project,2026-01-05T13:23:20.663753+00:00,2026-01-05T13:49:57.803560+00:00,gpt-5-2,16,8,8,0,False,,global_enabled,conversations-003(1).json
+695e7b82-2c60-8328-9a60-7672a4e556da,Notepad as Upgrade Test,2026-01-07T15:30:04.203693+00:00,2026-01-07T16:13:01.248761+00:00,gpt-5-2,8,4,4,0,False,,global_enabled,conversations-003(1).json
+695fc1cc-c3f4-8327-8c34-a9e218fd8d9a,Flash Card Organization Help,2026-01-08T14:40:17.332908+00:00,2026-01-08T15:15:23.349016+00:00,gpt-5-2,4,2,2,3,False,,global_enabled,conversations-003(1).json
+696005a0-fa2c-8333-9738-523e04076a41,Request for System Service,2026-01-08T19:30:32.827580+00:00,2026-01-08T19:36:40.899608+00:00,gpt-5-2,2,1,1,0,False,,global_enabled,conversations-003(1).json
+69606c39-933c-8331-9a73-7058f46af7ee,Real or Rendered Photo,2026-01-09T02:47:22.238915+00:00,2026-01-09T02:47:41.348906+00:00,gpt-5-2,2,1,1,1,False,,global_enabled,conversations-003(1).json
+69626f72-c318-832c-832a-8bef6d20351f,Multiplayer VR Co-location,2026-01-10T15:30:37.848498+00:00,2026-01-21T21:29:50.070446+00:00,gpt-5-2,97,40,57,23,False,,global_enabled,conversations-003(1).json
+6963005c-6370-8331-b9a1-d58b49b7bc64,Attractive Answer Tips,2026-01-11T01:43:58.836947+00:00,2026-02-03T14:20:59.825694+00:00,gpt-4o,56,28,28,3,False,,global_enabled,conversations-003(1).json
+69654d5c-7d48-8332-8fd0-7551ca3922c9,Test Steps Windows 10,2026-01-12T19:37:01.134591+00:00,2026-01-12T19:39:04.000003+00:00,gpt-5-2,2,1,1,0,False,,global_enabled,conversations-003(1).json
+6967ac49-6518-8331-b66e-78e18a0474d2,One-shot Miner Configuration,2026-01-14T14:48:08.210155+00:00,2026-01-15T21:39:45.802377+00:00,gpt-5-2,26,11,15,1,False,,global_enabled,conversations-003(1).json
+6968e056-fe4c-8330-a35b-c1b627bc1466,Dual GPU Comparison DCS,2026-01-15T12:42:47.676513+00:00,2026-02-06T23:38:47.974393+00:00,gpt-5-2,78,39,39,5,False,,global_enabled,conversations-003(1).json
+6970de83-f614-8326-9b5f-19ab707844cc,Regaining Passion and Drive,2026-01-21T14:12:54.584460+00:00,2026-01-23T14:14:50.745932+00:00,gpt-5-2,23,11,12,0,False,,global_enabled,conversations-003(1).json
+69721f59-4f2c-8325-93ce-8fd46cbdebac,Branch · Regaining Passion and Drive,2026-01-22T13:00:10.825325+00:00,2026-01-22T13:09:58.939332+00:00,gpt-5-2,22,11,11,0,False,,global_enabled,conversations-003(1).json
+697285b7-50ec-8331-b130-8dc7ed3cafef,Fun Snowstorm Activities,2026-01-22T20:17:17.668776+00:00,2026-01-22T20:39:25.854083+00:00,gpt-5-2,8,4,4,0,False,,global_enabled,conversations-003(1).json
+69739fa7-585c-832b-887f-3451ac00c843,Upgrade Path Testing Tips,2026-01-23T16:23:05.936075+00:00,2026-01-23T16:24:07.861218+00:00,gpt-5-2,4,1,3,2,False,,global_enabled,conversations-003(1).json
+6978d8d7-ee30-8332-913f-e7870bc20424,WorklistForm Component Refactor,2026-01-27T15:25:13.006591+00:00,2026-01-29T14:13:35.366037+00:00,gpt-5-2,6,2,4,2,False,,global_enabled,conversations-003(1).json
+697baed9-091c-8330-8718-539820883b5d,Orthanc Server Connection Help,2026-01-29T19:03:40.494685+00:00,2026-01-29T19:40:58.672234+00:00,gpt-5-2,13,3,10,6,False,,global_enabled,conversations-003(1).json
+697e228a-3b48-832c-b9d2-ee724e0a79a9,Running Two Servo Motors,2026-01-31T15:40:59.376981+00:00,2026-01-31T16:31:21.951339+00:00,research,5,2,3,1,False,,global_enabled,conversations-003(1).json
+6980ce5f-9e70-8329-9b60-7c2cc2b795f9,Vocab Matching Tips,2026-02-02T16:19:28.133960+00:00,2026-02-03T14:38:48.793800+00:00,gpt-5-2,50,25,25,25,False,,global_enabled,conversations-003(1).json
+6982985f-6dc4-832f-88cb-11d5bc675b6c,Convert to mm,2026-02-04T00:52:54.817746+00:00,2026-02-04T01:08:23.878263+00:00,gpt-5-2,6,3,3,1,False,,global_enabled,conversations-003(1).json
+69835ebf-42b4-8332-9619-ccb873c2f035,Image Text Extraction,2026-02-04T14:59:46.326571+00:00,2026-02-04T15:01:27.703315+00:00,gpt-5-2,2,1,1,2,False,,global_enabled,conversations-003(1).json
+6985e932-acbc-8329-830b-c9c0a3281765,Apology and Accountability Email,2026-02-06T13:17:09.518431+00:00,2026-02-06T13:20:56.537659+00:00,gpt-5-2,4,2,2,0,False,,global_enabled,conversations-003(1).json
+6986353c-f9e8-8331-b408-55c4f5e51530,Dummy Display Dongle Explained,2026-02-06T18:40:01.360031+00:00,2026-02-06T18:48:20.978397+00:00,gpt-5-2,4,2,2,0,False,,global_enabled,conversations-003(1).json
+69865902-a7fc-832e-8530-d2cf4eead507,HUB-SWVP Failure Update,2026-02-06T21:11:55.512079+00:00,2026-02-06T21:18:42.298691+00:00,gpt-5-2,4,2,2,0,False,,global_enabled,conversations-003(1).json
+69873a0d-b23c-8328-a1d7-078464554203,Hulu Invalid Region Fix,2026-02-07T13:12:10.535045+00:00,2026-02-07T13:22:09.035120+00:00,gpt-5-2,6,3,3,0,False,,global_enabled,conversations-003(1).json
+6987be12-0fcc-832f-9808-bb69886bbac7,Roommate Request Help,2026-02-07T22:36:36.346770+00:00,2026-03-10T23:40:28.915313+00:00,gpt-5-3,15,7,8,2,False,,global_enabled,conversations-003(1).json
+6989e83f-7924-8328-a6a6-d2a655fd419f,Response Tone Feedback,2026-02-09T14:00:12.774371+00:00,2026-02-09T14:02:19.641778+00:00,gpt-5-2,3,1,2,1,False,,global_enabled,conversations-003(1).json
+698b509c-7ccc-8329-981f-f4182ff07c31,Funny Response Ideas,2026-02-10T15:37:20.649271+00:00,2026-04-15T18:37:51.176800+00:00,gpt-5-3,8,4,4,0,False,,global_enabled,conversations-003(1).json
+698d4a52-d8a0-832c-8cab-6cb5d2bf4f64,Space Rental Calculation,2026-02-12T03:36:22.163032+00:00,2026-02-12T03:52:26.532367+00:00,gpt-5-2,8,4,4,1,False,,global_enabled,conversations-003(1).json
+698e10c8-0968-8333-8083-3ad9651e1dc7,VR Date Space Design,2026-02-12T17:41:48.582351+00:00,2026-02-15T20:37:07.321164+00:00,gpt-5-2,177,69,108,29,False,,global_enabled,conversations-003(1).json
+698e745c-2bb0-8333-b63f-2c3d7681ef8d,Prompting Meta Gen AI,2026-02-13T00:46:49.470791+00:00,2026-02-13T02:32:26.880702+00:00,gpt-5-2,6,3,3,1,False,,global_enabled,conversations-003(1).json
+6991cd12-80ec-8332-915e-59d848e87d4c,Creative Side Hustle Ideas,2026-02-15T13:42:27.056753+00:00,2026-02-19T00:13:04.477003+00:00,gpt-5-2,4,2,2,3,False,,global_enabled,conversations-003(1).json
+6993da8e-98c0-8327-a06e-a1b7cc315d30,Tactile Bass Shaker vs Subwoofer,2026-02-17T03:04:57.833696+00:00,2026-02-17T11:32:50.631715+00:00,gpt-5-2,20,9,11,2,False,,global_enabled,conversations-003(1).json
+69948e54-01d4-8329-a715-d233487662e8,Sample Size for EOL Test,2026-02-17T15:51:56.366220+00:00,2026-02-17T15:52:36.256459+00:00,gpt-5-2,2,1,1,0,False,,global_enabled,conversations-003(1).json
+69989a27-c410-832d-8365-ff9d051e3955,Serial and Model Extraction,2026-02-20T17:31:51.107261+00:00,2026-02-20T17:32:42.727462+00:00,gpt-5-2,4,2,2,3,False,,global_enabled,conversations-003(1).json
+699c562e-2d0c-832c-b630-a152dbb415e0,Antivirus DCS World Fix,2026-02-23T13:29:39.081572+00:00,2026-02-23T13:29:56.016525+00:00,gpt-5-2,2,1,1,0,False,,global_enabled,conversations-003(1).json
+69a0d9ef-5200-8331-89e6-de3c40573d00,Jira Ticket Test Issue,2026-02-26T23:40:31.857858+00:00,2026-02-27T16:15:18.206446+00:00,gpt-5-2,10,5,5,2,False,,global_enabled,conversations-003(1).json
+69a72fbb-70a8-8327-857a-c8687907a7f7,TAP Conversion Concerns,2026-03-03T19:01:17.716390+00:00,2026-03-03T19:03:53.444294+00:00,gpt-5-2,2,1,1,0,False,,global_enabled,conversations-003(1).json
+69a88c4b-3a04-832e-bb5d-abc44056a6bf,Fire Tornado Design Setup,2026-03-04T19:48:33.329183+00:00,2026-03-20T03:05:32.111588+00:00,gpt-5-3,45,17,28,1,False,,global_enabled,conversations-003(1).json
+69b02fdd-0534-8329-a51c-46ace11ba4d2,DCS Performance on Ultra 7,2026-03-10T14:51:59.156102+00:00,2026-03-10T22:33:46.835168+00:00,gpt-5-3,6,3,3,2,False,,global_enabled,conversations-003(1).json
+69b968ff-5dd8-8329-9bf1-d27cb0fe9737,LMAO Meaning Explained,2026-03-17T14:45:34.911889+00:00,2026-03-17T14:45:46.382787+00:00,gpt-5-3,2,1,1,0,False,,global_enabled,conversations-003(1).json
+69ba9edc-5d58-8330-928c-0d1cc46f7c1a,Resume review request,2026-03-18T12:47:34.907490+00:00,2026-03-18T14:30:26.602369+00:00,gpt-5-3,8,3,5,5,False,,global_enabled,conversations-003(1).json
+69c6b09c-3dc0-8329-b100-bf9b391965ef,Jira Description Rewrite,2026-03-27T16:30:46.715161+00:00,2026-03-27T16:31:26.157246+00:00,gpt-5-3,2,1,1,0,False,,global_enabled,conversations-003(1).json
+69c6b905-f294-832d-b718-3257c41d863d,SMART Goals for Team,2026-03-27T17:07:36.515983+00:00,2026-03-27T17:36:14.463546+00:00,gpt-5-3,15,8,7,4,False,,global_enabled,conversations-003(1).json
+69d2bdf6-8208-8331-8943-988e6ad4b6d2,PC Sleep Mode Issue,2026-04-05T19:54:35.835072+00:00,2026-04-05T20:00:11.300632+00:00,gpt-5-3,6,3,3,1,False,,global_enabled,conversations-003(1).json
+69d6542c-2a24-832a-8241-43a046e75253,Secure Boot Authorization Issue,2026-04-08T13:12:31.965560+00:00,2026-04-14T22:58:43.049910+00:00,gpt-5-3,9,4,5,3,False,,global_enabled,conversations-003(1).json
+69dd0fac-be94-83ea-b620-70122d61f447,BOM for Blaster Build,2026-04-13T15:47:35.723517+00:00,2026-04-26T04:06:43.168146+00:00,gpt-5-3,7,3,4,2,False,,global_enabled,conversations-003(1).json
+69de8753-bae0-83ea-9fcc-cec20ad0aca0,CPU vs GPU for VR,2026-04-14T18:33:39.084348+00:00,2026-04-14T19:16:51.870694+00:00,gpt-5-3,22,11,11,0,False,,global_enabled,conversations-003(1).json
+69df92f4-00cc-83ea-8861-a8c854d9387b,Printed Parts Checklist,2026-04-15T13:30:29.637096+00:00,2026-04-15T13:31:11.350937+00:00,gpt-5-3,2,1,1,1,False,,global_enabled,conversations-003(1).json
+69eb8bb2-24a8-83ea-a3c1-d65bc7806140,Gears Vector Training Guide,2026-04-24T15:28:26.147303+00:00,2026-04-24T15:30:57.806807+00:00,gpt-5-3,4,2,2,4,False,,global_enabled,conversations-003(1).json
+69ee821c-888c-83ea-ba59-900376bb4912,MSI SSD BIOS Configuration,2026-04-26T21:25:40.557787+00:00,2026-04-27T01:59:19.014552+00:00,gpt-5-3,16,8,8,2,False,,global_enabled,conversations-003(1).json
+69f08c02-b73c-83ea-89a9-a2c3569b04d5,Blueprint Poster Request,2026-04-28T10:29:36.032998+00:00,2026-04-28T10:30:16.040594+00:00,gpt-5-3,2,1,1,1,False,,global_enabled,conversations-003(1).json
+69f109f5-71f8-83ea-adba-c8e37aa69bc6,New chat,2026-04-28T19:26:51.225579+00:00,2026-04-28T19:27:22.094873+00:00,gpt-5-3,2,1,1,2,False,,global_enabled,conversations-003(1).json
+69f6be43-3c64-83ea-a5c3-ba40f15eab4b,OpenClaw Setup Guide,2026-05-03T03:21:40.340535+00:00,2026-05-03T12:59:24.270875+00:00,gpt-5-3,15,5,10,1,False,,global_enabled,conversations-003(1).json
+69f73d73-effc-83ea-9a0a-66ef88926ef7,Remote Project Setup,2026-05-03T12:25:52.920883+00:00,2026-05-11T22:13:56.136097+00:00,gpt-5-5,211,88,123,41,False,,global_enabled,conversations-003(1).json
+69f760da-a708-83ea-a35c-967d6283451c,Codex TUI Setup VR,2026-05-03T14:53:26.349311+00:00,2026-05-03T14:53:54.217336+00:00,gpt-5-3,5,1,4,1,False,,global_enabled,conversations-003(1).json
+69f8b427-4df8-83ea-bfeb-0b1e4797b3bd,Codex Agent Setup,2026-05-04T15:03:46.341535+00:00,2026-05-11T15:08:21.103865+00:00,gpt-5-5,57,23,34,5,False,,global_enabled,conversations-003(1).json
+69f94e20-955c-83ea-8df3-61921062b139,Local TAP Drive Setup,2026-05-05T01:56:12.214047+00:00,2026-05-10T02:36:55.923321+00:00,gpt-5-5,28,12,16,4,False,,global_enabled,conversations-003(1).json
+69fb6cb2-2868-83ea-b446-23a03d69ca75,Wiring Switch for Beginner,2026-05-06T16:35:40.529603+00:00,2026-05-06T16:45:01.151509+00:00,gpt-5-5,8,4,4,3,False,,global_enabled,conversations-003(1).json
+69fea3ed-6670-83ea-9af5-fe4cf97a2421,Percentage Calculation for Scaling,2026-05-09T03:04:06.261907+00:00,2026-05-09T03:04:09.668861+00:00,gpt-5-5,2,1,1,0,False,,global_enabled,conversations-003(1).json
+6a006401-4e90-83ea-87a5-fe3f68cbf3a7,Creative Minecraft Modpacks,2026-05-10T10:57:13.867389+00:00,2026-05-11T22:13:12.861566+00:00,gpt-5-5,15,8,7,9,False,,global_enabled,conversations-003(1).json
+6a01eaaf-677c-83ea-bb3f-93db0e2ca037,Pre-launch config repair,2026-05-11T14:41:56.015908+00:00,2026-05-11T14:42:12.577785+00:00,gpt-5-5,4,1,3,0,False,,global_enabled,conversations-003(1).json
+6a031e93-b550-83ea-bf95-30b51b20dc89,Funny Congrats for Manager,2026-05-12T12:36:24.589725+00:00,2026-05-12T12:41:16.143479+00:00,gpt-5-5,4,2,2,0,False,,global_enabled,conversations-003(1).json
+6a03468b-9e30-83ea-9006-d3c3b1876e79,Total Test Cases Calculation,2026-05-12T15:26:09.820995+00:00,2026-05-12T15:34:16.207815+00:00,gpt-5-5,2,1,1,2,False,,global_enabled,conversations-003(1).json
+6a0372fc-178c-83ea-8308-dcb4b25ff2c5,Instagram Sunset Post,2026-05-12T18:35:49.806302+00:00,2026-05-12T18:36:35.547455+00:00,gpt-5-5,2,1,1,0,False,,global_enabled,conversations-003(1).json
+6a04715e-2568-83ea-b4c2-c9dc1d4ed54b,Git tag and checkout issues,2026-05-13T12:41:24.332497+00:00,2026-05-13T12:41:34.208351+00:00,gpt-5-5,4,1,3,0,False,,global_enabled,conversations-003(1).json
+6a060d2e-8efc-83ea-b17f-d677d9ab6f0c,HP Laptop Key Function,2026-05-14T17:58:28.728285+00:00,2026-05-14T17:58:32.431348+00:00,gpt-5-5,2,1,1,1,False,,global_enabled,conversations-003(1).json
+6a079639-ce8c-83ea-9314-670eeb69dce6,Attractive Message Revision,2026-05-15T21:55:06.613376+00:00,2026-07-07T22:40:07.659572+00:00,gpt-5-5,18,9,9,0,False,,global_enabled,conversations-003(1).json
+6a09ae38-712c-83ea-a939-4eba9eeebc49,Removing MainSignalSearchDaemon,2026-05-17T12:03:06.068253+00:00,2026-05-17T17:08:41.731686+00:00,gpt-5-5,22,11,11,9,False,,global_enabled,conversations-003(1).json
+6a0c5f2d-6394-83ea-9b03-a515e9716fd4,Responding to Stressful Messages,2026-05-19T13:01:47.128126+00:00,2026-05-19T13:11:29.868792+00:00,gpt-5-5,6,3,3,1,False,,global_enabled,conversations-003(1).json
+6a0cf76f-a768-83ea-9fd6-60b42f354a04,Air Force Theme Background,2026-05-19T23:53:59.816343+00:00,2026-05-20T04:26:19.343617+00:00,gpt-5-5,13,9,4,10,False,,global_enabled,conversations-003(1).json
+6a0e334d-ac88-83ea-b9b4-db93a19f6999,Servo vs Stepper Motor,2026-05-20T22:19:39.091066+00:00,2026-05-20T22:19:45.485647+00:00,gpt-5-5,2,1,1,1,False,,global_enabled,conversations-003(1).json
+6a0ee31d-f6a4-83ea-99a0-6ad785ae0dce,Organizing Juggling Projects,2026-05-21T10:49:08.462143+00:00,2026-05-21T10:49:24.977970+00:00,gpt-5-5,2,1,1,1,False,,global_enabled,conversations-003(1).json
+6a10296e-b23c-83ea-923e-ec3f41943366,Codex Agent Tool Inventory,2026-05-22T10:04:21.728510+00:00,2026-05-22T22:35:18.611150+00:00,gpt-5-5,5,1,4,0,False,,global_enabled,conversations-003(1).json
+6a10aa20-5418-4144-8149-64ecb4523220,Full Send Responses,2023-10-12T16:59:19.272729+00:00,2023-10-12T16:59:27.269007+00:00,,2,1,1,0,False,,global_enabled,conversations-003(1).json
+6a1125ec-c314-83ea-a1f9-622c622162f9,IT Troubleshooting with .md Files,2026-05-23T04:01:12.741549+00:00,2026-06-13T04:00:31.018686+00:00,gpt-5-5,8,4,4,13,False,,global_enabled,conversations-003(1).json
+6a112979-2e88-83ea-b83e-5fa4a42b6955,Game Streaming Setup,2026-05-23T04:15:53.115978+00:00,2026-05-23T22:49:44.947276+00:00,gpt-5-5,27,14,13,7,False,,global_enabled,conversations-003(1).json
+6a11de8c-98c4-83ea-bf72-2b48d0e78ac2,Router Setup for Multiple Lines,2026-05-23T17:06:59.036449+00:00,2026-05-23T17:07:07.479768+00:00,gpt-5-5,2,1,1,0,False,,global_enabled,conversations-003(1).json
+6a11e021-1708-83ea-9b2f-845ba6331a07,Intel RealSense in DCS,2026-05-23T17:13:54.034969+00:00,2026-05-24T18:16:26.802230+00:00,gpt-5-5,22,11,11,1,False,,global_enabled,conversations-003(1).json
+6a134b56-e7a8-83ea-b4d4-5e83427a34cb,Branch · Creative writing options,2026-05-24T19:02:54.284723+00:00,2026-05-24T19:03:10.592577+00:00,gpt-5-5,1010,505,505,32,False,,global_enabled,conversations-003(1).json
+6a1729ff-69dc-83ea-a33b-6e7f0dfe47ef,Unhinged Biography Creation,2026-05-27T17:30:33.153494+00:00,2026-06-16T20:38:42.139569+00:00,gpt-5-5,18,9,9,0,False,,global_enabled,conversations-003(1).json
+6a173e62-3f60-83ea-a4f4-bb0be65a6974,Testing Update Deadline Extension,2026-05-27T18:57:45.684606+00:00,2026-05-27T19:00:52.553477+00:00,gpt-5-5,4,2,2,0,False,,global_enabled,conversations-004(1).json
+6a175337-c8c0-83ea-b841-91ca4578feee,Branch · Unhinged Biography Creation,2026-05-27T20:25:28.699480+00:00,2026-05-27T20:25:37.257033+00:00,gpt-5-5,4,2,2,0,False,,global_enabled,conversations-004(1).json
+6a18dc6a-44e4-83ea-933a-68e2af7d778b,RAM Compatibility Check,2026-05-29T00:24:05.492531+00:00,2026-05-29T17:58:44.329835+00:00,gpt-5-5,24,12,12,1,False,,global_enabled,conversations-004(1).json
+6a197ef3-d644-83ea-81bf-785935b2a3dd,Image Recreation Request,2026-05-29T11:56:57.878662+00:00,2026-05-29T12:00:27.381770+00:00,gpt-5-5,2,2,0,1,False,,global_enabled,conversations-004(1).json
+6a1a0254-4504-83ea-acab-f482274f6330,Branch · RAM Compatibility Check,2026-05-29T21:17:09.021079+00:00,2026-05-30T20:24:38.885235+00:00,gpt-5-5,28,14,14,1,False,,global_enabled,conversations-004(1).json
+6a1b84f0-f27c-83ea-aab7-d782a249de54,Salad Software for AI,2026-05-31T00:47:09.970660+00:00,2026-05-31T03:28:51.670132+00:00,gpt-5-5,8,4,4,0,False,,global_enabled,conversations-004(1).json
+6a1babec-cb48-83ea-bebe-e21cd97c9ece,VR Optimization Solution,2026-05-31T03:40:40.916802+00:00,2026-06-13T15:15:58.134206+00:00,gpt-5-5,18,7,11,0,False,,global_enabled,conversations-004(1).json
+6a1c5fb9-f460-83ea-945f-ac3b30738cb0,Optmizing,2026-05-31T16:20:49.846812+00:00,2026-06-27T16:58:03.347054+00:00,gpt-5-5,117,55,62,28,False,,global_enabled,conversations-004(1).json
+6a1e057e-75b0-83ea-8b12-9ada8111d5c5,weaselNet Mission Control,2026-06-01T22:20:03.466564+00:00,2026-06-18T02:12:41.675969+00:00,gpt-5-5,35,15,20,6,False,,global_enabled,conversations-004(1).json
+6a2024e4-be98-83ea-9d5d-d924fa779f47,Optimizing License Mapping,2026-06-03T12:59:34.632785+00:00,2026-06-03T13:01:30.060915+00:00,gpt-5-5,2,1,1,0,False,,global_enabled,conversations-004(1).json
+6a26bb4d-d378-83ea-9c90-bf0ebfce41fe,Branch · Branch · Creative writing options,2026-06-08T12:53:39.081550+00:00,2026-06-18T22:38:45.347346+00:00,gpt-5-5,1058,529,529,35,False,,global_enabled,conversations-004(1).json
+6a285a44-2aa4-83ea-90ff-683f2d010f3f,BitLocker Drive Encryption Test,2026-06-09T18:25:50.605255+00:00,2026-06-09T18:32:11.751634+00:00,gpt-5-5,4,2,2,0,False,,global_enabled,conversations-004(1).json
+6a2b2302-a100-83ea-aa71-a26813e64edd,Funny Responses to Drained Life,2026-06-11T21:05:23.400952+00:00,2026-06-11T21:10:02.850815+00:00,gpt-5-5,4,2,2,0,False,,global_enabled,conversations-004(1).json
+6a2bda14-63d0-83ea-a966-b4cbbdc68709,Branch · RTX 4000 Ada Testing,2026-06-12T10:06:17.618105+00:00,2026-06-13T15:15:50.203405+00:00,gpt-5-5,20,10,10,2,True,,global_enabled,conversations-004(1).json
+6a320588-8108-83ea-a3b6-2fd8dc8b07ac,Branch · Branch · Branch · Creative writing options,2026-06-17T02:25:17.159573+00:00,2026-06-17T02:25:31.891345+00:00,gpt-5-5,1050,525,525,35,False,,global_enabled,conversations-004(1).json
+6a320862-bb90-83ea-b2dd-2af851c9a742,Branch · Branch · Branch · Branch · Creative writing options,2026-06-17T02:37:30.343220+00:00,2026-06-17T02:38:53.132762+00:00,gpt-5-5,1054,527,527,35,False,,global_enabled,conversations-004(1).json
+6a3299fd-99a4-83ea-bb01-5a1f8114c582,Branch · Local TAP Drive Setup,2026-06-17T12:58:40.631310+00:00,2026-06-17T13:00:15.112707+00:00,gpt-5-5,30,13,17,4,False,,global_enabled,conversations-004(1).json
+6a336455-e8c0-83ea-bcdf-efb866c77475,Sunshine Servers Moonlight Setup,2026-06-18T03:24:37.125653+00:00,2026-06-18T03:24:59.141067+00:00,gpt-5-5,4,1,3,0,False,,global_enabled,conversations-004(1).json
+6a33f6c8-8668-83ea-b3a6-e06a0f2a84be,Hardware Documentation System,2026-06-18T13:49:18.661052+00:00,2026-06-18T13:53:33.769670+00:00,gpt-5-5,2,1,1,0,False,,global_enabled,conversations-004(1).json
+6a33f8a7-f864-83ea-aff0-7c4f30a83345,Branch · Hardware Documentation System,2026-06-18T13:54:59.418444+00:00,2026-06-18T15:55:07.533809+00:00,gpt-5-5,9,3,6,0,False,,global_enabled,conversations-004(1).json
+6a374fb0-77c0-83ea-bba2-e8659bd133ea,PawnIO Overview,2026-06-21T02:43:09.167618+00:00,2026-06-21T03:11:11.662254+00:00,gpt-5-5,4,2,2,0,False,,global_enabled,conversations-004(1).json
+6a37e073-4158-83ea-81d5-c7ba4b8a9b4b,RFID for Lab Tracking,2026-06-21T13:09:38.847139+00:00,2026-06-21T18:00:46.019379+00:00,gpt-5-5,17,7,10,0,False,,global_enabled,conversations-004(1).json
+6a385d79-eed0-83ea-864e-68c14f8bdf9d,Server Performance Comparison,2026-06-21T21:56:17.669560+00:00,2026-06-21T21:56:27.704251+00:00,gpt-5-5,2,1,1,1,False,,global_enabled,conversations-004(1).json
+6a387924-2464-83ea-9f05-31a3c07a0988,Shirt Design Mockup,2026-06-21T23:53:06.609763+00:00,2026-06-21T23:53:36.724957+00:00,gpt-5-5,1,1,0,2,False,,global_enabled,conversations-004(1).json
+6a387a25-daac-83ea-8ebf-5a92ba84683d,3D Ankylosaurus Character Design,2026-06-21T23:58:29.420749+00:00,2026-06-23T23:33:42.500594+00:00,gpt-5-5,18,11,7,1,False,,global_enabled,conversations-004(1).json
+6a399915-8f90-83ea-9fc7-ac8146bc1f58,Funny Response Suggestions,2026-06-22T20:21:07.763799+00:00,2026-06-22T20:21:17.515784+00:00,gpt-5-5,2,1,1,0,False,,global_enabled,conversations-004(1).json
+6a3b265f-24e4-83ea-b6b3-82cc5ba5df0a,Scheduling Next Week,2026-06-24T00:36:11.251293+00:00,2026-07-02T18:16:00.304678+00:00,gpt-5-5,49,24,25,7,False,,global_enabled,conversations-004(1).json
+6a3b29b7-91b8-83ea-ab02-7805049a54de,3D Model Creation Prompt,2026-06-24T00:50:02.325853+00:00,2026-06-24T22:46:37.202889+00:00,gpt-5-5,4,3,1,4,False,,global_enabled,conversations-004(1).json
+6a3b31e4-2fc8-83ea-ab6b-257b63fe4eff,Project for Respectful Communication,2026-06-24T01:24:54.064414+00:00,2026-06-24T01:58:32.134176+00:00,gpt-5-5-thinking,16,4,12,0,False,,global_enabled,conversations-004(1).json
+6a3b37ab-2808-83ea-8f64-a74da949e4e0,VR Game Project Instructions,2026-06-24T01:49:40.158859+00:00,2026-06-24T21:43:35.396823+00:00,gpt-5-4-thinking,23,6,17,0,False,,global_enabled,conversations-004(1).json
+6a3bd2d1-1fb8-83ea-91ba-ebf788bb5148,Team Meeting Request,2026-06-24T12:54:02.392731+00:00,2026-06-24T12:54:13.325987+00:00,gpt-5-5-thinking,4,1,3,0,False,,global_enabled,conversations-004(1).json
+6a3c66c1-d5c0-83ea-a033-4a87c5ae30f0,Branch · Optmizing,2026-06-24T23:22:44.610910+00:00,2026-06-25T14:22:23.192673+00:00,gpt-5-5,115,54,61,28,False,,global_enabled,conversations-004(1).json
+6a3c8530-21a8-83ea-984c-682190344741,VR Co-Space Anchor Ideas,2026-06-25T01:35:46.383449+00:00,2026-06-28T13:25:03.035273+00:00,gpt-5-5-thinking,14,4,10,1,False,,global_enabled,conversations-004(1).json
+6a3e7507-949c-83ea-956c-2b0ec16c2208,Humorous Coworker Response,2026-06-26T12:50:02.651749+00:00,2026-06-30T21:32:02.549793+00:00,gpt-5-5,6,3,3,1,False,,global_enabled,conversations-004(1).json
+6a3e795f-1484-83ea-b0db-b8f00ac46c06,Empathetic yet Funny Email,2026-06-26T13:10:15.279034+00:00,2026-06-26T13:17:37.963972+00:00,gpt-5-5-thinking,4,1,3,0,False,,global_enabled,conversations-004(1).json
+6a3f0c72-7948-83ea-961f-62c39dc065bb,Funny Meme Creation,2026-06-26T23:34:35.852680+00:00,2026-06-27T12:40:28.510234+00:00,gpt-5-5,11,8,3,6,False,,global_enabled,conversations-004(1).json
+6a3fc4e4-6a60-83ea-9115-f2400b13e124,WeaselNet Logo Concepts,2026-06-27T12:41:32.509695+00:00,2026-07-06T01:26:00.994712+00:00,gpt-5-5,25,12,13,5,False,,global_enabled,conversations-004(1).json
+6a3fe8ef-aa68-83ea-9ac6-cc39989e5948,Reversing Ultimate Performance Command,2026-06-27T15:15:57.441019+00:00,2026-07-06T09:11:38.697512+00:00,gpt-5-5,11,5,6,1,False,,global_enabled,conversations-004(1).json
+6a3fffcb-6548-83ea-a9fb-e2b521f157a3,Quest 2 Potato Mode,2026-06-27T16:53:23.468267+00:00,2026-06-29T22:18:59.918283+00:00,gpt-5-5-thinking,114,20,94,12,False,,global_enabled,conversations-004(1).json
+6a400725-4f34-83ea-a7da-2add52ad04d1,Gpedit.msc Error Explanation,2026-06-27T17:23:58.024586+00:00,2026-06-27T19:07:08.894304+00:00,gpt-5-5-thinking,14,4,10,3,False,,global_enabled,conversations-004(1).json
+6a40723b-6c48-83ea-b725-1c7fa9f058a5,Branch · WeaselNet Logo Concepts,2026-06-28T01:00:45.608746+00:00,2026-06-28T13:50:59.762187+00:00,gpt-5-5,18,10,8,3,False,,global_enabled,conversations-004(1).json
+6a409100-7178-83ea-8960-a320b92b75df,Branch · Branch · WeaselNet Logo Concepts,2026-06-28T03:12:16.875044+00:00,2026-06-28T13:48:40.671684+00:00,gpt-5-5,31,18,13,3,False,,global_enabled,conversations-004(1).json
+6a412bd7-a2bc-83ea-b19c-1e8d95b32318,Meshy Badge 3D Prompt,2026-06-28T14:13:53.298365+00:00,2026-06-28T14:15:45.975540+00:00,gpt-5-5-thinking,4,1,3,1,False,,global_enabled,conversations-004(1).json
+6a415004-0d14-83ea-9b42-2746538272a9,Notes Organizer Agent,2026-06-28T16:51:51.234170+00:00,2026-06-28T16:52:40.401164+00:00,gpt-5-5-thinking,5,1,4,0,False,,global_enabled,conversations-004(1).json
+6a415ee2-f848-83ea-a61d-f8f85a24ddeb,Reaching Alfred Remotely,2026-06-28T17:50:57.910266+00:00,2026-06-28T17:51:18.751490+00:00,gpt-5-5,2,1,1,0,False,,global_enabled,conversations-004(1).json
+6a427835-f5a4-83ea-a116-1f0bb39f9e94,OKRs Creation and Refinement,2026-06-29T13:51:25.033917+00:00,2026-06-30T12:48:40.340039+00:00,gpt-5-5-thinking,26,7,19,3,False,,global_enabled,conversations-004(1).json
+6a42efd0-2540-83ea-80d8-00615ce473c7,Quest 3 Potato Mode,2026-06-29T22:21:16.206553+00:00,2026-07-03T19:01:00.619442+00:00,gpt-5-5-thinking,170,31,139,19,False,,global_enabled,conversations-004(1).json
+6a43cbff-caa4-83ea-ba9b-d039203fc9c9,WeaselNet GitHub Setup,2026-06-30T14:01:39.043004+00:00,2026-07-08T03:01:49.727575+00:00,gpt-5-5-thinking,22,6,16,0,False,,global_enabled,conversations-004(1).json
+6a459071-4548-83ea-99cf-b53036fc0e7d,WeaselNote Recorder DIY,2026-07-01T22:13:58.675560+00:00,2026-07-01T22:26:52.113565+00:00,gpt-5-5,9,3,6,0,False,,global_enabled,conversations-004(1).json
+6a46c87a-98d8-83ea-b20d-f5087856bd40,Branch · Scheduling Next Week,2026-07-02T20:22:22.036461+00:00,2026-07-09T20:39:59.996722+00:00,gpt-5-5,73,36,37,7,False,,global_enabled,conversations-004(1).json
+6a47eeb5-bcfc-83ea-8eb2-3b96d68cd4f0,VR Optimization Strategies,2026-07-03T17:20:01.152767+00:00,2026-07-03T17:20:18.630728+00:00,gpt-5-5,2,1,1,0,False,,global_enabled,conversations-004(1).json
+6a480ce2-0c94-83ea-93e0-bc26a0a3c825,VR-fov reduction,2026-07-03T19:28:58.927532+00:00,2026-07-04T12:52:41.214771+00:00,gpt-5-5-thinking,35,6,29,2,False,,global_enabled,conversations-004(1).json
+6a486165-84ac-83ea-992a-7a66113a7334,RTX 4000 VR Tuning,2026-07-04T01:28:02.111831+00:00,2026-07-04T01:51:06.676326+00:00,gpt-5-5,6,3,3,0,False,,global_enabled,conversations-004(1).json
+6a4871b1-a6d4-83ea-9f17-64dd949da184,Branch · Copilot Enterprise Automation,2026-07-04T02:36:37.881520+00:00,2026-07-09T13:11:41.477672+00:00,gpt-5-5,49,17,32,5,False,,global_enabled,conversations-004(1).json
+6a49040d-ebc4-83ea-aea3-89cc4b632c7f,Branch · WeaselNet Logo Concepts,2026-07-04T13:01:04.582855+00:00,2026-07-08T03:18:25.753643+00:00,gpt-5-5,19,14,5,6,False,,global_enabled,conversations-004(1).json
+6a498c6a-aa24-83ea-8e4c-134b9c0194c4,Zombie Survival Game Ideas,2026-07-04T22:45:27.753684+00:00,2026-07-04T22:45:35.687764+00:00,gpt-5-5,2,1,1,1,False,,global_enabled,conversations-004(1).json
+6a49d4a9-bcd4-83ea-b15f-4079858a3dc8,Network Latency and Settings,2026-07-05T03:51:46.929624+00:00,2026-07-08T00:49:53.152963+00:00,gpt-5-5-thinking,45,12,33,4,False,,global_enabled,conversations-004(1).json
+6a4d175e-f360-83ea-975b-b6803fbbfc86,Data Parsing and GPU Analysis,2026-07-07T15:13:46.695793+00:00,2026-07-07T15:25:33.620147+00:00,gpt-5-5-thinking,7,1,6,1,False,,global_enabled,conversations-004(1).json
+6a4e7195-9898-83ea-bea4-3da580c1116a,Performance Testing Tools,2026-07-08T15:52:11.251649+00:00,2026-07-08T16:57:05.701322+00:00,gpt-5-5-thinking,14,2,12,2,False,,global_enabled,conversations-004(1).json
+6a4f86b5-02bc-83ea-8fc2-6c342f13a749,DWM Swapchain Explanation,2026-07-09T11:32:30.180215+00:00,2026-07-09T11:35:03.567033+00:00,gpt-5-5-thinking,2,1,1,0,False,,global_enabled,conversations-004(1).json
+6a4fa243-7eec-83ea-ae1b-5d4e580b93d9,Mid-year review assistance,2026-07-09T13:29:40.404876+00:00,2026-07-09T14:48:00.960488+00:00,gpt-5-5-thinking,57,17,40,6,False,,global_enabled,conversations-004(1).json
+6a5018d0-031c-83ea-a0fb-2d7fd02ad802,Meeting Location Clarification,2026-07-09T21:56:20.135752+00:00,2026-07-09T21:56:23.940810+00:00,gpt-5-5,2,1,1,0,False,,global_enabled,conversations-004(1).json
+6a504ad3-46cc-83ea-981a-07850947126d,Processing a Relationship Shift,2026-07-10T01:29:04.321197+00:00,2026-07-10T02:50:46.197972+00:00,gpt-5-5,10,4,6,0,False,,global_enabled,conversations-004(1).json
+6a50f2d1-7578-83ea-8a80-99fd14da53a8,4x MSAA GPU Impact,2026-07-10T13:25:54.474754+00:00,2026-07-10T13:26:00.087687+00:00,gpt-5-6-thinking,3,1,2,0,False,,global_enabled,conversations-004(1).json
+6a5167c7-6c90-83ea-96e3-08bebc464c2c,Exporting VR Project Data,2026-07-10T21:46:51.257133+00:00,2026-07-10T21:47:19.801078+00:00,gpt-5-6-thinking,6,1,5,0,False,,global_enabled,conversations-004(1).json
+6cb089d9-6eda-43ae-ae2e-0eda3c565642,Enhancing Skills Through Teaching,2024-04-23T17:55:35.355621+00:00,2024-04-23T17:55:42.477759+00:00,gpt-4,2,1,1,0,False,,global_enabled,conversations-004(1).json
+6d779505-234f-440f-843b-14ca6a304a4f,"Learn C#, .NET, WinUI!",2024-04-27T20:24:03.459816+00:00,2024-04-27T20:30:38.099722+00:00,text-davinci-002-render-sha,6,3,3,0,False,,global_enabled,conversations-004(1).json
+6f552931-c976-46c3-8ecd-fe3401a8e091,Exciting New Job Start!,2023-09-12T21:40:18.849710+00:00,2023-09-13T00:02:44+00:00,,10,5,5,0,False,,global_enabled,conversations-004(1).json
+6f82446d-ef7c-4ef6-9d4a-d84fce9e253a,C++ Dynamic Programming Algorithm,2024-01-30T02:52:57.028364+00:00,2024-01-30T02:53:12.076745+00:00,,2,1,1,0,False,,global_enabled,conversations-004(1).json
+705b26d8-fdbf-4421-b220-a7f286d77873,Virus Drama Battle,2024-07-24T01:04:21.799839+00:00,2024-07-24T11:56:22.406686+00:00,auto,10,5,5,0,False,,global_enabled,conversations-004(1).json
+708ac5ab-8d8e-4f21-919a-ee7d6d845012,Chill in Germany 😎,2024-01-17T10:40:46.698357+00:00,2024-01-18T02:19:39.412978+00:00,,2,1,1,0,False,,global_enabled,conversations-004(1).json
+70d8041f-cbf2-46f9-a3cc-d285717edd4d,Thankful Response Requested,2024-05-15T12:47:43.600784+00:00,2024-05-16T00:48:16.438007+00:00,gpt-4,5,2,3,0,False,,global_enabled,conversations-004(1).json
+71f35a0b-52bb-4c9c-b542-477776e2deb7,Teasing Job Title Examples,2023-09-08T00:19:21.942088+00:00,2023-09-30T01:27:23.478464+00:00,,14,7,7,0,False,,global_enabled,conversations-004(1).json
+72b80327-9db7-4de5-8fcb-40027bccd0a3,Strawberry Fields Psychological Test,2023-09-06T17:10:37.814549+00:00,2023-09-06T17:15:45+00:00,,4,2,2,0,False,,global_enabled,conversations-004(1).json
+747beb62-6782-4316-8fb3-4f8b506caedb,Apology for Recent Behavior,2024-03-08T13:39:29.261151+00:00,2024-03-08T14:07:20.287090+00:00,,6,4,2,0,False,,global_enabled,conversations-004(1).json
+747c6720-efdf-4434-8aed-2b7510d12e85,Fence and Farmer Ethics,2023-09-13T14:30:08.030999+00:00,2023-09-30T01:35:16.539213+00:00,,10,5,5,0,False,,global_enabled,conversations-004(1).json
+75dbf3fa-cb4e-4581-88c6-9930367909f9,NLP Protocol for Limiting Beliefs,2023-07-10T04:35:09.154505+00:00,2023-07-10T04:38:00+00:00,,4,2,2,0,False,,global_enabled,conversations-004(1).json
+7681504b-a249-4d60-a386-ac38478a0eb1,7-Day Beginner Resistance Plan,2023-11-11T14:28:26.230769+00:00,2023-11-11T14:29:08.000407+00:00,,2,1,1,0,False,,global_enabled,conversations-004(1).json
+77c1f597-39bb-4673-a928-454f50d0a43c,Fun Texting Games,2023-10-12T10:04:57.557637+00:00,2023-10-23T21:28:08.274290+00:00,,8,4,4,0,False,,global_enabled,conversations-004(1).json
+78234e59-baf8-45a1-8e5f-feed1c159d44,New chat,2023-12-12T00:33:41.282334+00:00,2023-12-12T00:33:55.561436+00:00,,5,1,4,0,False,,global_enabled,conversations-004(1).json
+7b33e65c-1bd9-4d14-9736-6f6cdc0b14fd,Flirty reply requested,2024-03-03T16:07:17.452081+00:00,2024-03-03T16:07:20.235858+00:00,,2,1,1,0,False,,global_enabled,conversations-004(1).json
+7d19b83d-e426-4694-a6f7-f6053ccca94a,Podcast Name Ideas,2023-09-09T12:20:08.841265+00:00,2023-09-09T12:20:26+00:00,,2,1,1,0,False,,global_enabled,conversations-004(1).json
+7d672aee-f531-42d9-bc41-b0c0e8d36918,Respected Colleague's Farewell,2023-08-17T14:44:41.243693+00:00,2023-08-17T14:52:56+00:00,,6,3,3,0,False,,global_enabled,conversations-004(1).json
+7dcef014-e6e1-4dbe-80a5-e708d3185385,Symbolism of Life Challenges,2023-09-13T13:40:59.279002+00:00,2023-09-13T22:41:15+00:00,,3,1,2,0,False,,global_enabled,conversations-004(1).json
+7e911acc-a044-4f12-8a1d-81593bde81ad,Career Advice Appreciation,2023-12-21T12:31:38.487345+00:00,2024-01-18T02:26:13.944936+00:00,,10,5,5,0,False,,global_enabled,conversations-004(1).json
+7ee48e4d-dedb-4264-bfde-4c7b7877ac53,WPF Automation Properties Guide,2024-04-01T19:39:56.240018+00:00,2024-04-02T13:02:35.971635+00:00,gpt-4,4,2,2,0,False,,global_enabled,conversations-004(1).json
+7f7183e6-cec7-4248-9631-246a4e0c439c,Quick Childcare Arrangement,2024-03-12T17:57:50.862618+00:00,2024-03-12T17:58:03.852680+00:00,,2,1,1,0,False,,global_enabled,conversations-004(1).json
+80a04d24-a66e-430f-b68b-e51f474ab713,Roman Road Network Expansion,2023-11-16T18:38:12.165683+00:00,2023-11-16T18:38:21.674431+00:00,,2,1,1,0,False,,global_enabled,conversations-004(1).json
+80b456ad-fbcb-44d7-91b1-0237d2c58655,Basic Programming Game: Choose Language,2024-05-27T02:44:40.315152+00:00,2024-05-27T02:45:15.076060+00:00,gpt-4o,4,2,2,0,False,,global_enabled,conversations-004(1).json
+80b5b0a9-786f-42b6-8422-eaa9d90f5ca8,Cartoon Girl Illustration,2024-01-31T12:42:36.060460+00:00,2024-01-31T12:43:55.094223+00:00,,2,1,1,1,False,,global_enabled,conversations-004(1).json
+818f67a8-854d-48a2-9a88-650be0c5860f,Monster Truck Ride Proposal,2024-06-09T13:58:57.119066+00:00,2024-06-09T14:02:02.501237+00:00,gpt-4o,6,3,3,0,False,,global_enabled,conversations-004(1).json
+8212127e-da07-42ad-872d-4f2af492b5d3,"Jaguar Tattoo, Minimalist Style",2024-02-23T02:00:38.731557+00:00,2024-02-23T02:22:59.910398+00:00,,8,4,4,1,False,,global_enabled,conversations-004(1).json
+82821452-7813-4358-986b-200c8363055e,Friendship Reflection and Apology.,2024-05-24T19:19:19.765468+00:00,2024-05-24T19:30:59.039184+00:00,gpt-4o,4,2,2,0,False,,global_enabled,conversations-004(1).json
+82d6dd78-87c3-400b-af2a-2a4afd3dec9b,TypeScript POM Template for Virtual Keyboard Testing,2023-11-16T18:45:19.522533+00:00,2023-11-16T21:39:01.021876+00:00,,8,4,4,1,False,,global_enabled,conversations-004(1).json
+857c0beb-7f37-48ca-963e-1352a2b82ab5,Flirty reply needed,2024-05-21T21:56:30.160218+00:00,2024-05-21T21:56:31.467671+00:00,gpt-4,2,1,1,0,False,,global_enabled,conversations-004(1).json
+85bc1658-8bfd-455f-9291-76bc1d42918f,Gamer-Inspired 3D Print Shop,2024-01-27T02:36:27.110841+00:00,2024-01-27T02:47:49.705880+00:00,,6,3,3,0,False,,global_enabled,conversations-004(1).json
+8619ea62-9f14-4cc2-a8e6-53e0fdc1f82d,Clear Non-Apology Texting,2023-09-08T13:26:16.088434+00:00,2023-09-08T13:27:03+00:00,,2,1,1,0,False,,global_enabled,conversations-004(1).json
+86d396ed-468f-4525-a491-8c4752ead211,Interest in Job Position,2024-06-19T12:34:17.654710+00:00,2024-06-19T12:34:23.993281+00:00,gpt-4o,2,1,1,0,False,,global_enabled,conversations-004(1).json
+87538eba-5e0b-4407-835e-ccf123b3398c,Cypress POM for Virtual Keyboard,2023-09-27T15:14:10.820831+00:00,2023-10-11T14:21:37.727163+00:00,,16,8,8,0,False,,global_enabled,conversations-004(1).json
+87d18bce-cc7c-4ecc-9d8d-26feecf1f4ea,Similar style chair modeled,2024-03-01T18:15:22.000704+00:00,2024-03-01T18:17:46.445615+00:00,,4,1,3,1,False,,global_enabled,conversations-004(1).json
+88758b01-0612-4b32-8c52-c5ace399fe2a,Graze Break Convo,2024-05-07T20:20:04.257131+00:00,2024-05-07T20:20:06.953599+00:00,gpt-4,2,1,1,0,False,,global_enabled,conversations-005(1).json
+88b668d2-cc99-476c-ba51-09035890de1c,Job Opportunity Inquiry,2024-05-16T18:06:38.506347+00:00,2024-05-16T18:12:51.974563+00:00,gpt-4,4,2,2,0,False,,global_enabled,conversations-005(1).json
+8ba34b14-a8b0-40ec-aacd-94dfb5e6b6b9,Tema Personalizada con WinUI3,2024-01-18T02:27:36.937473+00:00,2024-01-18T14:22:38.529548+00:00,,12,6,6,0,False,,global_enabled,conversations-005(1).json
+8bfa9157-9dbd-4655-8eca-b96b82d58513,Refactor StatusIconsViewModel.cs,2024-01-31T13:53:53.709964+00:00,2024-01-31T13:58:11.416116+00:00,,4,2,2,0,False,,global_enabled,conversations-005(1).json
+8c3369c4-c853-41b7-8dee-d360424cfd2f,Fixing CS0311 Error,2024-04-19T18:57:21.062470+00:00,2024-04-19T19:29:07.375590+00:00,gpt-4,4,2,2,0,False,,global_enabled,conversations-005(1).json
+8c982faf-28ac-4483-9d28-2b9aa30d6fdf,Create Light ComboBox Style,2024-02-03T04:36:52.532370+00:00,2024-02-03T04:37:48.419515+00:00,,2,1,1,0,False,,global_enabled,conversations-005(1).json
+8d1c213e-4ca5-4115-9223-5fa7077f948e,"Supportive Manager, Work Challenges",2024-02-09T15:25:03.667186+00:00,2024-02-09T15:25:37.994758+00:00,,2,1,1,0,False,,global_enabled,conversations-005(1).json
+8f368db5-1852-4bdb-875c-92b128a409bb,"I apologize, but I can't provide information on that specific topic as my knowledge cutoff date is September 2021, and I don't h",2023-09-10T18:55:07.468811+00:00,2023-09-13T13:17:06+00:00,,8,4,4,0,False,,global_enabled,conversations-005(1).json
+8f652104-765f-41a4-ba57-b1ec191c9a4d,Track Components in 15 Systems,2024-01-28T17:46:32.397580+00:00,2024-01-28T22:42:28.825206+00:00,,2,1,1,0,False,,global_enabled,conversations-005(1).json
+90c7ea3c-c362-4ca3-9220-25f31d1cc37f,Software Requirements Summary,2024-03-06T13:18:13.688125+00:00,2024-03-06T13:18:20.092267+00:00,,2,1,1,0,False,,global_enabled,conversations-005(1).json
+90d7b287-5d3b-403e-be18-e0c57118edb2,"Vibrant, Simple, Color Preferences",2024-01-27T02:50:11.377050+00:00,2024-01-28T22:42:28.772860+00:00,,6,3,3,0,False,,global_enabled,conversations-005(1).json
+928610c6-b977-4851-a2e3-8704807ab15a,Pixar-style Cartoonification of User,2024-01-31T12:36:48.810599+00:00,2024-01-31T12:38:41.177122+00:00,,4,2,2,1,False,,global_enabled,conversations-005(1).json
+928f4fb3-1a22-45c2-92b2-44f182a820df,Support Through Tough Conversations,2024-04-04T18:06:06.699762+00:00,2024-04-04T18:06:13.174550+00:00,gpt-4,2,1,1,0,False,,global_enabled,conversations-005(1).json
+92e97f5c-f855-45aa-a206-6380e25d0983,Team Switch Meeting Request,2024-01-26T18:01:43.741650+00:00,2024-01-26T18:01:49.482656+00:00,,2,1,1,0,False,,global_enabled,conversations-005(1).json
+9341e87a-a1c7-47c3-af2c-de3fa0d277d0,Hiking and Foodie Chat,2024-03-03T15:52:50.599127+00:00,2024-03-03T16:05:58.163197+00:00,,8,4,4,0,False,,global_enabled,conversations-005(1).json
+935c9b63-04da-4b83-916a-2c3390e6bcde,Test Engineer's Key Accomplishments,2024-05-21T21:26:40.632219+00:00,2024-05-24T15:31:08.544935+00:00,gpt-4o,20,10,10,3,False,,global_enabled,conversations-005(1).json
+94375998-1a84-4d0e-90d1-211be18deb37,Engaging Dating App Opener,2024-04-06T03:15:42.126454+00:00,2024-04-06T03:16:03.124412+00:00,gpt-4,2,1,1,0,False,,global_enabled,conversations-005(1).json
+962c857b-9a42-40af-8634-3e18a5cf8bfd,Accessing Cash in Whole Life,2023-09-23T20:13:14.892520+00:00,2023-09-23T20:13:14.892520+00:00,,18,9,9,0,False,,global_enabled,conversations-005(1).json
+9694868c-09f8-4dc7-99a3-1032226d3bb5,Keyboard Input Test,2023-11-01T15:09:20.748680+00:00,2023-11-01T15:09:23.672359+00:00,,2,1,1,0,False,,global_enabled,conversations-005(1).json
+98c8b89a-087e-403c-883f-ebc696ba64b3,Convert Android XML to WinUI3,2024-02-29T12:17:59.563179+00:00,2024-02-29T13:51:46.339311+00:00,,4,2,2,0,False,,global_enabled,conversations-005(1).json
+995b13ec-a2d2-4d5e-863e-086563169174,Helpful Assistance Appreciated,2024-06-23T19:19:06.992664+00:00,2024-06-23T20:33:42.519994+00:00,gpt-4o,4,2,2,0,False,,global_enabled,conversations-005(1).json
+9974399f-8221-47db-bf36-af689763c140,Boss's Engineering Experience Questions,2023-10-31T18:54:58.582531+00:00,2023-10-31T19:00:55.799747+00:00,,3,1,2,0,False,,global_enabled,conversations-005(1).json
+99d3ad69-ac51-4894-8ad8-e53e9a0fb1a6,Psychological Games & Gambits,2023-09-06T17:21:20.665902+00:00,2023-09-06T17:30:38+00:00,,8,4,4,0,False,,global_enabled,conversations-005(1).json
+9b01b26a-f772-4fb6-a5d9-d9327ab7ef6f,Analyze Financial Statement: Company?,2024-05-30T09:54:50.708835+00:00,2024-05-30T10:19:47.591386+00:00,gpt-4o,6,3,3,1,False,,global_enabled,conversations-005(1).json
+9cd7f6a0-dcd6-4625-ad4c-21fa76cd5e5e,Ask Her Advice Diligently,2024-03-03T16:24:24.474773+00:00,2024-03-03T16:24:38.654530+00:00,,2,1,1,0,False,,global_enabled,conversations-005(1).json
+9ce88cd8-cda7-4457-a8e2-a7ca49061e2c,WinUI 3 Online Courses,2024-01-24T12:58:01.313928+00:00,2024-01-24T12:58:04.253186+00:00,,2,1,1,0,False,,global_enabled,conversations-005(1).json
+9d934bb3-2166-4c3b-854d-d2cbfe01e170,Birthday Month Questions,2023-10-01T00:45:41.057826+00:00,2023-10-10T23:18:12.046171+00:00,,20,10,10,0,False,,global_enabled,conversations-005(1).json
+9ebecdb1-d3c9-42c0-b667-aafa9e9d8ebd,Measure Fluoroscopic Focal Plane,2023-12-17T00:26:23.255470+00:00,2023-12-17T00:31:51.883521+00:00,,4,2,2,0,False,,global_enabled,conversations-005(1).json
+9f63ebea-dcd5-4cab-8ac3-b27198e5ff29,Pop Psych Games Compilation,2023-09-09T14:42:30.519943+00:00,2023-09-09T16:12:03+00:00,,10,5,5,0,False,,global_enabled,conversations-005(1).json
+9f6df8a4-c669-43fe-8819-d1e6f5b1db95,Pining Banter for Pizza,2023-09-10T01:06:37.116674+00:00,2023-09-10T01:06:56+00:00,,2,1,1,0,False,,global_enabled,conversations-005(1).json
+9f9c9727-ee16-4692-bd32-923216dbb4bf,Spring Palette Suits You,2024-04-06T03:21:16.939855+00:00,2024-04-06T03:21:35.710320+00:00,text-davinci-002-render-sha,2,1,1,1,False,,global_enabled,conversations-005(1).json
+a0bc8fae-1576-42dd-9bb6-79dd6cc6f169,Refactor StatusIconsViewModel.cs,2024-01-30T02:55:46.045473+00:00,2024-01-30T04:14:46.235584+00:00,,28,14,14,0,False,,global_enabled,conversations-005(1).json
+a1268c8b-7463-4d69-a2b7-3f7faa132d11,The Cube Challenge Offer,2024-03-03T15:46:09.627670+00:00,2024-03-03T15:48:40.550432+00:00,,6,3,3,0,False,,global_enabled,conversations-005(1).json
+a136897b-2af6-447c-8a3e-5ae6aef82521,Batman Family Tech Names,2024-02-21T00:45:39.483485+00:00,2024-02-23T02:00:20.615107+00:00,,8,4,4,0,False,,global_enabled,conversations-005(1).json
+a2e3af2d-3173-420b-8bf9-b44900ccbe95,New chat,2024-02-28T01:45:38.421955+00:00,2024-02-28T01:47:29.172897+00:00,,8,4,4,0,False,,global_enabled,conversations-005(1).json
+a30f92c4-a566-4d91-8023-776fd9f99fd8,Positive Perception of User,2023-11-29T03:54:25.841632+00:00,2023-11-30T19:51:11.361821+00:00,,6,3,3,0,False,,global_enabled,conversations-005(1).json
+a46a0d71-756e-4bbf-816c-8e755e20f662,Couch Commentary Pro,2024-01-19T16:33:23.390058+00:00,2024-01-19T18:26:22.657719+00:00,,16,8,8,0,False,,global_enabled,conversations-005(1).json
+a76eb4be-2fda-4369-869b-be87c8ab491c,Engineer Burnout Recovery Guide,2024-02-09T15:00:24.791771+00:00,2024-02-09T15:00:33.784376+00:00,,2,1,1,0,False,,global_enabled,conversations-005(1).json
+a9c40914-85af-4128-91f4-4160ecad6b37,Elusive Beach Flirting,2023-09-08T09:42:51.774773+00:00,2023-10-23T21:37:35.120270+00:00,,24,12,12,0,False,,global_enabled,conversations-005(1).json
+aab5f5b2-d40f-4317-a9c3-e72cc447cf4b,What is a .tsx file?,2023-11-16T14:23:06.093169+00:00,2023-11-16T14:23:29.259846+00:00,,2,1,1,0,False,,global_enabled,conversations-005(1).json
+aab88877-34f2-4247-84df-f510b859e77e,Strawberry Fields Game: Text-Based,2024-03-03T15:38:17.198728+00:00,2024-03-03T15:43:17.881811+00:00,,6,3,3,0,False,,global_enabled,conversations-005(1).json
+ab082bf5-7cbf-46da-9255-262e07eb0d91,Funny Gaming User Tags,2024-04-18T01:01:02.226687+00:00,2024-04-18T01:01:09.119181+00:00,gpt-4,2,1,1,0,False,,global_enabled,conversations-005(1).json
+ad9251f8-7a3d-4aea-8118-3452d9375934,Pixar-style superhero transformation,2024-01-30T02:10:50.461285+00:00,2024-01-30T02:14:46.371620+00:00,,4,2,2,1,False,,global_enabled,conversations-005(1).json
+ae11954c-8d08-49d2-a75c-ed260254ac7b,Stealthy Ninja's Cookie Conquest,2024-04-27T20:44:21.094446+00:00,2024-04-27T20:45:58.649894+00:00,gpt-4,4,2,2,0,False,,global_enabled,conversations-005(1).json
+aeefa448-fe24-4126-b4b2-14647b7c2bc2,Create 20 Brotendo Variations,2024-06-20T19:24:26.128131+00:00,2024-07-03T13:56:45.259126+00:00,gpt-4o,4,2,2,0,False,,global_enabled,conversations-005(1).json
+afa118d1-31aa-4aee-bcef-8caef3c5d939,Spaghetti Chat Flirt,2024-08-07T21:04:09.875337+00:00,2024-08-07T21:06:09.838516+00:00,auto,6,3,3,0,False,,global_enabled,conversations-005(1).json
+afbc1e08-cf21-46f2-864e-2973f0d0568d,Work and Witches Chat,2023-09-29T15:33:30.811280+00:00,2023-09-29T21:30:23.346264+00:00,,8,4,4,0,False,,global_enabled,conversations-005(1).json
+b0e77d77-b049-43ec-98f1-9ce62d7d6e2e,Create STL from Photo,2024-07-05T18:09:37.558140+00:00,2024-07-05T18:12:02.085714+00:00,gpt-4o,6,3,3,2,False,,global_enabled,conversations-005(1).json
+b245e3e8-de18-42be-ba41-42e78752c444,Sidekicks for Hero,2023-12-31T04:01:41.900113+00:00,2024-01-18T02:26:08.186880+00:00,,4,2,2,0,False,,global_enabled,conversations-005(1).json
+b2932ee3-960c-451e-9439-b6b2eb27df57,Playful Self-Mocking Text,2023-11-18T11:47:37.127126+00:00,2023-11-19T00:50:34.886412+00:00,,14,7,7,0,False,,global_enabled,conversations-005(1).json
+b453cfa6-8fdd-4e1e-8ce2-5f9314cb0294,Welcome Email Response,2024-08-15T15:55:49.391410+00:00,2024-08-15T15:56:34.880926+00:00,auto,4,2,2,0,False,,global_enabled,conversations-005(1).json
+b4b21dd0-92b8-4833-be95-ca0b08ecbd52,Mad About Hammerhead Buddy,2024-03-17T00:37:40.119431+00:00,2024-03-17T00:44:57.691314+00:00,gpt-4,8,4,4,0,False,,global_enabled,conversations-005(1).json
+b5d56c92-b36f-4cef-82d8-dcc9fb2a9c71,Legendary Intriguing Thank You,2024-05-10T16:40:42.216496+00:00,2024-05-10T17:30:30.376209+00:00,gpt-4,8,3,5,0,False,,global_enabled,conversations-005(1).json
+b60b2386-30d1-4d61-92c9-2d00ab1d0cf4,System Tracking Implementation Solution,2024-05-28T20:28:14.567877+00:00,2024-05-28T20:33:13.199393+00:00,gpt-4o,4,2,2,0,False,,global_enabled,conversations-005(1).json
+b9879bbc-b937-4ef1-ae75-6396ad4d8cfe,Left-Handed Girl Teasing,2023-08-10T16:47:53.047374+00:00,2023-08-10T19:51:26+00:00,,4,2,2,0,False,,global_enabled,conversations-005(1).json
+baacc252-f24e-4b04-95b6-2c55d7e5da43,Enhancing Software Engineering Skills,2023-11-28T18:44:16.101957+00:00,2023-11-29T01:48:14.506101+00:00,,4,2,2,0,False,,global_enabled,conversations-005(1).json
+bbebd4cd-a5c3-4d6f-bebf-d445ecf66846,4K ToggleSwitch Styling,2024-02-27T18:43:39.176343+00:00,2024-02-27T18:46:25.967263+00:00,,5,4,1,1,False,,global_enabled,conversations-005(1).json
+bf801e02-d1bc-4c3f-a520-5c5d2a52e772,Tattoo Artists Search Request,2024-03-24T20:30:49.674007+00:00,2024-03-24T20:32:02.152415+00:00,gpt-4-gizmo,4,2,2,0,False,,global_enabled,conversations-005(1).json
+c0060300-663c-43ae-b53f-a8de2fee9fe4,Movies Gauntlet: Guess the Director,2024-04-06T03:28:53.290411+00:00,2024-04-06T03:28:58.685126+00:00,text-davinci-002-render-sha,2,1,1,0,False,,global_enabled,conversations-005(1).json
+c0bc495c-439c-4969-8b64-b5ec8e0de9c7,Catchy Dating Bio Advice.,2024-04-06T03:06:25.658349+00:00,2024-04-06T03:11:04.978649+00:00,gpt-4-gizmo,4,2,2,0,False,,global_enabled,conversations-005(1).json
+c2018ca1-e979-4358-b910-9d1de5cf0d96,RAD Gain Calibration Interface,2024-03-06T17:23:41.936578+00:00,2024-03-06T18:19:04.418460+00:00,,9,3,6,8,False,,global_enabled,conversations-005(1).json
+c2cd0c43-72e5-4291-956b-756443b42729,New chat,2023-09-01T09:42:49.069794+00:00,2023-09-03T12:40:09+00:00,,4,2,2,0,False,,global_enabled,conversations-005(1).json
+c3be77da-b735-4438-b46e-f90ebe89dfbc,Sticker Thanks and Playfulness,2024-03-18T20:12:27.284107+00:00,2024-03-18T20:12:41.691040+00:00,gpt-4,2,1,1,0,False,,global_enabled,conversations-005(1).json
+c496ed3a-04ea-4c85-91e7-77f9c9ce5713,Pixar-style superhero girl illustration,2024-01-30T02:05:12.554220+00:00,2024-01-30T03:14:14.095650+00:00,,23,12,11,7,False,,global_enabled,conversations-005(1).json
+c5520b78-018e-4870-b47f-81e23e1e69ef,Automate Daily Email Reports,2023-08-17T14:31:57.152123+00:00,2023-08-17T14:33:03+00:00,,2,1,1,0,False,,global_enabled,conversations-005(1).json
+c6c378ed-eaff-4c48-8855-54459744faae,Greek Statue of LinkedIn User,2023-11-17T22:20:53.764055+00:00,2023-11-18T11:43:20.634120+00:00,,10,5,5,4,False,,global_enabled,conversations-005(1).json
+c7fb28a5-6b86-41ce-b5b1-4b764cfbe6d2,Update Battery Status Method,2024-04-11T01:41:10.921208+00:00,2024-04-13T16:06:48.080255+00:00,gpt-4,14,7,7,0,False,,global_enabled,conversations-005(1).json
+c8fbbd8d-ae63-45b9-9b76-4540151aed85,Clearing the Air,2024-05-25T18:12:29.112765+00:00,2024-05-25T18:12:39.959500+00:00,gpt-4o,2,1,1,0,False,,global_enabled,conversations-005(1).json
+c93093cb-a546-4417-a4d5-e90c89112162,Follow-Up Background Check,2024-08-12T16:06:35.979377+00:00,2024-08-12T16:07:03.531068+00:00,auto,2,1,1,0,False,,global_enabled,conversations-005(1).json
+c9c47f52-d247-4139-a571-05cdbfee4093,Naming Convention for Elements,2024-01-18T20:53:22.179016+00:00,2024-01-18T20:53:23.992001+00:00,,2,1,1,0,False,,global_enabled,conversations-005(1).json
+ca83a266-9124-4a94-822c-f66a44beb2d9,Retro Arcade Game Concepts,2023-11-18T11:45:16.203859+00:00,2023-11-18T11:46:11.841617+00:00,,2,1,1,0,False,,global_enabled,conversations-005(1).json
+cbba0aac-e378-4a6b-8158-8c1b689eb0fc,Apology for Delayed Decision,2024-03-25T13:07:19.405134+00:00,2024-03-25T13:13:45.271828+00:00,gpt-4,3,2,1,0,False,,global_enabled,conversations-005(1).json
+cdf1008c-676d-42fd-9697-aefd21a5d916,Reconnect After Slight Ghosting,2024-05-20T16:03:15.637948+00:00,2024-05-20T16:03:23.351660+00:00,gpt-4,2,1,1,0,False,,global_enabled,conversations-005(1).json
+cfc25b39-1a3e-445c-bdae-4938b534b762,Mass. Conference Room Scavenger,2023-10-10T02:18:36.453579+00:00,2023-10-20T12:53:10.688850+00:00,,10,4,6,0,False,,global_enabled,conversations-005(1).json
+d1a19f7d-7e65-45ce-a59c-850a315d91e9,Mystical Forest Fantasy Adventure,2024-01-19T02:16:13.311113+00:00,2024-01-19T02:19:47.477937+00:00,,4,2,2,0,False,,global_enabled,conversations-005(1).json
+d26745e0-667b-4809-a070-c053812d0a71,Crafting Captivating Short Story,2024-05-21T21:56:10.783933+00:00,2024-05-21T21:56:13.635838+00:00,gpt-4,2,1,1,0,False,,global_enabled,conversations-005(1).json
+d2879a1a-ae07-4b2e-887d-1e1c924837e4,Charming Response Request,2024-08-29T15:19:18.133719+00:00,2024-08-29T15:31:12.798676+00:00,auto,8,4,4,0,False,,global_enabled,conversations-005(1).json
+d2dca494-3a31-47cf-930b-56af1daf42b9,New chat,2023-08-09T22:12:55.073320+00:00,2023-08-09T22:14:22+00:00,,4,2,2,0,False,,global_enabled,conversations-005(1).json
+d396aca7-44db-4eb7-8c84-273d4fc21bfa,AI Integration in Medtronic,2024-05-22T15:10:15.418864+00:00,2024-05-22T15:10:31.304220+00:00,gpt-4,4,2,2,0,False,,global_enabled,conversations-005(1).json
+d5576b15-879f-4506-b346-d3cada41f9d9,New chat,2023-09-06T14:31:58.627360+00:00,2023-09-06T14:31:58+00:00,,2,1,1,0,False,,global_enabled,conversations-005(1).json
+d64320d3-dbc2-4cf2-aa30-ab6379723294,Lactose Intolerance: Dietary Misunderstanding,2024-04-20T01:55:30.900197+00:00,2024-04-20T01:58:01.175364+00:00,gpt-4,4,2,2,0,False,,global_enabled,conversations-005(1).json
+d661c931-ec7c-800e-8883-4d4af5a04f5e,Israel Iraq Nuclear Strike,2025-06-22T01:10:18.550234+00:00,2025-06-22T01:10:18.550234+00:00,gpt-4o,2,1,1,0,False,,global_enabled,conversations-005(1).json
+d7f5c5cf-130c-45b8-a2cf-04070c43a5c3,Twenty More Attempts Calculations,2024-03-03T20:52:26.588730+00:00,2024-03-03T21:08:27.136252+00:00,,14,7,7,0,False,,global_enabled,conversations-005(1).json
+d993201e-5c44-800e-965f-59438025f204,Describe picnic table,2025-10-10T23:50:36.616145+00:00,2025-10-10T23:50:36.616145+00:00,gpt-4o,2,1,1,1,False,,global_enabled,conversations-005(1).json
+dd291e87-28ac-800e-9bf8-b7c9e1e414ee,Israel Iran 90s Conflict,2025-06-22T01:09:18.575531+00:00,2025-06-22T01:09:18.575531+00:00,gpt-4o,2,1,1,0,False,,global_enabled,conversations-005(1).json
+e06e84d0-0108-4213-8e6d-91a6d598ccc7,Merch Store Database Schema,2023-12-12T00:53:04.350591+00:00,2023-12-12T00:53:45.500148+00:00,,2,1,1,0,False,,global_enabled,conversations-005(1).json
+e4143228-7886-4c28-8af6-2e7658a82192,Ear Infection Absence Notice,2023-10-30T13:14:14.184604+00:00,2023-10-30T13:20:18.679495+00:00,,5,2,3,0,False,,global_enabled,conversations-005(1).json
+e41c01c3-1aa6-4aff-b6ac-65192601d9d1,Fantasy Portal Adventure,2024-03-18T08:29:02.263576+00:00,2024-03-18T08:29:59.504442+00:00,gpt-4,2,1,1,0,False,,global_enabled,conversations-005(1).json
+e6419604-f20a-4c6c-82a2-4ff82011857e,Catchy dating bio creation.,2024-03-05T22:12:05.684097+00:00,2024-03-05T22:12:23.016783+00:00,,2,1,1,0,False,,global_enabled,conversations-005(1).json
+e7322411-2229-42dd-8268-7d2e05152680,Meeting set for Saturday.,2024-04-16T16:30:10.983394+00:00,2024-04-16T16:30:17.913599+00:00,gpt-4,2,1,1,0,False,,global_enabled,conversations-005(1).json
+e94c8051-9c50-800e-9a01-b016e1f6b364,Target CVS Hours Haverhill,2025-06-10T19:43:48.366618+00:00,2025-06-10T19:43:48.366618+00:00,gpt-4o,2,1,1,0,False,,global_enabled,conversations-005(1).json
+e9b16caf-d6f3-4941-a0be-228f8c241b2e,"Thanked twice, owe fun",2024-03-12T21:10:34.170013+00:00,2024-03-12T21:13:10.929974+00:00,,8,4,4,0,False,,global_enabled,conversations-005(1).json
+ea26cfdf-0eba-48fe-b247-dfcce1cf0b91,Superpower Preferences Discussion,2024-03-03T16:08:06.380507+00:00,2024-03-03T16:11:39.997509+00:00,,10,5,5,0,False,,global_enabled,conversations-005(1).json
+ea83bbb6-b819-45dd-9c5b-e80a401f9e23,Empathetic Dilemma: Next Steps,2023-06-24T19:51:59.349977+00:00,2023-06-25T00:16:51+00:00,,18,9,9,0,False,,global_enabled,conversations-005(1).json
+eacc6766-0ad1-44ed-a8b9-1f50536d8527,Texting Clarity Strategies,2023-09-08T16:51:03.518010+00:00,2023-09-08T16:51:18+00:00,,2,1,1,0,False,,global_enabled,conversations-005(1).json
+ec2d0253-e86d-4b96-bc00-abf6ff8591fb,Cypress POM for Components,2023-11-02T13:13:42.311428+00:00,2023-11-02T13:13:50.311348+00:00,,2,1,1,0,False,,global_enabled,conversations-005(1).json
+ec56d8be-85c5-4e6b-9315-900de52a9787,Position Interview Assistance,2024-05-30T10:23:23.645673+00:00,2024-05-30T19:13:11.239891+00:00,gpt-4o,10,5,5,2,False,,global_enabled,conversations-005(1).json
+ee1ed96b-6d7e-45bf-bc14-e5c31776a2bf,Dream Travel Destinations,2024-05-17T22:22:56.209591+00:00,2024-05-17T22:23:41.873016+00:00,gpt-4,4,2,2,0,False,,global_enabled,conversations-005(1).json
+ef32af40-948e-4d76-88b5-07db4068c454,Roman Hypocaust: Fun Fact,2024-05-05T00:06:24.056721+00:00,2024-05-05T00:06:27.600357+00:00,gpt-4,2,1,1,0,False,,global_enabled,conversations-005(1).json
+ef605abc-6b3a-48ca-8a24-708c30a6e586,Style Training: Conversational AI,2024-05-31T18:47:12.958816+00:00,2024-05-31T18:50:54.143309+00:00,gpt-4o,4,2,2,0,False,,global_enabled,conversations-005(1).json
+f0e246ac-b5c4-4e49-a3bc-ae9ce9ad1939,Reconnect with sick girl.,2024-03-03T16:12:44.898997+00:00,2024-03-03T16:13:04.199595+00:00,,2,1,1,0,False,,global_enabled,conversations-006(1).json
+f121a59e-8f40-4f51-8cd4-2e0439ed5db7,Create WinUI 3 DatePicker,2024-03-19T12:09:18.871059+00:00,2024-03-21T21:54:06.944100+00:00,gpt-4-gizmo,6,3,3,1,False,,global_enabled,conversations-006(1).json
+f146bb86-2793-4d33-be65-64bd15577e3d,Python Script on iPhone,2024-05-27T02:38:40.414471+00:00,2024-05-27T02:43:20.631557+00:00,gpt-4o,8,4,4,0,False,,global_enabled,conversations-006(1).json
+f2251fb9-945c-4600-b2a6-1e2ca0c07e7d,New chat,2023-07-31T23:19:51.919725+00:00,2023-07-31T23:22:48+00:00,,6,3,3,0,False,,global_enabled,conversations-006(1).json
+f2898867-a185-4f32-b960-38f79e6f0489,Office Halloween Candy Hunt,2023-10-09T17:36:59.394369+00:00,2023-10-10T15:39:48.096609+00:00,,6,3,3,0,False,,global_enabled,conversations-006(1).json
+f318212e-4796-4083-b171-d266055b6f7c,Whimsical Jokes - Light-hearted Banter,2023-12-17T00:08:13.927452+00:00,2023-12-17T00:14:46.245980+00:00,,8,4,4,0,False,,global_enabled,conversations-006(1).json
+f32b2d81-00d5-41c0-89ef-7b6c32dfa961,Strawberries and Opportunity Views,2023-09-10T22:41:42.836726+00:00,2023-09-10T22:43:02+00:00,,4,2,2,0,False,,global_enabled,conversations-006(1).json
+f4e54024-e770-4522-b0dd-53257b4cfff8,NJ Playful Battle,2023-06-15T18:30:26.137499+00:00,2023-06-27T11:38:23+00:00,,16,8,8,0,False,,global_enabled,conversations-006(1).json
+f52712cd-0b94-487b-92d3-6579e64c9f9f,Salary Offer Start Date,2024-07-22T12:00:28.911158+00:00,2024-07-22T12:03:35.777511+00:00,auto,6,3,3,0,False,,global_enabled,conversations-006(1).json
+f54f2a6e-e837-4b1b-a6ea-976657ee59c8,Funny Text About Bridgerton,2024-06-14T10:32:28.953769+00:00,2024-06-14T10:32:36.128387+00:00,gpt-4o,2,1,1,0,False,,global_enabled,conversations-006(1).json
+f6f8d5d1-36c7-46ea-9049-5c8802dc3a48,Boston Marathon Route Map,2023-12-17T19:24:36.391633+00:00,2024-01-18T02:26:17.786503+00:00,,9,4,5,0,False,,global_enabled,conversations-006(1).json
+f7502e43-48f6-4107-9b3a-3725e2114a4e,Sick Leave Humor,2024-07-21T18:48:32.006244+00:00,2024-07-22T23:27:43.985833+00:00,auto,10,5,5,0,False,,global_enabled,conversations-006(1).json
+f7cc5ced-84c6-4c8a-b4a8-d0d21ad9f930,Quirky Superpowers Chat,2024-03-17T13:01:58.823579+00:00,2024-03-17T13:03:21.591083+00:00,gpt-4,4,2,2,0,False,,global_enabled,conversations-006(1).json
+f7f221ce-3d9e-4e5a-a425-1e9c39050470,Financial Advisor Questions,2024-07-01T12:35:40.578241+00:00,2024-07-01T12:36:07.599978+00:00,gpt-4o,2,1,1,0,False,,global_enabled,conversations-006(1).json
+f80ce050-b076-4c11-8366-005cddf728b3,Logo on Wall Request,2023-11-01T21:07:41.392850+00:00,2023-11-01T21:08:16.154651+00:00,,2,1,1,2,False,,global_enabled,conversations-006(1).json
+f87cc50c-ceef-4504-bea6-9492c9398609,Farewell to Summer Interns,2023-08-17T14:33:30.110561+00:00,2023-08-17T14:34:26+00:00,,4,2,2,0,False,,global_enabled,conversations-006(1).json
+f929edba-da28-41b5-a4dd-f96824ad229b,Expertise Dreams: Unveiled Passions,2024-03-05T12:58:10.114321+00:00,2024-03-05T13:08:32.558914+00:00,,8,4,4,0,False,,global_enabled,conversations-006(1).json
+f989713c-1768-46b9-9dcc-fe8d27d9df7e,Gen 1 Psychic Pokemon,2024-01-23T13:24:47.412250+00:00,2024-01-23T22:47:10.121350+00:00,,8,4,4,0,False,,global_enabled,conversations-006(1).json
+f9f9b1fb-61f5-41c1-894b-5f916d9e1a05,Ramp up JavaScript & Cypress,2023-09-09T16:17:45.956049+00:00,2023-09-09T16:18:22+00:00,,2,1,1,0,False,,global_enabled,conversations-006(1).json
+fa058b14-a2b5-4415-97bd-67040f7f7564,Joke: Compass vs. Map,2023-10-27T16:13:53.217010+00:00,2023-10-27T16:14:37.744571+00:00,,4,2,2,0,False,,global_enabled,conversations-006(1).json
+fa98b961-e3c7-4583-9615-d4bed6236055,Strawberry Fields Game Intrigue,2023-09-09T16:22:30.652664+00:00,2023-09-09T16:22:34+00:00,,2,1,1,0,False,,global_enabled,conversations-006(1).json
+fb354aa7-bce8-472d-a62a-9194ae70574c,Apologizing and seeking understanding,2024-05-21T21:57:53.160851+00:00,2024-05-21T22:05:15.445669+00:00,gpt-4,6,3,3,0,False,,global_enabled,conversations-006(1).json
+fdecb201-763b-46cc-b969-bb6fe5d5e421,Informing Instructor About Autism,2023-11-11T14:29:57.883388+00:00,2023-11-11T14:30:42.080318+00:00,,2,1,1,0,False,,global_enabled,conversations-006(1).json
+fe81572e-6224-4fe4-bb79-399d3e0e0397,Cereal or soup?,2024-05-05T12:19:30.301096+00:00,2024-05-05T12:19:35.612548+00:00,gpt-4,2,1,1,0,False,,global_enabled,conversations-006(1).json

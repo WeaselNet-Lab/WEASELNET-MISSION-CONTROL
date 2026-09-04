@@ -1,0 +1,36 @@
+{
+  "package": "WeaselNet Knowledge Foundation",
+  "version": "0.2",
+  "generated_at_utc": "2026-07-14T22:09:38.012204+00:00",
+  "scope": "Inventory and indexing only; raw asset payloads are not included in this package.",
+  "counts": {
+    "manifest_entries": 668,
+    "manifest_asset_paths": 653,
+    "uploaded_asset_instances": 694,
+    "manifest_asset_paths_present": 653,
+    "manifest_asset_paths_not_present": 0,
+    "distinct_asset_content_hashes": 617,
+    "content_duplicate_groups": 69,
+    "conversation_chunks": 7,
+    "conversations": 624,
+    "messages": 13470,
+    "conversation_asset_reference_rows": 1054
+  },
+  "mime_type_counts_by_uploaded_instance": {
+    "application/octet-stream": 1,
+    "application/pdf": 3,
+    "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet": 1,
+    "application/vnd.openxmlformats-officedocument.wordprocessingml.document": 4,
+    "audio/x-wav": 20,
+    "image/jpeg": 394,
+    "image/png": 259,
+    "text/csv": 6,
+    "text/plain": 6
+  },
+  "notes": [
+    "All asset paths listed in the export manifest are now represented.",
+    "Uploaded instance count includes browser-created duplicate filenames such as '(1)' and '(2)'.",
+    "Distinct content hashes are not the same as useful asset count; separate export paths can intentionally contain identical bytes.",
+    "user.json is indexed as restricted account data and is not copied into this package."
+  ]
+}

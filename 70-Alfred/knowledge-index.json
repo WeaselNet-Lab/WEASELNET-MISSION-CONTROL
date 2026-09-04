@@ -1,0 +1,47 @@
+{
+  "knowledge_base": "WeaselNet-Knowledge",
+  "foundation_version": "0.2",
+  "generated_at_utc": "2026-07-14T22:09:38.012204+00:00",
+  "folder_order": [
+    "00-Inbox",
+    "10-Missions",
+    "20-Playbooks",
+    "30-Systems",
+    "40-Experiments",
+    "50-Decisions",
+    "60-Data",
+    "70-Alfred",
+    "90-Archive"
+  ],
+  "source_priority": [
+    "current system configuration",
+    "accepted decision record",
+    "completed mission",
+    "experiment summary",
+    "raw experiment data",
+    "curated conversation summary",
+    "raw conversation"
+  ],
+  "foundation_artifacts": {
+    "asset_inventory": "60-Data/Inventory/asset-inventory.csv",
+    "manifest_reconciliation": "60-Data/Inventory/manifest-reconciliation.csv",
+    "duplicate_report": "60-Data/Inventory/duplicate-report.csv",
+    "conversation_inventory": "60-Data/Inventory/conversation-inventory.csv",
+    "conversation_asset_map": "60-Data/Inventory/conversation-asset-map.csv",
+    "source_registry": "70-Alfred/source-registry.jsonl"
+  },
+  "current_counts": {
+    "manifest_entries": 668,
+    "manifest_asset_paths": 653,
+    "uploaded_asset_instances": 694,
+    "manifest_asset_paths_present": 653,
+    "manifest_asset_paths_not_present": 0,
+    "distinct_asset_content_hashes": 617,
+    "content_duplicate_groups": 69,
+    "conversation_chunks": 7,
+    "conversations": 624,
+    "messages": 13470,
+    "conversation_asset_reference_rows": 1054
+  },
+  "next_phase": "Curate VR troubleshooting, system profiles, experiments, decisions, and mission entries."
+}
