@@ -4,7 +4,6 @@ import {
   createContext,
   useCallback,
   useContext,
-  useMemo,
   useSyncExternalStore,
   type ReactNode,
 } from "react";
@@ -12,7 +11,6 @@ import {
 import type { OperatorState, PublishGate } from "@/lib/types";
 
 const STORAGE_KEY = "weaselnet-operator-v1";
-const EVENT = "weaselnet-operator";
 
 const emptyState: OperatorState = {
   notes: {},
@@ -20,6 +18,11 @@ const emptyState: OperatorState = {
   pinned: [],
   checkpoint: null,
 };
+
+let cached: OperatorState = emptyState;
+let version = 0;
+let loaded = false;
+const listeners = new Set<() => void>();
 
 function parseState(raw: string | null): OperatorState {
   if (!raw) return emptyState;
@@ -36,31 +39,46 @@ function parseState(raw: string | null): OperatorState {
   }
 }
 
+function emit() {
+  version += 1;
+  listeners.forEach((listener) => listener());
+}
+
+function loadFromStorage() {
+  if (loaded || typeof window === "undefined") return;
+  loaded = true;
+  cached = parseState(window.localStorage.getItem(STORAGE_KEY));
+  version += 1;
+}
+
 function subscribe(onStoreChange: () => void) {
-  const handler = () => onStoreChange();
-  window.addEventListener("storage", handler);
-  window.addEventListener(EVENT, handler);
+  loadFromStorage();
+  listeners.add(onStoreChange);
+  const onStorage = (event: StorageEvent) => {
+    if (event.key !== STORAGE_KEY) return;
+    cached = parseState(event.newValue);
+    emit();
+  };
+  window.addEventListener("storage", onStorage);
   return () => {
-    window.removeEventListener("storage", handler);
-    window.removeEventListener(EVENT, handler);
+    listeners.delete(onStoreChange);
+    window.removeEventListener("storage", onStorage);
   };
 }
 
-function getSnapshot(): string {
-  return window.localStorage.getItem(STORAGE_KEY) ?? "";
+function getSnapshot() {
+  loadFromStorage();
+  return version;
 }
 
-function getServerSnapshot(): string {
-  return "";
-}
-
-function currentState(): OperatorState {
-  return parseState(window.localStorage.getItem(STORAGE_KEY));
+function getServerSnapshot() {
+  return 0;
 }
 
 function writeState(next: OperatorState) {
+  cached = next;
   window.localStorage.setItem(STORAGE_KEY, JSON.stringify(next));
-  window.dispatchEvent(new Event(EVENT));
+  emit();
 }
 
 type OperatorContextValue = OperatorState & {
@@ -74,25 +92,23 @@ type OperatorContextValue = OperatorState & {
 const OperatorContext = createContext<OperatorContextValue | null>(null);
 
 export function OperatorProvider({ children }: { children: ReactNode }) {
-  const raw = useSyncExternalStore(subscribe, getSnapshot, getServerSnapshot);
-  const state = parseState(raw || null);
+  const snapshot = useSyncExternalStore(subscribe, getSnapshot, getServerSnapshot);
+  const state = snapshot === 0 ? emptyState : cached;
 
   const setNote = useCallback((slug: string, note: string) => {
-    const current = currentState();
     writeState({
-      ...current,
-      notes: { ...current.notes, [slug]: note },
+      ...cached,
+      notes: { ...cached.notes, [slug]: note },
     });
   }, []);
 
   const setPublishItem = useCallback(
     (slug: string, key: keyof PublishGate, value: boolean) => {
-      const current = currentState();
       writeState({
-        ...current,
+        ...cached,
         publish: {
-          ...current.publish,
-          [slug]: { ...current.publish[slug], [key]: value },
+          ...cached.publish,
+          [slug]: { ...cached.publish[slug], [key]: value },
         },
       });
     },
@@ -100,38 +116,33 @@ export function OperatorProvider({ children }: { children: ReactNode }) {
   );
 
   const togglePin = useCallback((slug: string) => {
-    const current = currentState();
     writeState({
-      ...current,
-      pinned: current.pinned.includes(slug)
-        ? current.pinned.filter((item) => item !== slug)
-        : [...current.pinned, slug],
+      ...cached,
+      pinned: cached.pinned.includes(slug)
+        ? cached.pinned.filter((item) => item !== slug)
+        : [...cached.pinned, slug],
     });
   }, []);
 
   const plantCheckpoint = useCallback((slug: string) => {
-    const current = currentState();
     writeState({
-      ...current,
+      ...cached,
       checkpoint: { slug, at: new Date().toISOString() },
     });
   }, []);
 
   const clearCheckpoint = useCallback(() => {
-    writeState({ ...currentState(), checkpoint: null });
+    writeState({ ...cached, checkpoint: null });
   }, []);
 
-  const value = useMemo(
-    () => ({
-      ...state,
-      setNote,
-      setPublishItem,
-      togglePin,
-      plantCheckpoint,
-      clearCheckpoint,
-    }),
-    [state, setNote, setPublishItem, togglePin, plantCheckpoint, clearCheckpoint],
-  );
+  const value: OperatorContextValue = {
+    ...state,
+    setNote,
+    setPublishItem,
+    togglePin,
+    plantCheckpoint,
+    clearCheckpoint,
+  };
 
   return <OperatorContext.Provider value={value}>{children}</OperatorContext.Provider>;
 }

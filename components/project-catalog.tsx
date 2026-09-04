@@ -47,7 +47,7 @@ export function ProjectCatalog() {
       <div className="flex flex-col gap-3">
         <Input
           value={query}
-          onChange={(event) => setQuery(event.target.value)}
+          onValueChange={setQuery}
           placeholder="Search callsigns, stacks, daughters, dragons…"
           aria-label="Search projects"
           className="h-10 bg-card"
@@ -98,6 +98,20 @@ export function ProjectCatalog() {
             Try a callsign, or admit the project is still in your head and file a concept
             dossier later.
           </p>
+          {query || department !== "all" || status !== "all" || onlyPinned ? (
+            <button
+              type="button"
+              className="mt-4 font-mono text-[11px] tracking-[0.16em] text-primary uppercase hover:underline"
+              onClick={() => {
+                setQuery("");
+                setDepartment("all");
+                setStatus("all");
+                setOnlyPinned(false);
+              }}
+            >
+              Clear search and filters
+            </button>
+          ) : null}
         </div>
       ) : (
         <div className="grid gap-4 md:grid-cols-2">

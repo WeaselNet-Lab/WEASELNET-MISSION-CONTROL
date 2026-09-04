@@ -3,6 +3,8 @@ import { notFound } from "next/navigation";
 import { ProjectDossier } from "@/components/project-dossier";
 import { getProject, projectSlugs } from "@/lib/projects";
 
+export const dynamicParams = false;
+
 export function generateStaticParams() {
   return projectSlugs().map((slug) => ({ slug }));
 }
@@ -14,9 +16,7 @@ export async function generateMetadata({
 }) {
   const { slug } = await params;
   const project = getProject(slug);
-  if (!project) {
-    return { title: "Unknown frequency" };
-  }
+  if (!project) notFound();
   return {
     title: `${project.callsign} · ${project.name}`,
     description: project.summary,

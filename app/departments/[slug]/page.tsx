@@ -5,6 +5,8 @@ import { ProjectCard } from "@/components/project-card";
 import { departments, getDepartment } from "@/lib/departments";
 import { projectsByDepartment } from "@/lib/projects";
 
+export const dynamicParams = false;
+
 export function generateStaticParams() {
   return departments.map((department) => ({ slug: department.slug }));
 }
@@ -16,7 +18,7 @@ export async function generateMetadata({
 }) {
   const { slug } = await params;
   const department = getDepartment(slug);
-  if (!department) return { title: "Unknown lab" };
+  if (!department) notFound();
   return {
     title: `${department.callsign} · ${department.name}`,
     description: department.summary,
