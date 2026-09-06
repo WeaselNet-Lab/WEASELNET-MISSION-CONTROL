@@ -1,0 +1,19 @@
+---
+globs: "app/**/*.{ts,tsx},components/**/*.{ts,tsx},lib/**/*.ts"
+alwaysApply: false
+---
+
+# Coding and file conventions
+
+- Use TypeScript and preserve strict typing. Avoid `any`; validate unknown imported data before treating it as operator state.
+- Use named exports for reusable components and utilities. Next.js route files may use required default exports.
+- Keep route files focused on routing and composition. Move reusable interactive behavior into `components/`.
+- Reuse existing UI primitives from `components/ui/` when they match the control.
+- Use semantic HTML, keyboard-accessible controls, visible focus states, and meaningful accessible labels.
+- Preserve the existing Tailwind token system in `app/globals.css`; avoid one-off colors when a semantic token exists.
+- Keep primary body text readable. Reserve very small monospaced text for secondary metadata.
+- Prefer existing domain terms: Mission File, The Drop, Field Log, Evidence Locker, Hardware Bay, Tool Bay, Command Deck, checkpoint, and EXFIL CACHE.
+- Do not reintroduce "dossier" in user-facing copy or component names.
+- Keep user-facing copy concise, specific, and operational. Humor may support the interface but must never replace instructions, status, or error information.
+
+Before adding a dependency, verify that the current stack cannot reasonably provide the needed behavior. Preserve `package-lock.json` whenever dependencies change.

@@ -1,0 +1,20 @@
+---
+alwaysApply: true
+---
+
+# WeaselNet Mission Control purpose
+
+Mission Control is a local-first operational console for Josh's projects, hardware, evidence, and restart context. It is not a generic portfolio, task manager, or fictional AI assistant.
+
+Protect these product goals:
+
+- Reduce reconstruction work after interruptions.
+- Make capture faster than organization: capture first, file later through The Drop.
+- Keep one clear next action and a concrete success check visible for each project.
+- Distinguish confirmed evidence from recollection or inference.
+- Preserve the user's playful WeaselNet voice without letting flavor text obscure controls.
+- Keep Alfred responsible for future classification and paperwork while the operator retains approval authority.
+
+When a request is ambiguous, inspect `README.md`, `lib/projects.ts`, `lib/departments.ts`, and the relevant existing component before proposing new product scope.
+
+Do not turn Mission Control into a conventional corporate dashboard. Prefer a small operational improvement that closes a real loop: capture, classify, resume, verify, or publish.

@@ -12,7 +12,7 @@ export const projects: Project[] = [
     brief:
       "V1 on the home side was deliberately small: Open WebUI, a Whisper transcription folder, a Markdown project inbox, Tailscale, and iPhone voice-memo upload. Processing started manual on purpose. This board is the other half of that idea — a place where projects stop becoming folklore. The publish bar is README + 5 screenshots + a 60-second demo. If a project cannot clear that, it is not finished. It is a rumor with a folder.",
     nextAction:
-      "Keep this board as the living catalog. Add a dossier note the next time a lab actually moves, not the next time it sounds cool.",
+      "Keep this board as the living catalog. Add a Mission File note the next time a lab actually moves, not the next time it sounds cool.",
     successCriteria:
       "You can answer 'what is live, what is parked, and what still needs a demo' without opening twelve tabs.",
     stack: ["Next.js", "TypeScript", "localStorage", "Open WebUI", "Whisper", "Tailscale"],
@@ -239,7 +239,7 @@ export const projects: Project[] = [
     brief:
       "There was a personal-projects tree with README, projects/, tools/, and docs/, plus a next step around AGENTS.md and tighter folders. That is the right housekeeping instinct. This console is the version that also tracks next actions, publish gates, and the last checkpoint — because folder hygiene alone never stopped a project from going missing after a meeting you forgot to record.",
     nextAction:
-      "Treat this board as the catalog. Port any still-true notes from the old tree into dossiers, then leave the generator parked.",
+      "Treat this board as the catalog. Port any still-true notes from the old tree into Mission Files, then leave the generator parked.",
     successCriteria:
       "No second website-generator. One catalog. Notes that survive a forgotten upload.",
     stack: ["Markdown", "docs", "generators"],
@@ -256,7 +256,7 @@ export const projects: Project[] = [
     summary:
       "The pile, named. Xeons, Ada cards, Quest 3, and the rule about which machine is allowed to get interesting.",
     brief:
-      "Last planning inventory included 2× RTX 4000 Ada, 2× RTX A4000, 1× RTX A4500, 3× RTX A2000, 2× RTX 2080, three Xeon 10980XE workstations, and two Xeon 9700E systems. Architecture decision still stands: dedicated AI workstation, DCS/VR machine kept isolated. The bay page is the living list. This dossier is the why.",
+      "Last planning inventory included 2× RTX 4000 Ada, 2× RTX A4000, 1× RTX A4500, 3× RTX A2000, 2× RTX 2080, three Xeon 10980XE workstations, and two Xeon 9700E systems. Architecture decision still stands: dedicated AI workstation, DCS/VR machine kept isolated. The bay page is the living list. This Mission File is the why.",
     nextAction:
       "Walk the room once and mark which cards actually sit in which chassis. Guessing is not inventory.",
     successCriteria:

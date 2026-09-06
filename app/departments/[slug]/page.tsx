@@ -59,7 +59,7 @@ export default async function DepartmentPage({
         <div className="rounded-xl bg-card px-4 py-10 text-center ring-1 ring-foreground/10">
           <p className="font-heading text-lg">This lab is staffed by future work.</p>
           <p className="mt-2 text-sm text-muted-foreground">
-            A department with no dossiers is a costume. File something or fold it.
+            A department with no mission files is a costume. File something or fold it.
           </p>
         </div>
       ) : (

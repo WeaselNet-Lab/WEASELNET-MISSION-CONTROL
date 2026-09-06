@@ -113,3 +113,27 @@
     oklch(0.1 0.02 252 / 0.72) 100%
   );
 }
+
+@layer components {
+  .eyebrow {
+    @apply font-mono text-xs tracking-[0.18em] text-primary uppercase;
+  }
+  .mission-panel {
+    @apply overflow-hidden rounded-xl bg-card ring-1 ring-foreground/10;
+  }
+  .mission-panel-header {
+    @apply flex items-center justify-between border-b border-border/70 px-4 py-3;
+  }
+  .panel-empty {
+    @apply rounded-xl bg-card/80 px-5 py-12 text-center ring-1 ring-foreground/10;
+  }
+  .tool-tile {
+    @apply flex min-h-52 flex-col items-start justify-end gap-3 rounded-xl bg-card/85 p-6 text-left ring-1 ring-foreground/10 transition hover:bg-card hover:ring-primary/40;
+  }
+  .field-label {
+    @apply space-y-1 text-xs tracking-wide text-muted-foreground uppercase;
+  }
+  .field-select {
+    @apply h-9 w-full rounded-md border bg-background px-3 text-sm text-foreground normal-case;
+  }
+}

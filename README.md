@@ -7,7 +7,14 @@ The house publish rule is still the small one: **README + 5 screenshots + a 60-s
 ## What this slice does
 
 - **Ops board** — attention queue, department grid, system constellations, and a checkpoint flag for the "I forgot what I was handing off" problem
-- **Project dossiers** — real briefs, next actions, success criteria, linked systems
+- **Mission Files** — real briefs, next actions, success criteria, linked systems
+- **Quick Capture + The Drop** — catch ideas, tests, links, files, and decisions before sorting
+- **Field logs + Evidence Lockers** — append-only movement and direct proof links
+- **Useful checkpoints** — current work, exact next move, blocker, and resume reference
+- **Hardware Bay** — assignments, location, condition, confidence, and last-tested state
+- **Command Deck** — Ctrl+K search across projects, labs, hardware, notes, captures, and evidence
+- **Tool Bay** — the integration runway for GitHub, Alfred, Whisper, Tailscale, telemetry, and capture transport
+- **EXFIL CACHE** — portable JSON backup and restore for operator state
 - **Publish queue** — the three-item gate, persisted in the browser
 - **Hardware bay** — last-known inventory plus the isolation policy (Alfred loud, SIM clean)
 - **Operator notes / pins** — local only, on this browser, until Alfred gets the job

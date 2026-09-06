@@ -10,7 +10,7 @@ export function SignalLost() {
         That frequency is empty.
       </h1>
       <p className="text-base leading-7 text-muted-foreground">
-        Either the dossier never existed, or it went folklore before it made the board.
+        Either the mission file never existed, or it went folklore before it made the board.
         Mission Control is still here. You can be too.
       </p>
       <Link

@@ -16,14 +16,20 @@ import {
   SheetTrigger,
 } from "@/components/ui/sheet";
 import { TooltipProvider } from "@/components/ui/tooltip";
+import { BrandMark } from "@/components/brand-mark";
+import { CommandDeck } from "@/components/command-deck";
+import { QuickCapture } from "@/components/quick-capture";
 import { cn } from "@/lib/utils";
 
 const nav = [
   { href: "/", label: "Ops" },
   { href: "/projects", label: "Projects" },
+  { href: "/drop", label: "Drop" },
   { href: "/departments", label: "Labs" },
   { href: "/publish", label: "Publish" },
   { href: "/hardware", label: "Bay" },
+  { href: "/tools", label: "Tools" },
+  { href: "/exfil", label: "Exfil" },
 ];
 
 function isActive(pathname: string, href: string) {
@@ -100,9 +106,7 @@ function ShellInner({ children }: { children: React.ReactNode }) {
       <header className="sticky top-0 z-40 border-b border-primary/20 bg-background/85 backdrop-blur-md">
         <div className="mx-auto flex w-full max-w-6xl items-center gap-3 px-4 py-3 sm:px-6">
           <Link href="/" className="flex min-w-0 items-center gap-3">
-            <span className="flex size-9 items-center justify-center rounded-md border border-primary/40 bg-primary/10 font-heading text-lg font-semibold text-primary">
-              W
-            </span>
+            <BrandMark className="size-10" />
             <span className="min-w-0">
               <span className="block font-heading text-base leading-none tracking-[0.18em] text-primary uppercase">
                 WeaselNet
@@ -116,6 +120,8 @@ function ShellInner({ children }: { children: React.ReactNode }) {
             <NavLinks />
           </div>
           <div className="ml-auto flex items-center gap-3 md:ml-4">
+            <CommandDeck />
+            <QuickCapture compact />
             <div className="hidden items-center gap-2 sm:flex">
               <LiveDot />
               <span className="font-mono text-[10px] tracking-[0.18em] text-signal uppercase">

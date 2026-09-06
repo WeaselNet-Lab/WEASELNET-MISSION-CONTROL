@@ -66,6 +66,10 @@ export function OpsBoard() {
                     minute: "2-digit",
                   }).format(new Date(operator.checkpoint.at))}
                 </p>
+                {operator.checkpoint.doing ? <p className="text-sm"><span className="text-muted-foreground">In progress:</span> {operator.checkpoint.doing}</p> : null}
+                {operator.checkpoint.next ? <p className="text-sm"><span className="text-muted-foreground">Resume with:</span> {operator.checkpoint.next}</p> : null}
+                {operator.checkpoint.blocker ? <p className="text-sm text-primary">Blocked by: {operator.checkpoint.blocker}</p> : null}
+                {operator.checkpoint.resumeLink ? <p className="break-all font-mono text-xs text-primary">{operator.checkpoint.resumeLink}</p> : null}
                 <div className="flex gap-2">
                   <Button render={<Link href={`/projects/${checkpoint.slug}`} />}>
                     Resume
@@ -78,7 +82,7 @@ export function OpsBoard() {
             ) : (
               <>
                 <p className="text-sm text-muted-foreground">
-                  No flag in the ground. Open a dossier and plant one before the next
+                  No flag in the ground. Open a mission file and plant one before the next
                   meeting evaporates.
                 </p>
                 <Button variant="outline" render={<Link href="/projects" />}>
@@ -185,7 +189,7 @@ export function OpsBoard() {
                   {department.summary}
                 </p>
                 <p className="mt-3 font-mono text-[10px] tracking-[0.16em] text-muted-foreground uppercase">
-                  {count} dossier{count === 1 ? "" : "s"}
+                  {count} mission file{count === 1 ? "" : "s"}
                 </p>
               </Link>
             );

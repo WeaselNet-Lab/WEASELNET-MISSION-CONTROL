@@ -1,6 +1,6 @@
 import { notFound } from "next/navigation";
 
-import { ProjectDossier } from "@/components/project-dossier";
+import { MissionFile } from "@/components/mission-file";
 import { getProject, projectSlugs } from "@/lib/projects";
 
 export const dynamicParams = false;
@@ -31,5 +31,5 @@ export default async function ProjectPage({
   const { slug } = await params;
   const project = getProject(slug);
   if (!project) notFound();
-  return <ProjectDossier project={project} />;
+  return <MissionFile project={project} />;
 }

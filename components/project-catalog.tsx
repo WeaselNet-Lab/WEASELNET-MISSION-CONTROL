@@ -95,7 +95,7 @@ export function ProjectCatalog() {
           <p className="font-heading text-lg">Nothing on that frequency.</p>
           <p className="mt-2 text-sm text-muted-foreground">
             Try a callsign, or admit the project is still in your head and file a concept
-            dossier later.
+            Mission File later.
           </p>
           {query || department !== "all" || status !== "all" || onlyPinned ? (
             <button
