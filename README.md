@@ -1,3 +1,4 @@
+
 # WeaselNet Mission Control
 
 The ops board for Josh's labs. Not a portfolio. Not JARVIS. A map so Anky Island, Alfred, the Fury Twins, and the clean sim rig stop living as disconnected side quests.
@@ -57,3 +58,7 @@ Catalog data lives in `lib/projects.ts`, `lib/departments.ts`, and `lib/hardware
 1. Walk the hardware room and replace guesses with chassis assignments
 2. Plant a checkpoint the next time a lab actually moves
 3. Clear Anky Island or Alfred through the publish gate first — pick one, not both
+
+# WEASELNET-MISSION-CONTROL
+Mission Control for Alfred, Bats, VR systems, simulation research, automation tools, and experimental engineering
+nano README.md
