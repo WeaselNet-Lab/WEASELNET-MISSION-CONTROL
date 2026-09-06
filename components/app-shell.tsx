@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { useState, useSyncExternalStore } from "react";
+import { useState, useSyncExternalStore, type ReactNode } from "react";
 import { Menu, Radio } from "lucide-react";
 
 import { OperatorProvider } from "@/components/operator-provider";
@@ -19,21 +19,23 @@ import { TooltipProvider } from "@/components/ui/tooltip";
 import { BrandMark } from "@/components/brand-mark";
 import { CommandDeck } from "@/components/command-deck";
 import { QuickCapture } from "@/components/quick-capture";
+import { WorkspacePreviewBanner } from "@/components/workspace-preview-banner";
+import {
+  getWorkspaceConfig,
+  isWorkspacePreviewPath,
+  previewWorkspaceId,
+  resolveShellNav,
+  shouldMountOperatorProvider,
+  shouldShowOperatorControls,
+} from "@/lib/workspaces";
 import { cn } from "@/lib/utils";
-
-const nav = [
-  { href: "/", label: "Ops" },
-  { href: "/projects", label: "Projects" },
-  { href: "/drop", label: "Drop" },
-  { href: "/departments", label: "Labs" },
-  { href: "/publish", label: "Publish" },
-  { href: "/hardware", label: "Bay" },
-  { href: "/tools", label: "Tools" },
-  { href: "/exfil", label: "Exfil" },
-];
 
 function isActive(pathname: string, href: string) {
   if (href === "/") return pathname === "/";
+  if (href.includes("#")) {
+    const [path] = href.split("#");
+    return pathname === path || pathname.startsWith(`${path}/`);
+  }
   return pathname === href || pathname.startsWith(`${href}/`);
 }
 
@@ -73,11 +75,17 @@ function Clock() {
   return <span className="font-mono text-xs tracking-wider text-muted-foreground">{label}</span>;
 }
 
-function NavLinks({ onNavigate }: { onNavigate?: () => void }) {
+function NavLinks({
+  items,
+  onNavigate,
+}: {
+  items: { href: string; label: string }[];
+  onNavigate?: () => void;
+}) {
   const pathname = usePathname();
   return (
     <nav className="flex flex-col gap-1 md:flex-row md:items-center md:gap-1">
-      {nav.map((item) => (
+      {items.map((item) => (
         <Link
           key={item.href}
           href={item.href}
@@ -96,13 +104,22 @@ function NavLinks({ onNavigate }: { onNavigate?: () => void }) {
   );
 }
 
-function ShellInner({ children }: { children: React.ReactNode }) {
+function ShellInner({ children }: { children: ReactNode }) {
   const [open, setOpen] = useState(false);
+  const pathname = usePathname();
+  const isPreview = isWorkspacePreviewPath(pathname);
+  const previewId = previewWorkspaceId(pathname);
+  const previewConfig = previewId ? getWorkspaceConfig(previewId) : undefined;
+  const navItems = resolveShellNav(pathname);
+  const showOperatorTools = shouldShowOperatorControls(pathname);
 
   return (
     <div className="relative flex min-h-full flex-1 flex-col">
       <div className="pointer-events-none absolute inset-0 bg-grid opacity-60" />
       <div className="pointer-events-none absolute inset-0 bg-vignette" />
+      {isPreview ? (
+        <WorkspacePreviewBanner workspaceLabel={previewConfig?.displayName} />
+      ) : null}
       <header className="sticky top-0 z-40 border-b border-primary/20 bg-background/85 backdrop-blur-md">
         <div className="mx-auto flex w-full max-w-6xl items-center gap-3 px-4 py-3 sm:px-6">
           <Link href="/" className="flex min-w-0 items-center gap-3">
@@ -112,20 +129,34 @@ function ShellInner({ children }: { children: React.ReactNode }) {
                 WeaselNet
               </span>
               <span className="mt-1 block font-mono text-[10px] tracking-[0.22em] text-muted-foreground uppercase">
-                Mission Control
+                {previewConfig?.role === "student"
+                  ? previewConfig.displayName
+                  : "Mission Control"}
               </span>
             </span>
           </Link>
           <div className="ml-auto hidden md:block">
-            <NavLinks />
+            <NavLinks items={navItems} />
           </div>
           <div className="ml-auto flex items-center gap-3 md:ml-4">
-            <CommandDeck />
-            <QuickCapture compact />
+            {showOperatorTools ? (
+              <>
+                <CommandDeck />
+                <QuickCapture compact />
+              </>
+            ) : (
+              <Button
+                size="sm"
+                variant="outline"
+                render={<Link href="/dev/workspaces" />}
+              >
+                Previews
+              </Button>
+            )}
             <div className="hidden items-center gap-2 sm:flex">
               <LiveDot />
               <span className="font-mono text-[10px] tracking-[0.18em] text-signal uppercase">
-                Board live
+                {isPreview ? "Preview" : "Board live"}
               </span>
             </div>
             <Clock />
@@ -149,7 +180,7 @@ function ShellInner({ children }: { children: React.ReactNode }) {
                   </SheetTitle>
                 </SheetHeader>
                 <div className="px-2">
-                  <NavLinks onNavigate={() => setOpen(false)} />
+                  <NavLinks items={navItems} onNavigate={() => setOpen(false)} />
                 </div>
               </SheetContent>
             </Sheet>
@@ -172,12 +203,20 @@ function ShellInner({ children }: { children: React.ReactNode }) {
   );
 }
 
-export function AppShell({ children }: { children: React.ReactNode }) {
+function OperatorBoundary({ children }: { children: ReactNode }) {
+  const pathname = usePathname();
+  if (!shouldMountOperatorProvider(pathname)) {
+    return <>{children}</>;
+  }
+  return <OperatorProvider>{children}</OperatorProvider>;
+}
+
+export function AppShell({ children }: { children: ReactNode }) {
   return (
     <TooltipProvider>
-      <OperatorProvider>
+      <OperatorBoundary>
         <ShellInner>{children}</ShellInner>
-      </OperatorProvider>
+      </OperatorBoundary>
     </TooltipProvider>
   );
 }

@@ -21,6 +21,15 @@ The house publish rule is still the small one: **README + 5 screenshots + a 60-s
 
 No login. No database. On purpose.
 
+## Personal workspace previews (Phase 1)
+
+Development-only fixtures for a future multi-workspace layout live at
+[`/dev/workspaces`](http://127.0.0.1:43147/dev/workspaces). They use fictional
+Student Alpha / Student Bravo configs, share one student dashboard component, and
+are blocked in production. `npm run dev` binds to **127.0.0.1**. Host loopback
+checks are defense-in-depth only — not authentication. A profile picker is
+**not** sign-in. See `docs/architecture/personal-workspaces.md`.
+
 ## Run locally
 
 ```bash
@@ -31,6 +40,8 @@ npm run dev
 Open [http://127.0.0.1:43147](http://127.0.0.1:43147).
 
 ```bash
+npm run lint
+npm test
 npm run build
 npm start
 ```
