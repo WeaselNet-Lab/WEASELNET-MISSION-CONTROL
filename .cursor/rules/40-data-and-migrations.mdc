@@ -1,0 +1,23 @@
+---
+globs: "components/operator-provider.tsx,lib/types.ts,app/exfil/**/*.tsx,components/hardware-bay.tsx"
+alwaysApply: false
+---
+
+# Operator data and migrations
+
+Operator data is valuable user state even while it remains device-local.
+
+- Never clear, rename, or replace the local storage key without an explicit migration.
+- Preserve backward compatibility when adding fields to `OperatorState`.
+- Normalize imported and stored data with safe defaults for every collection and optional object.
+- Do not assume EXFIL files were created by the current version.
+- Validate structure before replacing active state. On failure, preserve the current state and show a recoverable error.
+- New record types require stable IDs and ISO-8601 timestamps.
+- Project-owned records must retain their `projectSlug` relationship.
+- Filing a capture must not discard its original title, body, source, type, or capture time.
+- Static catalog data and operator overrides must remain separate so updates to seeded inventory do not erase operator observations.
+- Export must include notes, publish state, pins, checkpoint, captures, activity, evidence, and hardware overrides.
+
+Before changing persistence behavior, describe the old shape, the new shape, the migration path, and the rollback or recovery path.
+
+Never "simplify" state code by dropping compatibility handling or silently resetting malformed data.
