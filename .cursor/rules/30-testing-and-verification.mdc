@@ -1,0 +1,29 @@
+---
+description: Required verification and evidence practices for changes to Mission Control
+alwaysApply: false
+---
+
+# Testing and verification
+
+Treat "done" as a verified claim.
+
+For every implementation change:
+
+1. Identify the behavior being changed and its most likely regression.
+2. Make the smallest coherent change.
+3. Run `npm run lint`.
+4. Run `npm run build` for changes affecting routes, components, types, state, configuration, or dependencies.
+5. Exercise the changed workflow when interaction behavior is involved.
+6. Report what was verified and any remaining uncertainty.
+
+## Workflow checks
+
+- Quick Capture: an unassigned item appears in The Drop; an assigned item becomes a Field Log entry.
+- The Drop: filing preserves capture content and targets the chosen Mission File.
+- Checkpoints: project, current work, exact next action, blocker, resume reference, and timestamp survive reload.
+- Evidence Locker: entries remain associated with the correct project; invalid or missing links do not crash rendering.
+- Hardware Bay: static inventory remains intact while overrides persist independently.
+- Command Deck: search reaches projects, labs, hardware, notes, captures, activity, and evidence.
+- EXFIL CACHE: export contains the complete operator state; restore accepts current data and safely fills missing fields from older versions.
+
+Do not claim a test passed if it was not executed. Distinguish a code review, build result, and browser interaction check as separate evidence.

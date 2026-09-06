@@ -1,0 +1,32 @@
+---
+description: Architecture boundaries, state ownership, and integration seams for WeaselNet Mission Control
+alwaysApply: false
+---
+
+# Architecture
+
+Use the existing Next.js App Router structure.
+
+- `app/` owns routes and route-level composition.
+- `components/` owns interactive UI and shared presentation.
+- `components/ui/` contains UI primitives; compose them instead of modifying them casually.
+- `lib/projects.ts`, `lib/departments.ts`, and `lib/hardware.ts` contain seeded catalog data.
+- `lib/types.ts` defines the shared domain model.
+- `components/operator-provider.tsx` owns current device-local operator state.
+
+## State boundaries
+
+- Static project facts belong in `lib/` catalog files.
+- User-created captures, field logs, evidence, hardware overrides, pins, publish state, and checkpoints belong in operator state.
+- Do not duplicate authoritative state across components.
+- Derive filtered lists, counts, and merged hardware views at read time.
+- Keep browser-only APIs inside client components.
+
+## Integration boundaries
+
+- Keep GitHub, Alfred, Whisper, Tailscale, telemetry, and recording transport behind explicit adapters or API clients when implemented.
+- Do not call external services directly from presentation components.
+- Do not add credentials, host addresses, tokens, or private family data to source control.
+- Alfred suggestions must enter The Drop as reviewable proposals. Do not auto-file, overwrite, publish, or delete operator records without an explicit approval step.
+
+Prefer extending the existing architecture over introducing a new state framework, database, or service abstraction. Add infrastructure only when the requested workflow requires it.

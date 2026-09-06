@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 96" role="img" aria-label="WeaselNet Mission Control">
+  <rect width="520" height="96" rx="18" fill="#121826"/>
+  <g transform="translate(8 8) scale(.83)"><path d="M18 24v18l12 30 18-35 18 35 12-30V24" fill="none" stroke="#e2b84b" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/><path d="M18 24h15M63 24h15M48 37V18" fill="none" stroke="#68d5b3" stroke-width="4" stroke-linecap="round"/><circle cx="18" cy="24" r="5" fill="#68d5b3"/><circle cx="48" cy="18" r="5" fill="#68d5b3"/><circle cx="78" cy="24" r="5" fill="#68d5b3"/></g>
+  <text x="104" y="48" font-family="Rajdhani, Arial, sans-serif" font-size="42" font-weight="700" letter-spacing="5" fill="#e2b84b">WEASELNET</text>
+  <text x="108" y="72" font-family="monospace" font-size="13" letter-spacing="6" fill="#8da0b9">MISSION CONTROL</text>
+</svg>
