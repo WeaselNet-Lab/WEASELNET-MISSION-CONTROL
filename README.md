@@ -1,71 +1,64 @@
-# WeaselNet Knowledge Foundation
 
-**Version:** 0.2  
-**Generated:** 2026-07-14T22:09:38.012204+00:00
+# WeaselNet Mission Control
 
-This is the corrected folder-ready Foundation package for the WeaselNet knowledge
-archive. It contains the archive structure, inventories, hashes, duplicate
-reconciliation, conversation indexes, and Alfred-readable source registries.
+The ops board for Josh's labs. Not a portfolio. Not JARVIS. A map so Anky Island, Alfred, the Fury Twins, and the clean sim rig stop living as disconnected side quests.
 
-It intentionally does **not** contain the full raw asset payload yet.
+The house publish rule is still the small one: **README + 5 screenshots + a 60-second demo**. If a project cannot clear that bar, it is camping.
 
-## Install
+## What this slice does
 
-Extract the contents of this ZIP into:
+- **Ops board** — attention queue, department grid, system constellations, and a checkpoint flag for the "I forgot what I was handing off" problem
+- **Mission Files** — real briefs, next actions, success criteria, linked systems
+- **Quick Capture + The Drop** — catch ideas, tests, links, files, and decisions before sorting
+- **Field logs + Evidence Lockers** — append-only movement and direct proof links
+- **Useful checkpoints** — current work, exact next move, blocker, and resume reference
+- **Hardware Bay** — assignments, location, condition, confidence, and last-tested state
+- **Command Deck** — Ctrl+K search across projects, labs, hardware, notes, captures, and evidence
+- **Tool Bay** — the integration runway for GitHub, Alfred, Whisper, Tailscale, telemetry, and capture transport
+- **EXFIL CACHE** — portable JSON backup and restore for operator state
+- **Publish queue** — the three-item gate, persisted in the browser
+- **Hardware bay** — last-known inventory plus the isolation policy (Alfred loud, SIM clean)
+- **Operator notes / pins** — local only, on this browser, until Alfred gets the job
 
-`OneDrive\WeaselNet-Knowledge`
+No login. No database. On purpose.
 
-Choose **Replace/Merge** when Windows asks about matching files. This package
-supersedes Foundation v0.1 and replaces its inventory files with the completed
-versions.
+## Personal workspace previews (Phase 1)
 
-PowerShell alternative:
+Development-only fixtures for a future multi-workspace layout live at
+[`/dev/workspaces`](http://127.0.0.1:43147/dev/workspaces). They use fictional
+Student Alpha / Student Bravo configs, share one student dashboard component, and
+are blocked in production. `npm run dev` binds to **127.0.0.1**. Host loopback
+checks are defense-in-depth only — not authentication. A profile picker is
+**not** sign-in. See `docs/architecture/personal-workspaces.md`.
 
-```powershell
-Expand-Archive `
-  -Path ".\WeaselNet-Knowledge-Foundation-v0.2.zip" `
-  -DestinationPath "$env:OneDrive\WeaselNet-Knowledge" `
-  -Force
+## Run locally
+
+```bash
+npm install
+npm run dev
 ```
 
-## Reconciliation result
+Open [http://127.0.0.1:43147](http://127.0.0.1:43147).
 
-- Manifest asset paths: **653**
-- Manifest asset paths represented: **653**
-- Manifest asset paths unresolved: **0**
-- Uploaded asset instances inventoried: **694**
-- Distinct byte-level asset hashes: **617**
-- Duplicate-content groups: **69**
-- Conversations indexed: **624**
-- Conversation-to-asset reference rows: **1,054**
+```bash
+npm run lint
+npm test
+npm run build
+npm start
+```
 
-The export manifest is now fully reconciled.
+## Stack
 
-## Key files
+Next.js (App Router), TypeScript, Tailwind, shadcn/ui.
 
-- `60-Data/Inventory/asset-inventory.csv`
-- `60-Data/Inventory/manifest-reconciliation.csv`
-- `60-Data/Inventory/duplicate-report.csv`
-- `60-Data/Inventory/conversation-inventory.csv`
-- `60-Data/Inventory/conversation-asset-map.csv`
-- `60-Data/Inventory/resolved-assets-verification.csv`
-- `60-Data/Inventory/inventory-summary.json`
-- `70-Alfred/knowledge-index.json`
-- `70-Alfred/source-registry.jsonl`
+Catalog data lives in `lib/projects.ts`, `lib/departments.ts`, and `lib/hardware.ts`. Operator state lives in `localStorage` under `weaselnet-operator-v1`.
 
-## Privacy
+## Next honest moves
 
-`user.json` contains restricted account information. It is listed in the manifest
-reconciliation, but its contents are not copied into this Foundation package.
+1. Walk the hardware room and replace guesses with chassis assignments
+2. Plant a checkpoint the next time a lab actually moves
+3. Clear Anky Island or Alfred through the publish gate first — pick one, not both
 
-## Next phase
-
-The next package begins curating the highest-value material into VR troubleshooting,
-system profiles, experiments, decisions, mission entries, and Alfred-ready knowledge.
-
-
-## License
-
-Code and scripts in this repository are licensed under the MIT License.
-
-Documentation, mission entries, diagrams, and written materials are licensed under Creative Commons Attribution 4.0 International unless otherwise noted.
+# WEASELNET-MISSION-CONTROL
+Mission Control for Alfred, Bats, VR systems, simulation research, automation tools, and experimental engineering
+nano README.md
