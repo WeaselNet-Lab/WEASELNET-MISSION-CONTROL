@@ -8,13 +8,12 @@ import { useOperator } from "@/components/operator-provider";
 import { Button } from "@/components/ui/button";
 import { Dialog, DialogContent, DialogHeader, DialogTitle } from "@/components/ui/dialog";
 import { Input } from "@/components/ui/input";
-import { departments } from "@/lib/departments";
-import { hardwareAssets } from "@/lib/hardware";
-import { projects } from "@/lib/projects";
+import { useCatalog } from "@/components/catalog-provider";
 
 export function CommandDeck() {
   const router = useRouter();
   const operator = useOperator();
+  const { projects, departments, hardware } = useCatalog();
   const [open, setOpen] = useState(false);
   const [query, setQuery] = useState("");
 
@@ -31,13 +30,13 @@ export function CommandDeck() {
     return [
       ...projects.map((item) => ({ label: item.name, detail: `${item.callsign} · ${item.summary}`, href: `/projects/${item.slug}` })),
       ...departments.map((item) => ({ label: item.name, detail: item.mandate, href: `/departments/${item.slug}` })),
-      ...hardwareAssets.map((item) => ({ label: item.name, detail: `${item.role} · ${operator.hardware[item.id]?.assignment || item.assignment || "unassigned"}`, href: "/hardware" })),
+      ...hardware.map((item) => ({ label: item.name, detail: `${item.role} · ${operator.hardware[item.id]?.assignment || item.assignment || "unassigned"}`, href: "/hardware" })),
       ...Object.entries(operator.notes).map(([slug, note]) => ({ label: `Operator log · ${projects.find((item) => item.slug === slug)?.name || slug}`, detail: note, href: `/projects/${slug}` })),
       ...operator.activity.map((item) => ({ label: `${item.kind} · ${projects.find((project) => project.slug === item.projectSlug)?.name || item.projectSlug}`, detail: item.text, href: `/projects/${item.projectSlug}` })),
       ...operator.evidence.map((item) => ({ label: item.label, detail: `${item.kind} · ${item.note || item.href || "evidence"}`, href: `/projects/${item.projectSlug}` })),
       ...operator.captures.filter((item) => item.status === "inbox").map((item) => ({ label: item.title, detail: item.body || item.source || item.kind, href: "/drop" })),
     ].filter((item) => `${item.label} ${item.detail}`.toLowerCase().includes(q)).slice(0, 10);
-  }, [query, operator]);
+  }, [query, operator, projects, departments, hardware]);
 
   function go(href: string) { setOpen(false); setQuery(""); router.push(href); }
 

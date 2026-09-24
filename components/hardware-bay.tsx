@@ -4,12 +4,13 @@ import Link from "next/link";
 import { CheckCircle2, CircleHelp } from "lucide-react";
 import { useOperator } from "@/components/operator-provider";
 import { Input } from "@/components/ui/input";
-import { hardwareAssets, hardwareKinds } from "@/lib/hardware";
+import { useCatalog } from "@/components/catalog-provider";
 import type { HardwareAsset } from "@/lib/types";
 
 export function HardwareBay() {
+  const { hardware, hardwareKinds } = useCatalog();
   return <div className="flex flex-col gap-6"><section className="space-y-3"><p className="eyebrow">Hardware bay</p><h1 className="font-heading text-4xl font-semibold tracking-tight">Know the room. Then give every box a job.</h1><p className="max-w-2xl text-base leading-7 text-muted-foreground">Record what is confirmed, where it sits, and what owns it. Remembered hardware is useful; verified hardware gets to drive decisions.</p><Link href="/projects/hardware-bay" className="inline-flex font-mono text-xs tracking-wider text-primary uppercase hover:underline">Open the bay Mission File →</Link></section>
-    {hardwareKinds.map((kind) => <section key={kind.id} className="space-y-3"><h2 className="font-heading text-2xl">{kind.label}</h2><div className="grid gap-3 lg:grid-cols-2">{hardwareAssets.filter((asset) => asset.kind === kind.id).map((asset) => <AssetCard key={asset.id} asset={asset} />)}</div></section>)}
+    {hardwareKinds.map((kind) => <section key={kind.id} className="space-y-3"><h2 className="font-heading text-2xl">{kind.label}</h2><div className="grid gap-3 lg:grid-cols-2">{hardware.filter((asset) => asset.kind === kind.id).map((asset) => <AssetCard key={asset.id} asset={asset} />)}</div></section>)}
   </div>;
 }
 

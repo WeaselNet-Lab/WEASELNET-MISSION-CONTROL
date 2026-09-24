@@ -1,13 +1,14 @@
 "use client";
 
 import Link from "next/link";
-import { usePathname } from "next/navigation";
+import { usePathname, useRouter } from "next/navigation";
 import { useState, useSyncExternalStore, type ReactNode } from "react";
 import { Menu, Radio } from "lucide-react";
 
 import { OperatorProvider } from "@/components/operator-provider";
+import type { OperatorState } from "@/lib/types";
 import { LiveDot } from "@/components/status-badge";
-import { Button } from "@/components/ui/button";
+import { Button, buttonVariants } from "@/components/ui/button";
 import {
   Sheet,
   SheetContent,
@@ -104,9 +105,10 @@ function NavLinks({
   );
 }
 
-function ShellInner({ children }: { children: ReactNode }) {
+function ShellInner({ children, csrf }: { children: ReactNode; csrf?: string }) {
   const [open, setOpen] = useState(false);
   const pathname = usePathname();
+  const router = useRouter();
   const isPreview = isWorkspacePreviewPath(pathname);
   const previewId = previewWorkspaceId(pathname);
   const previewConfig = previewId ? getWorkspaceConfig(previewId) : undefined;
@@ -135,6 +137,11 @@ function ShellInner({ children }: { children: ReactNode }) {
               </span>
             </span>
           </Link>
+          {showOperatorTools ? (
+            <Link href="/explore" className="hidden font-mono text-[10px] tracking-[0.16em] text-muted-foreground uppercase hover:text-primary sm:inline">
+              Explore
+            </Link>
+          ) : null}
           <div className="ml-auto hidden md:block">
             <NavLinks items={navItems} />
           </div>
@@ -145,13 +152,12 @@ function ShellInner({ children }: { children: ReactNode }) {
                 <QuickCapture compact />
               </>
             ) : (
-              <Button
-                size="sm"
-                variant="outline"
-                render={<Link href="/dev/workspaces" />}
+              <Link
+                href="/dev/workspaces"
+                className={buttonVariants({ variant: "outline", size: "sm" })}
               >
                 Previews
-              </Button>
+              </Link>
             )}
             <div className="hidden items-center gap-2 sm:flex">
               <LiveDot />
@@ -160,6 +166,23 @@ function ShellInner({ children }: { children: ReactNode }) {
               </span>
             </div>
             <Clock />
+            {csrf ? (
+              <button
+                type="button"
+                className="hidden font-mono text-[10px] tracking-[0.16em] text-muted-foreground uppercase hover:text-primary sm:inline"
+                onClick={() => {
+                  void fetch("/api/auth/logout", {
+                    method: "POST",
+                    headers: { "x-csrf-token": csrf },
+                  }).then(() => {
+                    router.push("/login");
+                    router.refresh();
+                  });
+                }}
+              >
+                Sign out
+              </button>
+            ) : null}
             <Sheet open={open} onOpenChange={setOpen}>
               <SheetTrigger
                 render={
@@ -203,19 +226,43 @@ function ShellInner({ children }: { children: ReactNode }) {
   );
 }
 
-function OperatorBoundary({ children }: { children: ReactNode }) {
+function OperatorBoundary({
+  children,
+  initialState,
+  revision,
+  csrf,
+}: {
+  children: ReactNode;
+  initialState?: OperatorState;
+  revision?: number;
+  csrf?: string;
+}) {
   const pathname = usePathname();
   if (!shouldMountOperatorProvider(pathname)) {
     return <>{children}</>;
   }
-  return <OperatorProvider>{children}</OperatorProvider>;
+  return (
+    <OperatorProvider initialState={initialState} revision={revision} csrf={csrf}>
+      {children}
+    </OperatorProvider>
+  );
 }
 
-export function AppShell({ children }: { children: ReactNode }) {
+export function AppShell({
+  children,
+  initialState,
+  revision,
+  csrf,
+}: {
+  children: ReactNode;
+  initialState?: OperatorState;
+  revision?: number;
+  csrf?: string;
+}) {
   return (
     <TooltipProvider>
-      <OperatorBoundary>
-        <ShellInner>{children}</ShellInner>
+      <OperatorBoundary initialState={initialState} revision={revision} csrf={csrf}>
+        <ShellInner csrf={csrf}>{children}</ShellInner>
       </OperatorBoundary>
     </TooltipProvider>
   );

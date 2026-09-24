@@ -8,11 +8,12 @@ import { Button } from "@/components/ui/button";
 import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogTrigger } from "@/components/ui/dialog";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
-import { projects } from "@/lib/projects";
+import { useCatalog } from "@/components/catalog-provider";
 import type { CaptureKind } from "@/lib/types";
 
 export function QuickCapture({ compact = false }: { compact?: boolean }) {
   const operator = useOperator();
+  const { projects } = useCatalog();
   const [open, setOpen] = useState(false);
   const [kind, setKind] = useState<CaptureKind>("note");
   const [title, setTitle] = useState("");

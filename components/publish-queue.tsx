@@ -5,7 +5,7 @@ import Link from "next/link";
 import { useOperator } from "@/components/operator-provider";
 import { StatusBadge } from "@/components/status-badge";
 import { isPublishClear, mergePublish, publishScore } from "@/lib/catalog";
-import { projects } from "@/lib/projects";
+import { useCatalog } from "@/components/catalog-provider";
 import { cn } from "@/lib/utils";
 
 const gates = [
@@ -16,6 +16,7 @@ const gates = [
 
 export function PublishQueue() {
   const operator = useOperator();
+  const { projects } = useCatalog();
   const rows = [...projects]
     .map((project) => {
       const gate = mergePublish(project, operator.publish);

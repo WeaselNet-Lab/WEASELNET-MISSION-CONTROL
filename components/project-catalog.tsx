@@ -1,11 +1,11 @@
 "use client";
 
+import Link from "next/link";
 import { useMemo, useState } from "react";
 
 import { ProjectCard } from "@/components/project-card";
-import { departments } from "@/lib/departments";
+import { useCatalog } from "@/components/catalog-provider";
 import { searchProjects, statusOrder } from "@/lib/catalog";
-import { projects } from "@/lib/projects";
 import type { DepartmentId, ProjectStatus } from "@/lib/types";
 import { cn } from "@/lib/utils";
 import { useOperator } from "@/components/operator-provider";
@@ -14,19 +14,20 @@ const statuses: Array<ProjectStatus | "all"> = ["all", ...statusOrder];
 
 export function ProjectCatalog() {
   const operator = useOperator();
+  const { projects, departments } = useCatalog();
   const [query, setQuery] = useState("");
   const [department, setDepartment] = useState<DepartmentId | "all">("all");
   const [status, setStatus] = useState<ProjectStatus | "all">("all");
   const [onlyPinned, setOnlyPinned] = useState(false);
 
   const filtered = useMemo(() => {
-    return searchProjects(query).filter((project) => {
+    return searchProjects(query, projects, departments).filter((project) => {
       if (department !== "all" && project.department !== department) return false;
       if (status !== "all" && project.status !== status) return false;
       if (onlyPinned && !operator.pinned.includes(project.slug)) return false;
       return true;
     });
-  }, [query, department, status, onlyPinned, operator.pinned]);
+  }, [query, department, status, onlyPinned, operator.pinned, projects, departments]);
 
   return (
     <div className="flex flex-col gap-6">
@@ -41,6 +42,9 @@ export function ProjectCatalog() {
           Filter like an operator, not like a portfolio. If it is here, it is part of the
           universe. If it cannot clear a README, it is not finished — it is camping.
         </p>
+        <Link href="/projects/new" className="inline-flex font-mono text-xs tracking-wider text-primary uppercase">
+          New project
+        </Link>
       </section>
 
       <div className="flex flex-col gap-3">

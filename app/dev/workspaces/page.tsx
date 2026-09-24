@@ -3,7 +3,7 @@ import { headers } from "next/headers";
 import { notFound } from "next/navigation";
 
 import { Badge } from "@/components/ui/badge";
-import { Button } from "@/components/ui/button";
+import { buttonVariants } from "@/components/ui/button";
 import {
   developmentPreviewDenialReason,
   isDevelopmentPreviewAllowed,
@@ -66,19 +66,16 @@ export default async function WorkspacePreviewIndexPage() {
               <p className="font-mono text-[10px] tracking-wider text-muted-foreground uppercase">
                 {workspace.enabledModules.join(" · ")}
               </p>
-              <Button
-                render={
-                  <Link
-                    href={
-                      workspace.role === "operator"
-                        ? workspace.homePath
-                        : `/dev/workspaces/${workspace.id}`
-                    }
-                  />
+              <Link
+                href={
+                  workspace.role === "operator"
+                    ? workspace.homePath
+                    : `/dev/workspaces/${workspace.id}`
                 }
+                className={buttonVariants()}
               >
                 {workspace.role === "operator" ? "Open Ops board" : "Open preview"}
-              </Button>
+              </Link>
             </div>
           </li>
         ))}

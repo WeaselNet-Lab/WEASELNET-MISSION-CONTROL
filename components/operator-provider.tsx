@@ -28,39 +28,50 @@ let version = 0;
 let loaded = false;
 const listeners = new Set<() => void>();
 
-function parseState(raw: string | null): OperatorState {
-  if (!raw) return emptyState;
-  try {
-    const parsed = JSON.parse(raw) as Partial<OperatorState>;
-    return {
-      notes: parsed.notes ?? {},
-      publish: parsed.publish ?? {},
-      pinned: parsed.pinned ?? [],
-      checkpoint: parsed.checkpoint ?? null,
-      captures: parsed.captures ?? [],
-      activity: parsed.activity ?? [],
-      evidence: parsed.evidence ?? [],
-      hardware: parsed.hardware ?? {},
-    };
-  } catch {
-    return emptyState;
-  }
-}
+let csrfToken = "";
+let currentRevision = 1;
+let syncError = "";
+let boot: { state: OperatorState; revision: number; csrfToken: string } | null = null;
 
-function readStoredState(): OperatorState {
-  try {
-    return parseState(window.localStorage.getItem(STORAGE_KEY));
-  } catch {
-    return emptyState;
-  }
+function rememberBoot(next: { state: OperatorState; revision: number; csrfToken: string }) {
+  boot = next;
 }
+let saveTimer: ReturnType<typeof setTimeout> | null = null;
 
 function persist(next: OperatorState) {
-  try {
-    window.localStorage.setItem(STORAGE_KEY, JSON.stringify(next));
-  } catch {
-    // Private mode can refuse storage. Keep the in-memory board anyway.
-  }
+  if (!csrfToken) return;
+  if (saveTimer) clearTimeout(saveTimer);
+  saveTimer = setTimeout(() => {
+    const revision = currentRevision;
+    void fetch("/api/operator", {
+      method: "PUT",
+      headers: {
+        "content-type": "application/json",
+        "x-csrf-token": csrfToken,
+      },
+      body: JSON.stringify({ revision, state: next }),
+    })
+      .then(async (response) => {
+        if (response.status === 409) {
+          syncError = "The saved board changed. These edits are still on screen and were not written over it.";
+          emit();
+          return;
+        }
+        if (!response.ok) {
+          syncError = "The board could not be saved. These edits are still on screen.";
+          emit();
+          return;
+        }
+        const body = (await response.json()) as { revision?: number };
+        if (typeof body.revision === "number") currentRevision = body.revision;
+        syncError = "";
+        emit();
+      })
+      .catch(() => {
+        syncError = "The board could not be saved. These edits are still on screen.";
+        emit();
+      });
+  }, 400);
 }
 
 function emit() {
@@ -71,7 +82,11 @@ function emit() {
 function subscribe(onStoreChange: () => void) {
   if (!loaded) {
     loaded = true;
-    cached = readStoredState();
+    if (boot) {
+      cached = boot.state;
+      currentRevision = boot.revision;
+      csrfToken = boot.csrfToken;
+    }
     version += 1;
   }
   listeners.add(onStoreChange);
@@ -95,6 +110,7 @@ function writeState(next: OperatorState) {
 }
 
 type OperatorContextValue = OperatorState & {
+  syncError: string;
   setNote: (slug: string, note: string) => void;
   setPublishItem: (slug: string, key: keyof PublishGate, value: boolean) => void;
   togglePin: (slug: string) => void;
@@ -112,7 +128,20 @@ type OperatorContextValue = OperatorState & {
 
 const OperatorContext = createContext<OperatorContextValue | null>(null);
 
-export function OperatorProvider({ children }: { children: ReactNode }) {
+export function OperatorProvider({
+  children,
+  initialState,
+  revision = 1,
+  csrf = "",
+}: {
+  children: ReactNode;
+  initialState?: OperatorState;
+  revision?: number;
+  csrf?: string;
+}) {
+  if (initialState) {
+    rememberBoot({ state: initialState, revision, csrfToken: csrf });
+  }
   const snapshot = useSyncExternalStore(subscribe, getSnapshot, getServerSnapshot);
   const state = snapshot === 0 ? emptyState : cached;
 
@@ -200,6 +229,7 @@ export function OperatorProvider({ children }: { children: ReactNode }) {
 
   const value: OperatorContextValue = {
     ...state,
+    syncError,
     setNote,
     setPublishItem,
     togglePin,
@@ -215,7 +245,13 @@ export function OperatorProvider({ children }: { children: ReactNode }) {
     replaceState,
   };
 
-  return <OperatorContext.Provider value={value}>{children}</OperatorContext.Provider>;
+  return (
+    <OperatorContext.Provider value={value}>
+      <LocalCacheNotice serverHasRecords={hasOperatorRecords(initialState)} />
+      {syncError ? <p className="mb-3 rounded-lg border border-destructive/40 bg-destructive/10 p-3 text-sm text-destructive">{syncError}</p> : null}
+      {children}
+    </OperatorContext.Provider>
+  );
 }
 
 export function useOperator() {
@@ -224,4 +260,38 @@ export function useOperator() {
     throw new Error("useOperator must run inside OperatorProvider");
   }
   return value;
+}
+
+function hasOperatorRecords(state?: OperatorState): boolean {
+  if (!state) return false;
+  return (
+    Object.keys(state.notes).length > 0 ||
+    state.pinned.length > 0 ||
+    state.captures.length > 0 ||
+    state.activity.length > 0 ||
+    state.evidence.length > 0 ||
+    Boolean(state.checkpoint)
+  );
+}
+
+function localCacheSnapshot() {
+  try {
+    return Boolean(window.localStorage.getItem(STORAGE_KEY));
+  } catch {
+    return false;
+  }
+}
+
+function LocalCacheNotice({ serverHasRecords }: { serverHasRecords: boolean }) {
+  const hasLocalCache = useSyncExternalStore(
+    () => () => {},
+    localCacheSnapshot,
+    () => false,
+  );
+  if (!hasLocalCache || serverHasRecords) return null;
+  return (
+    <p className="mb-3 rounded-lg border border-primary/30 bg-primary/10 p-3 text-sm text-primary">
+      This browser still has a local operator cache under {STORAGE_KEY}. It was not imported. Use Exfil when you want to copy it into the database. Nothing was erased.
+    </p>
+  );
 }

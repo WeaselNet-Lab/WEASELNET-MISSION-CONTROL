@@ -15,12 +15,14 @@ The house publish rule is still the small one: **README + 5 screenshots + a 60-s
 - **Hardware Bay** — assignments, location, condition, confidence, and last-tested state
 - **Command Deck** — Ctrl+K search across projects, labs, hardware, notes, captures, and evidence
 - **Tool Bay** — the integration runway for GitHub, Alfred, Whisper, Tailscale, telemetry, and capture transport
-- **EXFIL CACHE** — portable JSON backup and restore for operator state
-- **Publish queue** — the three-item gate, persisted in the browser
+- **EXFIL CACHE** — labeled, unencrypted JSON transfer of operator state. It is not a secure backup.
+- **Database backup** — SQLite snapshots under `data/backups/`, outside the public web directory
+- **Publish queue** — the three-item gate, stored in the local database
 - **Hardware bay** — last-known inventory plus the isolation policy (Alfred loud, SIM clean)
-- **Operator notes / pins** — local only, on this browser, until Alfred gets the job
+- **Operator notes / pins** — stored for the signed-in owner. The old browser cache is left in place and is not imported automatically.
+- **Explore the Lab** — public editorial cards and field notes at `/explore`. Draft edits stay off that page until an approved snapshot is saved.
 
-No login. No database. On purpose.
+The ops board requires an owner session. There is no open registration and no default password. Explore shows only approved editorial snapshots. Development workspace previews stay separate and are still not sign-in.
 
 ## Personal workspace previews (Phase 1)
 
@@ -38,7 +40,15 @@ npm install
 npm run dev
 ```
 
-Open [http://127.0.0.1:43147](http://127.0.0.1:43147).
+Open [http://127.0.0.1:43147](http://127.0.0.1:43147). The dev and start scripts bind to `127.0.0.1`. Create the single owner account in this environment before signing in:
+
+```bash
+$env:WEASELNET_OWNER_USERNAME="your-name"
+$env:WEASELNET_OWNER_PASSWORD="a long password you choose"
+npm run owner:provision
+```
+
+Do not commit `data/`. That folder holds the database, sessions, and backups. Public Explore is at [http://127.0.0.1:43147/explore](http://127.0.0.1:43147/explore).
 
 ```bash
 npm run lint
@@ -49,9 +59,9 @@ npm start
 
 ## Stack
 
-Next.js (App Router), TypeScript, Tailwind, shadcn/ui.
+Next.js (App Router), TypeScript, Tailwind, shadcn/ui, Node.js `node:sqlite`.
 
-Catalog data lives in `lib/projects.ts`, `lib/departments.ts`, and `lib/hardware.ts`. Operator state lives in `localStorage` under `weaselnet-operator-v1`.
+The seed catalog still starts from `lib/projects.ts`, `lib/departments.ts`, and `lib/hardware.ts`. After the first seed, owner edits live in `data/weaselnet.sqlite` and are not overwritten on startup. The browser key `weaselnet-operator-v1` is a leftover cache. It is not cleared and it is not the database.
 
 ## Next honest moves
 
