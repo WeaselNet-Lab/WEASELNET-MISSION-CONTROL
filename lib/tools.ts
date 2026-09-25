@@ -1,5 +1,5 @@
 export const toolRegistry = [
-  { name: "Mission Control local state", callsign: "CORE", status: "online", purpose: "Captures, field logs, evidence, checkpoints, pins, and hardware overrides in this browser.", next: "Use EXFIL CACHE before changing browsers." },
+  { name: "Mission Control database", callsign: "CORE", status: "online", purpose: "Owner projects, captures, logs, evidence, checkpoints, and hardware overrides in the local database. The old browser cache is not imported automatically.", next: "Use EXFIL only as a labeled, unencrypted transfer. Prefer the database backup." },
   { name: "Git + GitHub", callsign: "GIT", status: "ready", purpose: "Repository state, recent movement, README evidence, releases, and commit-backed recovery.", next: "Add repository URLs to each Evidence Locker." },
   { name: "Alfred API", callsign: "ALFRED", status: "planned", purpose: "Durable memory, capture classification, semantic search, and project summaries.", next: "Expose one authenticated Tailscale-only intake endpoint." },
   { name: "Whisper", callsign: "EAR", status: "planned", purpose: "Turn voice memos, meetings, and screen recordings into Drop items.", next: "Watch one inbound recording folder and emit transcript + metadata." },

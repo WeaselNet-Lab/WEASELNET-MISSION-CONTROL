@@ -5,19 +5,18 @@ import { Flag, Pin } from "lucide-react";
 
 import { ProjectCard } from "@/components/project-card";
 import { useOperator } from "@/components/operator-provider";
-import { Button } from "@/components/ui/button";
+import { Button, buttonVariants } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { attentionQueue, boardStats, constellations, formatUpdated } from "@/lib/catalog";
-import { departments } from "@/lib/departments";
-import { getProject, projects } from "@/lib/projects";
-import { projectsByDepartment } from "@/lib/projects";
+import { attentionQueue, boardStats, formatUpdated } from "@/lib/catalog";
+import { useCatalog } from "@/components/catalog-provider";
 
 export function OpsBoard() {
   const operator = useOperator();
-  const stats = boardStats(operator);
-  const queue = attentionQueue(operator).slice(0, 4);
+  const { projects, departments, constellations } = useCatalog();
+  const stats = boardStats(operator, projects);
+  const queue = attentionQueue(operator, projects).slice(0, 4);
   const checkpoint = operator.checkpoint
-    ? getProject(operator.checkpoint.slug)
+    ? projects.find((project) => project.slug === operator.checkpoint?.slug)
     : undefined;
   const pinned = projects.filter((project) => operator.pinned.includes(project.slug));
 
@@ -71,9 +70,12 @@ export function OpsBoard() {
                 {operator.checkpoint.blocker ? <p className="text-sm text-primary">Blocked by: {operator.checkpoint.blocker}</p> : null}
                 {operator.checkpoint.resumeLink ? <p className="break-all font-mono text-xs text-primary">{operator.checkpoint.resumeLink}</p> : null}
                 <div className="flex gap-2">
-                  <Button render={<Link href={`/projects/${checkpoint.slug}`} />}>
+                  <Link
+                    href={`/projects/${checkpoint.slug}`}
+                    className={buttonVariants()}
+                  >
                     Resume
-                  </Button>
+                  </Link>
                   <Button variant="outline" onClick={operator.clearCheckpoint}>
                     Clear
                   </Button>
@@ -85,10 +87,10 @@ export function OpsBoard() {
                   No flag in the ground. Open a mission file and plant one before the next
                   meeting evaporates.
                 </p>
-                <Button variant="outline" render={<Link href="/projects" />}>
+                <Link href="/projects" className={buttonVariants({ variant: "outline" })}>
                   <Flag className="size-3.5" />
                   Pick a lab
-                </Button>
+                </Link>
               </>
             )}
           </CardContent>
@@ -172,7 +174,7 @@ export function OpsBoard() {
         </div>
         <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
           {departments.map((department) => {
-            const count = projectsByDepartment(department.slug).length;
+            const count = projects.filter((project) => project.department === department.slug).length;
             return (
               <Link
                 key={department.slug}
@@ -213,7 +215,7 @@ export function OpsBoard() {
               </CardHeader>
               <CardContent className="flex flex-wrap gap-2">
                 {group.slugs.map((slug) => {
-                  const project = getProject(slug);
+                  const project = projects.find((item) => item.slug === slug);
                   if (!project) return null;
                   return (
                     <Link

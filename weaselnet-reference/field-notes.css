@@ -1,0 +1,41 @@
+/* Shared by both design options. Animate the note itself, without delaying
+   opening, keyboard focus, or the Escape / close controls. */
+#field-notes[open] {
+  transform-origin: 28% 50%;
+  backface-visibility: hidden;
+  animation: field-note-flip 440ms cubic-bezier(.18, .72, .24, 1) both;
+}
+
+#field-notes[open]::backdrop {
+  animation: field-note-backdrop 240ms ease-out both;
+}
+
+@keyframes field-note-flip {
+  from {
+    opacity: 0;
+    transform: perspective(1400px) rotateY(-48deg) translateY(12px) scale(.97);
+  }
+  65% {
+    opacity: 1;
+  }
+  to {
+    opacity: 1;
+    transform: perspective(1400px) rotateY(0) translateY(0) scale(1);
+  }
+}
+
+@keyframes field-note-backdrop {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+/* Override the site's general no-animation rule with a brief, motionless fade. */
+@media (prefers-reduced-motion: reduce) {
+  #field-notes[open] {
+    transform: none;
+    animation: field-note-backdrop 120ms ease-out both !important;
+  }
+  #field-notes[open]::backdrop {
+    animation: none !important;
+  }
+}

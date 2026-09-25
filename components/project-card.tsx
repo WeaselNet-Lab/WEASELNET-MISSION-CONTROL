@@ -6,13 +6,14 @@ import { Pin, PinOff } from "lucide-react";
 import { StatusBadge } from "@/components/status-badge";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
-import { departmentName } from "@/lib/departments";
-import { formatUpdated, mergePublish, publishScore } from "@/lib/catalog";
+import { departmentLabel, formatUpdated, mergePublish, publishScore } from "@/lib/catalog";
+import { useCatalog } from "@/components/catalog-provider";
 import { useOperator } from "@/components/operator-provider";
 import type { Project } from "@/lib/types";
 import { cn } from "@/lib/utils";
 
 export function ProjectCard({ project }: { project: Project }) {
+  const { departments } = useCatalog();
   const operator = useOperator();
   const gate = mergePublish(project, operator.publish);
   const score = publishScore(gate);
@@ -24,7 +25,7 @@ export function ProjectCard({ project }: { project: Project }) {
         <div className="flex items-start justify-between gap-3">
           <div className="min-w-0 space-y-2">
             <p className="font-mono text-[10px] tracking-[0.22em] text-primary uppercase">
-              {project.callsign} · {departmentName(project.department)}
+              {project.callsign} · {departmentLabel(departments, project.department)}
             </p>
             <CardTitle className="font-heading text-xl tracking-tight">
               <Link href={`/projects/${project.slug}`} className="hover:text-primary">

@@ -3,7 +3,7 @@ import { headers } from "next/headers";
 import { notFound } from "next/navigation";
 
 import { StudentDashboard } from "@/components/student-dashboard";
-import { Button } from "@/components/ui/button";
+import { buttonVariants } from "@/components/ui/button";
 import {
   getWorkspaceConfig,
   isDevelopmentPreviewAllowed,
@@ -67,10 +67,12 @@ export default async function WorkspacePreviewPage({ params }: PageProps) {
           </p>
         </section>
         <div className="flex flex-wrap gap-3">
-          <Button render={<Link href="/" />}>Open Ops board</Button>
-          <Button variant="outline" render={<Link href="/dev/workspaces" />}>
+          <Link href="/" className={buttonVariants()}>
+            Open Ops board
+          </Link>
+          <Link href="/dev/workspaces" className={buttonVariants({ variant: "outline" })}>
             Back to previews
-          </Button>
+          </Link>
         </div>
       </div>
     );
@@ -79,9 +81,12 @@ export default async function WorkspacePreviewPage({ params }: PageProps) {
   return (
     <div className="flex flex-col gap-6">
       <div>
-        <Button variant="outline" size="sm" render={<Link href="/dev/workspaces" />}>
+        <Link
+          href="/dev/workspaces"
+          className={buttonVariants({ variant: "outline", size: "sm" })}
+        >
           All previews
-        </Button>
+        </Link>
       </div>
       <StudentDashboard config={config} />
     </div>

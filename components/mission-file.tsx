@@ -8,20 +8,21 @@ import { OperatorNotes } from "@/components/operator-notes";
 import { PublishChecklist } from "@/components/publish-checklist";
 import { StatusBadge } from "@/components/status-badge";
 import { useOperator } from "@/components/operator-provider";
-import { Button } from "@/components/ui/button";
+import { Button, buttonVariants } from "@/components/ui/button";
 import { Dialog, DialogContent, DialogHeader, DialogTitle } from "@/components/ui/dialog";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { ActivityLog, EvidenceLocker } from "@/components/mission-tools";
-import { departmentName } from "@/lib/departments";
-import { formatUpdated } from "@/lib/catalog";
-import { relatedProjects } from "@/lib/projects";
 import type { Project } from "@/lib/types";
-import { missionLinks } from "@/lib/mission-links";
+import { departmentLabel, formatUpdated } from "@/lib/catalog";
+import { useCatalog } from "@/components/catalog-provider";
 
 export function MissionFile({ project }: { project: Project }) {
   const operator = useOperator();
-  const related = relatedProjects(project);
+  const { projects, departments, missionLinks } = useCatalog();
+  const related = project.related
+    .map((slug) => projects.find((item) => item.slug === slug))
+    .filter((item): item is Project => Boolean(item));
   const pinned = operator.pinned.includes(project.slug);
   const flagged = operator.checkpoint?.slug === project.slug;
   const topology = missionLinks[project.slug];
@@ -43,7 +44,7 @@ export function MissionFile({ project }: { project: Project }) {
         <div className="flex flex-wrap items-center gap-2">
           <StatusBadge status={project.status} />
           <span className="font-mono text-[11px] tracking-[0.18em] text-primary uppercase">
-            {project.callsign} · {departmentName(project.department)}
+            {project.callsign} · {departmentLabel(departments, project.department)}
           </span>
         </div>
         <h1 className="font-heading text-4xl font-semibold tracking-tight sm:text-5xl">
@@ -51,6 +52,12 @@ export function MissionFile({ project }: { project: Project }) {
         </h1>
         <p className="max-w-3xl text-lg leading-8 text-muted-foreground">{project.summary}</p>
         <div className="flex flex-wrap gap-2">
+          <Link
+            href={`/projects/${project.slug}/edit`}
+            className={buttonVariants({ variant: "outline" })}
+          >
+            Edit project
+          </Link>
           <Button
             type="button"
             variant={pinned ? "default" : "outline"}

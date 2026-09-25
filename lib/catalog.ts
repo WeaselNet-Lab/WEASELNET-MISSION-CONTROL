@@ -1,6 +1,4 @@
-import { departmentName } from "@/lib/departments";
-import { projects } from "@/lib/projects";
-import type { OperatorState, Project, ProjectStatus, PublishGate } from "@/lib/types";
+import type { Department, OperatorState, Project, ProjectStatus, PublishGate } from "@/lib/types";
 
 export const statusOrder: ProjectStatus[] = [
   "active",
@@ -29,7 +27,7 @@ export function isPublishClear(gate: PublishGate): boolean {
 }
 
 export function formatUpdated(iso: string): string {
-  const date = new Date(`${iso}T00:00:00`);
+  const date = new Date(`${iso.slice(0, 10)}T00:00:00`);
   return new Intl.DateTimeFormat("en-US", {
     month: "short",
     day: "numeric",
@@ -37,7 +35,11 @@ export function formatUpdated(iso: string): string {
   }).format(date);
 }
 
-export function searchProjects(query: string, list: Project[] = projects): Project[] {
+export function departmentLabel(departments: Department[], slug: string): string {
+  return departments.find((department) => department.slug === slug)?.name ?? slug;
+}
+
+export function searchProjects(query: string, list: Project[], departments: Department[]): Project[] {
   const needle = query.trim().toLowerCase();
   if (!needle) return list;
   return list.filter((project) => {
@@ -47,7 +49,7 @@ export function searchProjects(query: string, list: Project[] = projects): Proje
       project.summary,
       project.brief,
       project.department,
-      departmentName(project.department),
+      departmentLabel(departments, project.department),
       ...project.stack,
     ]
       .join(" ")
@@ -58,7 +60,7 @@ export function searchProjects(query: string, list: Project[] = projects): Proje
 
 export function attentionQueue(
   state: Pick<OperatorState, "publish" | "pinned">,
-  list: Project[] = projects,
+  list: Project[],
 ): Project[] {
   return [...list]
     .map((project) => {
@@ -79,36 +81,12 @@ export function attentionQueue(
     .map((item) => item.project);
 }
 
-export function boardStats(state: Pick<OperatorState, "publish">) {
-  const gates = projects.map((project) => mergePublish(project, state.publish));
+export function boardStats(state: Pick<OperatorState, "publish">, list: Project[]) {
+  const gates = list.map((project) => mergePublish(project, state.publish));
   return {
-    total: projects.length,
-    live: projects.filter((project) => project.status === "active" || project.status === "alpha")
-      .length,
+    total: list.length,
+    live: list.filter((project) => project.status === "active" || project.status === "alpha").length,
     unpublished: gates.filter((gate) => !isPublishClear(gate)).length,
-    shipped: projects.filter((project) => project.status === "shipped").length,
+    shipped: list.filter((project) => project.status === "shipped").length,
   };
 }
-
-export const constellations = [
-  {
-    name: "Daughter games",
-    detail: "CoSpace is the spine. Anky Island is the laugh test. Meshy keeps the island from becoming a graybox forever.",
-    slugs: ["cospace", "anky-island", "meshy-pipeline"],
-  },
-  {
-    name: "Command circuit",
-    detail: "Alfred thinks. Mission Control remembers. Preflight tells you if the night is even allowed to start.",
-    slugs: ["alfred", "mission-control", "preflight"],
-  },
-  {
-    name: "Clean flight path",
-    detail: "The sim rig, the measured 5 GHz hop, and the lab that refuses vibes-as-telemetry.",
-    slugs: ["vr-flight-lab", "hardware-bay", "bats"],
-  },
-  {
-    name: "Walking studio",
-    detail: "One honest leg, then a chassis, then a mind. Alfred speaks names. Teensy keeps the joints polite.",
-    slugs: ["fury-twins", "alfred", "autonomous-drone"],
-  },
-];
