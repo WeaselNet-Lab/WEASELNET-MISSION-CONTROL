@@ -59,14 +59,29 @@ function glyph(card: VisitorCard) {
   );
 }
 
+// Reference teasers break onto a second line on wide cards; the seed keeps that as "\n".
+function teaserLines(teaser: string) {
+  const lines = teaser.split("\n");
+  return lines.map((line, index) => (
+    <span key={index}>
+      {line}
+      {index < lines.length - 1 ? <br /> : null}
+    </span>
+  ));
+}
+
 export function ExploreExperience({ snapshot }: { snapshot: VisitorSnapshot }) {
   const notes = new Map(snapshot.notes.map((note) => [note.slug, note]));
   const theme = useSyncExternalStore(subscribeTheme, readTheme, () => "b" as ThemeChoice);
   const [history, setHistory] = useState<string[]>([]);
   const [open, setOpen] = useState(false);
+  const [motionReady, setMotionReady] = useState(false);
+  const [revealed, setRevealed] = useState<ReadonlySet<string>>(() => new Set());
+  const rootRef = useRef<HTMLDivElement>(null);
   const previousFocus = useRef<HTMLElement | null>(null);
   const titleRef = useRef<HTMLHeadingElement>(null);
   const dialogRef = useRef<HTMLDialogElement>(null);
+  const scrollRef = useRef<HTMLDivElement>(null);
   const lastThread = useRef<string | null>(null);
 
   useEffect(() => {
@@ -78,8 +93,36 @@ export function ExploreExperience({ snapshot }: { snapshot: VisitorSnapshot }) {
 
   useEffect(() => {
     if (!open) return;
+    if (scrollRef.current) scrollRef.current.scrollTop = 0;
     titleRef.current?.focus({ preventScroll: true });
   }, [open, history]);
+
+  // Scroll reveal from the reference: sections fade up the first time they enter view.
+  // Without IntersectionObserver, or with reduced motion, everything simply stays visible.
+  useEffect(() => {
+    const root = rootRef.current;
+    if (!root || !("IntersectionObserver" in window)) return;
+    if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+    const targets = Array.from(root.querySelectorAll<HTMLElement>("[data-reveal]"));
+    const onScreen = targets.filter((target) => target.getBoundingClientRect().top < window.innerHeight);
+    setRevealed(new Set(onScreen.map((target) => target.dataset.reveal ?? "")));
+    setMotionReady(true);
+    const observer = new IntersectionObserver(
+      (entries) => {
+        for (const entry of entries) {
+          if (!entry.isIntersecting) continue;
+          const key = (entry.target as HTMLElement).dataset.reveal;
+          if (key) setRevealed((current) => (current.has(key) ? current : new Set(current).add(key)));
+          observer.unobserve(entry.target);
+        }
+      },
+      { threshold: 0.07 },
+    );
+    targets.forEach((target) => observer.observe(target));
+    return () => observer.disconnect();
+  }, []);
+
+  const revealClass = (key: string) => (revealed.has(key) ? "reveal visible" : "reveal");
 
   function chooseTheme(next: ThemeChoice) {
     window.localStorage.setItem(THEME_KEY, next);
@@ -110,7 +153,7 @@ export function ExploreExperience({ snapshot }: { snapshot: VisitorSnapshot }) {
     : "A starting point. Choose a connection and see where it goes.";
 
   return (
-    <div className="explore-root" data-theme={theme}>
+    <div ref={rootRef} className={motionReady ? "explore-root motion-ready" : "explore-root"} data-theme={theme}>
       <a className="skip-link" href="#projects">Skip to projects</a>
       <header className="site-header">
         <a className="brand" href="#intro-title" aria-label="WeaselNet Labs home">
@@ -157,25 +200,31 @@ export function ExploreExperience({ snapshot }: { snapshot: VisitorSnapshot }) {
         </section>
         <div className="bench-strip section-width"><span>BUILT FROM QUESTIONS. AND OCCASIONALLY SPARE PARTS.</span><span>SCROLL TO EXPLORE <span>↓</span></span></div>
         <section id="projects" className="projects section-width">
-          <div className="section-heading">
+          <div className={`section-heading ${revealClass("heading")}`} data-reveal="heading">
             <div><div className="eyebrow">01 / THE PROJECTS</div><h2>Ideas with fingerprints.</h2></div>
             <p>Different experiments. The same instinct:<br />understand it, take it apart, make it possible.</p>
           </div>
           <div className="project-grid">
             {snapshot.cards.map((card) => (
-              <button key={card.slug} className="project-card" type="button" onClick={() => openNote(card.noteSlug, true)}>
-                <div className="card-top"><span className="project-number">P—{card.number}</span><span className="category">{card.category}</span></div>
+              <button
+                key={card.slug}
+                className={`project-card ${revealClass(`card:${card.slug}`)}`}
+                data-reveal={`card:${card.slug}`}
+                type="button"
+                onClick={() => openNote(card.noteSlug, true)}
+              >
+                <div className="card-top"><span className="project-number">{`P—${card.number}`}</span><span className="category">{card.category}</span></div>
                 {glyph(card)}
                 <div className="card-content">
                   <h3>{card.visitorTitle} <span>↗</span></h3>
-                  <p>{card.teaser}</p>
+                  <p>{teaserLines(card.teaser)}</p>
                   <div className="card-bottom"><span>{card.exploreLabel}</span><span>{card.number}</span></div>
                 </div>
               </button>
             ))}
           </div>
         </section>
-        <section id="connections" className="connections section-width">
+        <section id="connections" className={`connections section-width ${revealClass("connections")}`} data-reveal="connections">
           <div className="rabbit-intro">
             <div className="eyebrow">02 / THE RABBIT HOLES</div>
             <h2>Nothing here<br />is <em>quite</em> separate.</h2>
@@ -207,7 +256,7 @@ export function ExploreExperience({ snapshot }: { snapshot: VisitorSnapshot }) {
             ))}
           </div>
         </section>
-        <section id="builder" className="builder section-width">
+        <section id="builder" className={`builder section-width ${revealClass("builder")}`} data-reveal="builder">
           <div className="eyebrow">03 / THE HUMAN IN THE LOOP</div>
           <div className="builder-grid">
             <h2>Engineer by trade.<br /><em>“What if?”</em> by default.</h2>
@@ -218,7 +267,7 @@ export function ExploreExperience({ snapshot }: { snapshot: VisitorSnapshot }) {
             </div>
           </div>
         </section>
-        <div className="last-note section-width">
+        <div className={`last-note section-width ${revealClass("last-note")}`} data-reveal="last-note">
           <span className="mono">A NOTE BEFORE YOU GO</span>
           <p>Stay curious.<br />The interesting part is usually <button type="button" onClick={() => openNote("underneath", true)}>underneath.</button></p>
           <span className="note-mark" aria-hidden="true">↳</span>
@@ -248,7 +297,7 @@ export function ExploreExperience({ snapshot }: { snapshot: VisitorSnapshot }) {
           <span className="mono">WEASELNET / FIELD NOTES</span>
           <button type="button" className="close-button" aria-label="Close field notes" onClick={closeNotes}>✕</button>
         </div>
-        <div className="dialog-scroll">
+        <div className="dialog-scroll" ref={scrollRef}>
           {current ? <NoteBody note={current} history={history} notes={notes} depth={depth} titleRef={titleRef} onOpen={openNote} onBack={(index) => setHistory((currentHistory) => trailBack(currentHistory, index))} /> : <p>That connection is not on the visitor map.</p>}
         </div>
       </dialog>
