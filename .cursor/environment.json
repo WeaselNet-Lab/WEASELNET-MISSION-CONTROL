@@ -1,0 +1,12 @@
+{
+  "name": "WeaselNet Mission Control",
+  "user": "ubuntu",
+  "install": "bash .cursor/install.sh",
+  "terminals": [
+    {
+      "name": "next-dev",
+      "command": "bash .cursor/dev.sh"
+    }
+  ],
+  "ports": [43147]
+}
