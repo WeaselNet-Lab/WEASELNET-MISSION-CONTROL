@@ -2,6 +2,7 @@ import type { DatabaseSync } from "node:sqlite";
 
 import { getDatabase } from "@/lib/db/connection";
 import { visibleLinks } from "@/lib/explore/trail";
+import type { ProjectStatus } from "@/lib/types";
 
 export type VisitorBlock = { heading: string; body: string };
 export type VisitorLink = { targetSlug: string; label: string };
@@ -34,6 +35,7 @@ export type VisitorCard = {
   glyph: string;
   exploreLabel: string;
   noteSlug: string;
+  status: ProjectStatus | null;
 };
 
 export type VisitorSnapshot = {
@@ -101,20 +103,28 @@ function allowCard(raw: unknown): VisitorCard | null {
     glyph: text(value.glyph),
     exploreLabel: text(value.exploreLabel),
     noteSlug,
+    status: null,
   };
+}
+
+function allowStatus(value: unknown): ProjectStatus | null {
+  if (value === "active" || value === "alpha" || value === "parked" || value === "concept" || value === "shipped") {
+    return value;
+  }
+  return null;
 }
 
 export function readVisitorSnapshot(db: DatabaseSync = getDatabase()): VisitorSnapshot {
   const cardRows = db
     .prepare(
-      `SELECT s.approved_snapshot_json AS snapshot
+      `SELECT s.approved_snapshot_json AS snapshot, p.status AS status
        FROM showcase_entries s
        JOIN projects p ON p.id = s.project_id
        WHERE s.visibility = 'approved'
          AND s.approved_snapshot_json IS NOT NULL
          AND p.archive_state = 'active'`,
     )
-    .all() as { snapshot: string }[];
+    .all() as { snapshot: string; status: unknown }[];
   const noteRows = db
     .prepare(
       `SELECT slug, approved_snapshot_json AS snapshot
@@ -129,7 +139,11 @@ export function readVisitorSnapshot(db: DatabaseSync = getDatabase()): VisitorSn
   const available = new Set(notes.map((note) => note.slug));
   for (const note of notes) note.links = visibleLinks(note.links, available);
   const cards = cardRows
-    .map((row) => allowCard(JSON.parse(row.snapshot) as unknown))
+    .map((row) => {
+      const card = allowCard(JSON.parse(row.snapshot) as unknown);
+      if (!card) return null;
+      return { ...card, status: allowStatus(row.status) };
+    })
     .filter((card): card is VisitorCard => Boolean(card))
     .filter((card) => available.has(card.noteSlug))
     .sort((a, b) => a.number.localeCompare(b.number));
