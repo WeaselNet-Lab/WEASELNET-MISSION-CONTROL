@@ -41,8 +41,8 @@ export function CommandDeck() {
   function go(href: string) { setOpen(false); setQuery(""); router.push(href); }
 
   return <>
-    <Button variant="outline" size="sm" onClick={() => setOpen(true)} className="hidden gap-2 lg:flex"><Search className="size-4" />Command <kbd className="text-[11px] text-muted-foreground">Ctrl K</kbd></Button>
-    <Button variant="outline" size="icon-sm" aria-label="Search Mission Control" onClick={() => setOpen(true)} className="lg:hidden"><Search className="size-4" /></Button>
+    <Button variant="outline" size="sm" onClick={() => setOpen(true)} className="hidden gap-2 lg:flex xl:hidden"><Search className="size-4" />Command <kbd className="text-[11px] text-muted-foreground">Ctrl K</kbd></Button>
+    <Button variant="outline" size="icon-sm" aria-label="Search Mission Control" title="Command · Ctrl K" onClick={() => setOpen(true)} className="lg:hidden xl:inline-flex"><Search className="size-4" /></Button>
     <Dialog open={open} onOpenChange={setOpen}><DialogContent className="max-w-2xl bg-background">
       <DialogHeader><DialogTitle className="font-heading text-2xl">Command deck</DialogTitle></DialogHeader>
       <Input value={query} onChange={(event) => setQuery(event.target.value)} placeholder="Search projects, labs, hardware, callsigns…" autoFocus />

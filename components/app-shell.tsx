@@ -124,9 +124,9 @@ function ShellInner({ children, csrf }: { children: ReactNode; csrf?: string }) 
       ) : null}
       <header className="sticky top-0 z-40 border-b border-primary/20 bg-background/85 backdrop-blur-md">
         <div className="mx-auto flex w-full max-w-6xl items-center gap-3 px-4 py-3 sm:px-6">
-          <Link href="/" className="flex min-w-0 items-center gap-3">
+          <Link href="/" className="flex shrink-0 items-center gap-3">
             <BrandMark className="size-10" />
-            <span className="min-w-0">
+            <span className="whitespace-nowrap">
               <span className="block font-heading text-base leading-none tracking-[0.18em] text-primary uppercase">
                 WeaselNet
               </span>
@@ -137,12 +137,7 @@ function ShellInner({ children, csrf }: { children: ReactNode; csrf?: string }) 
               </span>
             </span>
           </Link>
-          {showOperatorTools ? (
-            <Link href="/explore" className="hidden font-mono text-[10px] tracking-[0.16em] text-muted-foreground uppercase hover:text-primary sm:inline">
-              Explore
-            </Link>
-          ) : null}
-          <div className="ml-auto hidden md:block">
+          <div className="ml-auto hidden xl:block">
             <NavLinks items={navItems} />
           </div>
           <div className="ml-auto flex items-center gap-3 md:ml-4">
@@ -189,7 +184,7 @@ function ShellInner({ children, csrf }: { children: ReactNode; csrf?: string }) 
                   <Button
                     size="icon"
                     variant="outline"
-                    className="md:hidden"
+                    className="xl:hidden"
                     aria-label="Open navigation"
                   />
                 }
@@ -204,6 +199,15 @@ function ShellInner({ children, csrf }: { children: ReactNode; csrf?: string }) 
                 </SheetHeader>
                 <div className="px-2">
                   <NavLinks items={navItems} onNavigate={() => setOpen(false)} />
+                  {showOperatorTools ? (
+                    <Link
+                      href="/explore"
+                      onClick={() => setOpen(false)}
+                      className="mt-1 block rounded-md px-3 py-2 font-mono text-xs tracking-[0.18em] text-muted-foreground uppercase transition-colors hover:bg-muted hover:text-foreground"
+                    >
+                      Explore
+                    </Link>
+                  ) : null}
                 </div>
               </SheetContent>
             </Sheet>
