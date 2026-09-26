@@ -1,10 +1,15 @@
 "use client";
 
 import Link from "next/link";
+import { useRouter } from "next/navigation";
 import { useEffect, useRef, useState, useSyncExternalStore } from "react";
 
+import { publicNoteLabel, publicNoteText, publicThreadTags } from "@/lib/explore/public-name";
 import { pickDiscovery, pushTrail, trailBack, TRAIL_LIMIT } from "@/lib/explore/trail";
-import type { VisitorCard, VisitorNote, VisitorSnapshot } from "@/lib/visitor/snapshot";
+import type { VisitorNote, VisitorSnapshot } from "@/lib/visitor/snapshot";
+
+import { LabEntry, clearEntrySeen } from "@/components/explore/lab-entry";
+import { ProjectShowcase } from "@/components/explore/project-showcase";
 
 const THEME_KEY = "weaselnet-explore-theme";
 type ThemeChoice = "a" | "b";
@@ -13,9 +18,9 @@ const themeListeners = new Set<() => void>();
 function readTheme(): ThemeChoice {
   try {
     const stored = window.localStorage.getItem(THEME_KEY);
-    return stored === "a" || stored === "b" ? stored : "b";
+    return stored === "a" || stored === "b" ? stored : "a";
   } catch {
-    return "b";
+    return "a";
   }
 }
 
@@ -26,53 +31,10 @@ function subscribeTheme(listener: () => void) {
   };
 }
 
-function glyph(card: VisitorCard) {
-  if (card.glyph === "alfred") {
-    return (
-      <div className="project-glyph alfred-glyph" aria-hidden="true">
-        <span>Al<span className="glyph-dot">.</span></span>
-        <div className="signal-lines">{Array.from({ length: 11 }, (_, index) => <i key={index} />)}</div>
-      </div>
-    );
-  }
-  if (card.glyph === "dragon") {
-    return (
-      <div className="project-glyph dragon-glyph" aria-hidden="true">
-        <span>Life<span className="glyph-dot">_</span></span>
-        <div className="glyph-caption">MECHANICS → PERSONALITY</div>
-      </div>
-    );
-  }
-  if (card.glyph === "space") {
-    return (
-      <div className="project-glyph space-glyph" aria-hidden="true">
-        <span>Here<span className="glyph-dot">²</span></span>
-        <div className="glyph-caption">TWO PERSPECTIVES. ONE PLACE.</div>
-      </div>
-    );
-  }
-  return (
-    <div className="project-glyph deck-glyph" aria-hidden="true">
-      <span>&gt;_</span>
-      <div className="glyph-caption">SALVAGE / REBUILD / REIMAGINE</div>
-    </div>
-  );
-}
-
-// Reference teasers break onto a second line on wide cards; the seed keeps that as "\n".
-function teaserLines(teaser: string) {
-  const lines = teaser.split("\n");
-  return lines.map((line, index) => (
-    <span key={index}>
-      {line}
-      {index < lines.length - 1 ? <br /> : null}
-    </span>
-  ));
-}
-
 export function ExploreExperience({ snapshot }: { snapshot: VisitorSnapshot }) {
+  const router = useRouter();
   const notes = new Map(snapshot.notes.map((note) => [note.slug, note]));
-  const theme = useSyncExternalStore(subscribeTheme, readTheme, () => "b" as ThemeChoice);
+  const theme = useSyncExternalStore(subscribeTheme, readTheme, () => "a" as ThemeChoice);
   const [history, setHistory] = useState<string[]>([]);
   const [open, setOpen] = useState(false);
   const [motionReady, setMotionReady] = useState(false);
@@ -154,6 +116,7 @@ export function ExploreExperience({ snapshot }: { snapshot: VisitorSnapshot }) {
 
   return (
     <div ref={rootRef} className={motionReady ? "explore-root motion-ready" : "explore-root"} data-theme={theme}>
+      <LabEntry />
       <a className="skip-link" href="#projects">Skip to projects</a>
       <header className="site-header">
         <a className="brand" href="#intro-title" aria-label="WeaselNet Labs home">
@@ -171,6 +134,15 @@ export function ExploreExperience({ snapshot }: { snapshot: VisitorSnapshot }) {
         <span>DESIGN STUDY</span>
         <a href="#projects" aria-current={theme === "a" ? "page" : undefined} onClick={(event) => { event.preventDefault(); chooseTheme("a"); }}>A / Original</a>
         <a href="#projects" aria-current={theme === "b" ? "page" : undefined} onClick={(event) => { event.preventDefault(); chooseTheme("b"); }}>B / Graphite + ember</a>
+        <button
+          type="button"
+          onClick={() => {
+            clearEntrySeen();
+            router.refresh();
+          }}
+        >
+          Replay entrance
+        </button>
         <Link href="/">Mission Control</Link>
       </div>
       <main>
@@ -199,31 +171,7 @@ export function ExploreExperience({ snapshot }: { snapshot: VisitorSnapshot }) {
           </div>
         </section>
         <div className="bench-strip section-width"><span>BUILT FROM QUESTIONS. AND OCCASIONALLY SPARE PARTS.</span><span>SCROLL TO EXPLORE <span>↓</span></span></div>
-        <section id="projects" className="projects section-width">
-          <div className={`section-heading ${revealClass("heading")}`} data-reveal="heading">
-            <div><div className="eyebrow">01 / THE PROJECTS</div><h2>Ideas with fingerprints.</h2></div>
-            <p>Different experiments. The same instinct:<br />understand it, take it apart, make it possible.</p>
-          </div>
-          <div className="project-grid">
-            {snapshot.cards.map((card) => (
-              <button
-                key={card.slug}
-                className={`project-card ${revealClass(`card:${card.slug}`)}`}
-                data-reveal={`card:${card.slug}`}
-                type="button"
-                onClick={() => openNote(card.noteSlug, true)}
-              >
-                <div className="card-top"><span className="project-number">{`P—${card.number}`}</span><span className="category">{card.category}</span></div>
-                {glyph(card)}
-                <div className="card-content">
-                  <h3>{card.visitorTitle} <span>↗</span></h3>
-                  <p>{teaserLines(card.teaser)}</p>
-                  <div className="card-bottom"><span>{card.exploreLabel}</span><span>{card.number}</span></div>
-                </div>
-              </button>
-            ))}
-          </div>
-        </section>
+        <ProjectShowcase cards={snapshot.cards} onExplore={(slug) => openNote(slug, true)} />
         <section id="connections" className={`connections section-width ${revealClass("connections")}`} data-reveal="connections">
           <div className="rabbit-intro">
             <div className="eyebrow">02 / THE RABBIT HOLES</div>
@@ -247,7 +195,7 @@ export function ExploreExperience({ snapshot }: { snapshot: VisitorSnapshot }) {
               <button key={thread.slug} className="thread" type="button" onClick={() => openNote(thread.slug, true)}>
                 <span className="thread-num">{thread.threadNum}</span>
                 <span className="thread-body">
-                  <span className="thread-tags">{thread.threadTags}</span>
+                  <span className="thread-tags">{thread.threadTags ? publicThreadTags(thread.threadTags) : null}</span>
                   <strong>{thread.threadTitle}</strong>
                   <span>{thread.threadDetail}</span>
                 </span>
@@ -326,7 +274,8 @@ function NoteBody({
     <>
       <div className="trail" aria-label="Your exploration path">
         {history.map((slug, index) => {
-          const label = notes.get(slug)?.label ?? slug;
+          const source = notes.get(slug);
+          const label = source ? publicNoteLabel(source) : slug;
           const last = index === history.length - 1;
           return (
             <span key={`${slug}-${index}`}>
@@ -338,24 +287,24 @@ function NoteBody({
       </div>
       <div className="eyebrow" id="note-category">{note.category}</div>
       <h2 id="note-title" ref={titleRef} tabIndex={-1}>
-        {note.titleLines.map((line) => <span key={line}>{line}<br /></span>)}
+        {note.titleLines.map((line) => <span key={line}>{publicNoteText(line)}<br /></span>)}
       </h2>
-      <p className="note-lead">{note.lead}</p>
+      <p className="note-lead">{publicNoteText(note.lead)}</p>
       <div>
         {note.blocks.map((block) => (
           <div className="note-block" key={block.heading}>
-            <h3>{block.heading}</h3>
-            <p>{block.body}</p>
+            <h3>{publicNoteText(block.heading)}</h3>
+            <p>{publicNoteText(block.body)}</p>
           </div>
         ))}
-        <p className="note-aside">{note.aside}</p>
+        <p className="note-aside">{publicNoteText(note.aside)}</p>
       </div>
       <div className="note-divider" />
       <div className="eyebrow">KEEP FOLLOWING THE THREAD</div>
       <div className="note-links">
         {note.links.map((link) => (
           <button key={link.targetSlug} className="note-link" type="button" onClick={() => onOpen(link.targetSlug)}>
-            <span>{link.label}</span><span aria-hidden="true">↗</span>
+            <span>{publicNoteText(link.label)}</span><span aria-hidden="true">↗</span>
           </button>
         ))}
       </div>
