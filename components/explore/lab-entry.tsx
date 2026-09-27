@@ -3,6 +3,8 @@
 import Image from "next/image";
 import { useCallback, useEffect, useRef, useState } from "react";
 
+import { EntryLabLogo } from "@/components/explore/entry-lab-logo";
+
 const SEEN_KEY = "weaselnet-lab-entry";
 
 /** One timeline for the entrance, the boot, and the handoff to the page. */
@@ -188,22 +190,25 @@ export function LabEntry() {
       {phase === "boot" ? (
         <div className="lab-boot" data-complete={complete} data-skipped={skipped}>
           <div className="lab-boot-panel">
-            <div className="lab-boot-ring" role="img" aria-label={`Boot ${progress}%`}>
-              <svg viewBox="0 0 120 120" aria-hidden="true">
-                <circle className="lab-boot-track" cx="60" cy="60" r={RING_RADIUS} />
-                <circle
-                  className="lab-boot-arc"
-                  cx="60"
-                  cy="60"
-                  r={RING_RADIUS}
-                  strokeDasharray={RING_CIRCUMFERENCE}
-                  strokeDashoffset={dash}
-                  transform="rotate(-90 60 60)"
-                />
-              </svg>
-              <span className="lab-boot-count">{progress}</span>
+            <div className="lab-boot-mark">
+              <EntryLabLogo placement="boot" />
+              <div className="lab-boot-ring" aria-hidden="true">
+                <svg viewBox="0 0 120 120" aria-hidden="true">
+                  <circle className="lab-boot-track" cx="60" cy="60" r={RING_RADIUS} />
+                  <circle
+                    className="lab-boot-arc"
+                    cx="60"
+                    cy="60"
+                    r={RING_RADIUS}
+                    strokeDasharray={RING_CIRCUMFERENCE}
+                    strokeDashoffset={dash}
+                    transform="rotate(-90 60 60)"
+                  />
+                </svg>
+                <span className="lab-boot-count">{progress}</span>
+              </div>
             </div>
-            <div className="lab-boot-list">
+            <div className="lab-boot-list" aria-hidden="true">
               {READINESS.map((row) => (
                 <p key={row.at} className="lab-boot-row" data-on={progress >= row.at}>
                   <span>{row.label}</span>
@@ -213,7 +218,10 @@ export function LabEntry() {
               ))}
             </div>
           </div>
-          <div className="lab-boot-welcome" data-on={complete}>
+          <p className="lab-boot-live" aria-live="polite">
+            {complete ? "Welcome to WeaselNet Labs. Let me show you around." : ""}
+          </p>
+          <div className="lab-boot-welcome" data-on={complete} aria-hidden="true">
             <p>Welcome to WeaselNet Labs</p>
             <p className="lab-boot-tagline">“Let me show you around.”</p>
           </div>
