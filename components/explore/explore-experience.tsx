@@ -2,7 +2,6 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import { useRouter } from "next/navigation";
 import { useEffect, useRef, useState, useSyncExternalStore } from "react";
 
 import { publicNoteLabel, publicNoteText, publicThreadTags } from "@/lib/explore/public-name";
@@ -10,7 +9,7 @@ import { pickDiscovery, pushTrail, trailBack, TRAIL_LIMIT } from "@/lib/explore/
 import type { VisitorNote, VisitorSnapshot } from "@/lib/visitor/snapshot";
 
 import { BlueprintField, PULSE, threadPulseRoute } from "@/components/explore/blueprint-field";
-import { LabEntry, clearEntrySeen } from "@/components/explore/lab-entry";
+import { LabEntry } from "@/components/explore/lab-entry";
 import { ProjectShowcase } from "@/components/explore/project-showcase";
 
 const THEME_KEY = "weaselnet-explore-theme";
@@ -20,9 +19,9 @@ const themeListeners = new Set<() => void>();
 function readTheme(): ThemeChoice {
   try {
     const stored = window.localStorage.getItem(THEME_KEY);
-    return stored === "a" || stored === "b" ? stored : "a";
+    return stored === "a" || stored === "b" ? stored : "b";
   } catch {
-    return "a";
+    return "b";
   }
 }
 
@@ -34,9 +33,8 @@ function subscribeTheme(listener: () => void) {
 }
 
 export function ExploreExperience({ snapshot }: { snapshot: VisitorSnapshot }) {
-  const router = useRouter();
   const notes = new Map(snapshot.notes.map((note) => [note.slug, note]));
-  const theme = useSyncExternalStore(subscribeTheme, readTheme, () => "a" as ThemeChoice);
+  const theme = useSyncExternalStore(subscribeTheme, readTheme, () => "b" as ThemeChoice);
   const [history, setHistory] = useState<string[]>([]);
   const [open, setOpen] = useState(false);
   const [pulse, setPulse] = useState<{ d: string; w: number; h: number } | null>(null);
@@ -93,11 +91,6 @@ export function ExploreExperience({ snapshot }: { snapshot: VisitorSnapshot }) {
   }, []);
 
   const revealClass = (key: string) => (revealed.has(key) ? "reveal visible" : "reveal");
-
-  function chooseTheme(next: ThemeChoice) {
-    window.localStorage.setItem(THEME_KEY, next);
-    themeListeners.forEach((listener) => listener());
-  }
 
   function openNote(slug: string, restart = false) {
     if (!notes.has(slug)) return;
@@ -223,23 +216,11 @@ export function ExploreExperience({ snapshot }: { snapshot: VisitorSnapshot }) {
           <a href="#connections">Rabbit holes <span className="tiny-arrow">↗</span></a>
           <a href="#builder">The builder</a>
         </nav>
-        <span className="header-note">INDEPENDENT EXPERIMENTS</span>
+        <div className="header-side">
+          <span className="header-note">INDEPENDENT EXPERIMENTS</span>
+          <Link href="/" className="header-utility">Mission Control</Link>
+        </div>
       </header>
-      <div className="design-options" aria-label="Design options">
-        <span>DESIGN STUDY</span>
-        <a href="#projects" aria-current={theme === "a" ? "page" : undefined} onClick={(event) => { event.preventDefault(); chooseTheme("a"); }}>A / Original</a>
-        <a href="#projects" aria-current={theme === "b" ? "page" : undefined} onClick={(event) => { event.preventDefault(); chooseTheme("b"); }}>B / Graphite + ember</a>
-        <button
-          type="button"
-          onClick={() => {
-            clearEntrySeen();
-            router.refresh();
-          }}
-        >
-          Replay entrance
-        </button>
-        <Link href="/">Mission Control</Link>
-      </div>
       <main>
         <section className="intro section-width" aria-labelledby="intro-title">
           <div className="intro-main">
