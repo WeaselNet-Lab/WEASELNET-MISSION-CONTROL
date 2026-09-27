@@ -69,15 +69,21 @@ html:has(.explore-root[data-theme="b"]){background:#202020}
   }
 }
 
-/* Branded entry. The page stays mounted underneath; this layer only covers it. */
+/* Branded entry. Graphite and orange, matching theme B. The page stays mounted underneath. */
 .lab-entry {
+  --lab-bg: #202020;
+  --lab-text: #f0efeb;
+  --lab-muted: #b6b5b1;
+  --lab-accent: #ffae58;
+  --lab-accent-hover: #ffb45f;
+  --boot-w-gap: 24px;
   position: fixed;
   inset: 0;
   z-index: 60;
   background:
-    radial-gradient(ellipse 62% 44% at 22% 20%, rgba(126, 200, 214, 0.14), transparent 62%),
-    linear-gradient(160deg, #0b1724 0%, #050a10 100%);
-  color: #e7eef5;
+    radial-gradient(ellipse 62% 44% at 22% 20%, color-mix(in srgb, var(--lab-accent) 14%, transparent), transparent 62%),
+    var(--lab-bg);
+  color: var(--lab-text);
   transition: opacity var(--lab-fade, 420ms) ease;
 }
 .lab-entry[data-phase="leaving"] .lab-entry-inner { opacity: 0; }
@@ -90,11 +96,13 @@ html:has(.explore-root[data-theme="b"]){background:#202020}
   justify-content: flex-start;
   transition: opacity var(--lab-fade, 420ms) ease;
 }
-.lab-entry-brand { max-width: 520px; }
+.lab-entry-brand { max-width: min(540px, 100%); }
 .lab-entry-logo {
   display: block;
-  width: clamp(240px, 30vw, 380px);
+  width: min(100%, 540px);
   height: auto;
+  object-fit: contain;
+  object-position: left center;
 }
 .lab-entry-lines {
   margin: clamp(28px, 4vh, 44px) 0 0;
@@ -105,9 +113,9 @@ html:has(.explore-root[data-theme="b"]){background:#202020}
   font-size: 13px;
   letter-spacing: 0.14em;
   text-transform: uppercase;
-  color: #93a7bb;
+  color: var(--lab-muted);
 }
-.lab-entry-lines span:first-child { color: #c9d8e6; }
+.lab-entry-lines span:first-child { color: var(--lab-text); }
 .lab-entry-button {
   margin-top: clamp(36px, 6vh, 64px);
   display: inline-flex;
@@ -117,21 +125,21 @@ html:has(.explore-root[data-theme="b"]){background:#202020}
   padding: 10px 0;
   border: 0;
   background: transparent;
-  color: #e7eef5;
+  color: var(--lab-text);
   font-size: 16px;
   cursor: pointer;
 }
 .lab-entry-rule {
   width: 44px;
   height: 1px;
-  background: #7ec8d6;
+  background: var(--lab-accent);
   transition: width 0.25s ease;
 }
 .lab-entry-button:hover,
-.lab-entry-button:focus-visible { color: #7ec8d6; }
+.lab-entry-button:focus-visible { color: var(--lab-accent-hover); }
 .lab-entry-button:hover .lab-entry-rule,
 .lab-entry-button:focus-visible .lab-entry-rule { width: 64px; }
-.lab-entry-button:focus-visible { outline: 2px solid #7ec8d6; outline-offset: 6px; }
+.lab-entry-button:focus-visible { outline: 2px solid var(--lab-accent); outline-offset: 6px; }
 .lab-entry[data-phase="done"] { opacity: 0; pointer-events: none; transition: opacity 400ms ease; }
 .lab-boot {
   position: absolute;
@@ -143,13 +151,28 @@ html:has(.explore-root[data-theme="b"]){background:#202020}
   gap: clamp(28px, 5vh, 48px);
   padding: 24px;
   background:
-    radial-gradient(ellipse 58% 42% at 50% 42%, rgba(226, 184, 75, 0.07), transparent 62%),
-    linear-gradient(160deg, #0b1724 0%, #050a10 100%);
+    radial-gradient(ellipse 58% 42% at 50% 42%, color-mix(in srgb, var(--lab-accent) 10%, transparent), transparent 62%),
+    var(--lab-bg);
 }
 .lab-boot-panel {
   display: flex;
   align-items: center;
   gap: clamp(32px, 5vw, 64px);
+}
+.lab-boot-mark {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--boot-w-gap);
+  flex: none;
+}
+.lab-boot-mark-logo {
+  display: block;
+  width: clamp(148px, 18vw, 196px);
+  height: auto;
+  object-fit: contain;
+  /* Source mark is dark gray. Lift it so the distressed W reads on graphite. */
+  filter: brightness(2.45) contrast(1.22);
 }
 .lab-boot-ring {
   position: relative;
@@ -159,12 +182,12 @@ html:has(.explore-root[data-theme="b"]){background:#202020}
 .lab-boot-ring svg { display: block; width: 100%; height: 100%; }
 .lab-boot-track {
   fill: none;
-  stroke: rgba(231, 238, 245, 0.12);
+  stroke: color-mix(in srgb, var(--lab-text) 16%, transparent);
   stroke-width: 1.5;
 }
 .lab-boot-arc {
   fill: none;
-  stroke: #e2b84b;
+  stroke: var(--lab-accent);
   stroke-width: 2;
   stroke-linecap: round;
 }
@@ -176,7 +199,7 @@ html:has(.explore-root[data-theme="b"]){background:#202020}
   font-family: var(--font-plex), ui-monospace, monospace;
   font-size: clamp(28px, 3vw, 36px);
   font-variant-numeric: tabular-nums;
-  color: #e7eef5;
+  color: var(--lab-text);
 }
 .lab-boot-list {
   display: flex;
@@ -193,16 +216,16 @@ html:has(.explore-root[data-theme="b"]){background:#202020}
   font-size: 13px;
   letter-spacing: 0.08em;
   text-transform: uppercase;
-  color: #93a7bb;
+  color: var(--lab-muted);
   opacity: 0;
   transform: translateY(4px);
   transition: opacity 0.3s ease, transform 0.3s ease, color 0.3s ease;
 }
-.lab-boot-row[data-on="true"] { opacity: 1; transform: none; color: #c9d8e6; }
-.lab-boot-row[data-on="true"] span:last-child { color: #e2b84b; }
+.lab-boot-row[data-on="true"] { opacity: 1; transform: none; color: var(--lab-text); }
+.lab-boot-row[data-on="true"] span:last-child { color: var(--lab-accent); }
 .lab-boot-dots {
   flex: 1;
-  border-bottom: 1px dotted rgba(147, 167, 187, 0.4);
+  border-bottom: 1px dotted color-mix(in srgb, var(--lab-muted) 45%, transparent);
   transform: translateY(-3px);
 }
 .lab-boot-welcome {
@@ -216,7 +239,7 @@ html:has(.explore-root[data-theme="b"]){background:#202020}
   font-family: var(--display), var(--font-dm), sans-serif;
   font-size: clamp(20px, 2.4vw, 28px);
   letter-spacing: 0.04em;
-  color: #e7eef5;
+  color: var(--lab-text);
   opacity: 0;
   transform: translateY(8px);
   transition: opacity 0.4s ease, transform 0.4s ease;
@@ -228,7 +251,7 @@ html:has(.explore-root[data-theme="b"]){background:#202020}
   font-style: italic;
   font-size: clamp(15px, 1.6vw, 18px);
   letter-spacing: 0;
-  color: #93a7bb;
+  color: var(--lab-muted);
 }
 .lab-boot-skip {
   position: absolute;
@@ -236,15 +259,15 @@ html:has(.explore-root[data-theme="b"]){background:#202020}
   bottom: clamp(20px, 4vh, 40px);
   min-height: 44px;
   padding: 8px 14px;
-  border: 1px solid rgba(231, 238, 245, 0.2);
+  border: 1px solid color-mix(in srgb, var(--lab-text) 22%, transparent);
   background: transparent;
-  color: #93a7bb;
+  color: var(--lab-muted);
   font-size: 14px;
   cursor: pointer;
 }
 .lab-boot-skip:hover,
-.lab-boot-skip:focus-visible { color: #e7eef5; border-color: #7ec8d6; }
-.lab-boot-skip:focus-visible { outline: 2px solid #7ec8d6; outline-offset: 4px; }
+.lab-boot-skip:focus-visible { color: var(--lab-text); border-color: var(--lab-accent); }
+.lab-boot-skip:focus-visible { outline: 2px solid var(--lab-accent); outline-offset: 4px; }
 @media (max-width: 760px) {
   .lab-boot-panel { flex-direction: column; gap: 28px; }
   .lab-boot-list { width: 100%; }
@@ -252,8 +275,9 @@ html:has(.explore-root[data-theme="b"]){background:#202020}
 html.lab-entry-active { overflow: hidden; }
 @media (max-width: 760px) {
   .lab-entry-inner { padding: 48px 24px; }
-  .lab-entry-logo { width: min(72vw, 300px); }
+  .lab-entry-logo { width: 100%; }
   .lab-entry-lines { font-size: 12px; }
+  .lab-boot-mark-logo { width: clamp(132px, 36vw, 168px); }
 }
 @media (prefers-reduced-motion: reduce) {
   .lab-entry { transition: none; }
@@ -517,3 +541,61 @@ html.lab-entry-active { overflow: hidden; }
 
 .explore-root[data-theme="b"] .exhibit-copy h3 { font-weight: 600; letter-spacing: -0.4px; }
 .explore-root[data-theme="b"] .exhibit-link { font-family: var(--font-plex), monospace; letter-spacing: 0.8px; }
+
+/* Header lockup. The file is 1536×1024 with the W occupying 1234px of width,
+   so 44.8px of image width is 36px of visible artwork. Warmth is header-only. */
+.explore-root .brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.explore-root .brand-mark {
+  display: block;
+  width: 44.8px;
+  height: auto;
+  flex: none;
+  object-fit: contain;
+  filter: brightness(2.4) contrast(1.18) sepia(0.28) saturate(0.5);
+}
+.explore-root .brand-words {
+  display: inline-flex;
+  align-items: baseline;
+  position: relative;
+  font-family: var(--font-dm), Arial, sans-serif;
+  line-height: 1;
+}
+.explore-root .brand-words::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  width: 100%;
+  height: 1px;
+  background: #ffae58;
+  transform: scaleX(0);
+  transform-origin: left center;
+  transition: transform 160ms ease;
+}
+.explore-root .brand:hover .brand-words::after,
+.explore-root .brand:focus-visible .brand-words::after {
+  transform: scaleX(1);
+}
+.explore-root .brand .brand-name {
+  color: #f4f1ea;
+  font-weight: 600;
+  font-size: 15px;
+  letter-spacing: 0.07em;
+}
+.explore-root .brand .brand-labs {
+  margin-left: 8px;
+  color: #ffae58;
+  font-weight: 500;
+  font-size: 11px;
+  letter-spacing: 0.26em;
+}
+.explore-root[data-theme="b"] .brand,
+.explore-root[data-theme="b"] .brand-words,
+.explore-root[data-theme="b"] .brand .brand-name,
+.explore-root[data-theme="b"] .brand .brand-labs {
+  font-family: var(--font-dm), Arial, sans-serif;
+}

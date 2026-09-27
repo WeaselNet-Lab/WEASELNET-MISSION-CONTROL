@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { useEffect, useRef, useState, useSyncExternalStore } from "react";
@@ -120,8 +121,18 @@ export function ExploreExperience({ snapshot }: { snapshot: VisitorSnapshot }) {
       <a className="skip-link" href="#projects">Skip to projects</a>
       <header className="site-header">
         <a className="brand" href="#intro-title" aria-label="WeaselNet Labs home">
-          <svg width="31" height="29" viewBox="0 0 31 29" fill="none" aria-hidden="true"><path d="m2 6 6 18 7.5-12L23 24l6-18M9 6l6.5 7L22 6" stroke="currentColor" strokeWidth="2.3" /></svg>
-          <span>WEASELNET<span className="brand-labs"> LABS</span></span>
+          <Image
+            src="/brand/weaselnet/Weaselnet-lab-W.png"
+            alt=""
+            width={1536}
+            height={1024}
+            priority
+            className="brand-mark"
+          />
+          <span className="brand-words">
+            <span className="brand-name">WEASELNET</span>
+            <span className="brand-labs">LABS</span>
+          </span>
         </a>
         <nav aria-label="Main navigation">
           <a href="#projects">The projects</a>

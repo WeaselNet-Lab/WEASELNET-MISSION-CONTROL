@@ -167,10 +167,10 @@ export function LabEntry() {
       <div className="lab-entry-inner">
         <div className="lab-entry-brand">
           <Image
-            src="/weaselnet-wordmark.svg"
-            alt="WeaselNet Mission Control"
-            width={520}
-            height={96}
+            src="/brand/weaselnet/WeaselNet-10ENGINEERING.png"
+            alt="WeaselNet Engineering"
+            width={2059}
+            height={764}
             priority
             className="lab-entry-logo"
           />
@@ -188,20 +188,30 @@ export function LabEntry() {
       {phase === "boot" ? (
         <div className="lab-boot" data-complete={complete} data-skipped={skipped}>
           <div className="lab-boot-panel">
-            <div className="lab-boot-ring" role="img" aria-label={`Boot ${progress}%`}>
-              <svg viewBox="0 0 120 120" aria-hidden="true">
-                <circle className="lab-boot-track" cx="60" cy="60" r={RING_RADIUS} />
-                <circle
-                  className="lab-boot-arc"
-                  cx="60"
-                  cy="60"
-                  r={RING_RADIUS}
-                  strokeDasharray={RING_CIRCUMFERENCE}
-                  strokeDashoffset={dash}
-                  transform="rotate(-90 60 60)"
-                />
-              </svg>
-              <span className="lab-boot-count">{progress}</span>
+            <div className="lab-boot-mark">
+              <Image
+                src="/brand/weaselnet/Weaselnet-lab-W.png"
+                alt="WeaselNet"
+                width={1536}
+                height={1024}
+                priority
+                className="lab-boot-mark-logo"
+              />
+              <div className="lab-boot-ring" role="img" aria-label={`Boot ${progress}%`}>
+                <svg viewBox="0 0 120 120" aria-hidden="true">
+                  <circle className="lab-boot-track" cx="60" cy="60" r={RING_RADIUS} />
+                  <circle
+                    className="lab-boot-arc"
+                    cx="60"
+                    cy="60"
+                    r={RING_RADIUS}
+                    strokeDasharray={RING_CIRCUMFERENCE}
+                    strokeDashoffset={dash}
+                    transform="rotate(-90 60 60)"
+                  />
+                </svg>
+                <span className="lab-boot-count">{progress}</span>
+              </div>
             </div>
             <div className="lab-boot-list">
               {READINESS.map((row) => (
