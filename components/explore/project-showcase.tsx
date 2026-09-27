@@ -2,6 +2,8 @@
 
 import { useLayoutEffect, useRef, useState } from "react";
 
+import { EntryLabLogo } from "@/components/explore/entry-lab-logo";
+import { brandArt, placementForGlyph } from "@/lib/brand/entry-lab-brand";
 import { exhibitFrame, exhibitTravelUnits } from "@/lib/explore/exhibit-scroll";
 import { publicProjectName } from "@/lib/explore/public-name";
 import type { VisitorCard } from "@/lib/visitor/snapshot";
@@ -25,6 +27,14 @@ function catalogNumber(number: string): string {
 }
 
 function ExhibitVisual({ card }: { card: VisitorCard }) {
+  const artSlot = placementForGlyph(card.glyph);
+  if (artSlot && brandArt(artSlot)) {
+    return (
+      <div className="project-glyph project-art">
+        <EntryLabLogo placement={artSlot} />
+      </div>
+    );
+  }
   if (card.glyph === "alfred") {
     return (
       <div className="project-glyph alfred-glyph" aria-hidden="true">

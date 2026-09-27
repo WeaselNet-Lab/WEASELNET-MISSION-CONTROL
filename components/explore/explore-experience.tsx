@@ -8,6 +8,7 @@ import { publicNoteLabel, publicNoteText, publicThreadTags } from "@/lib/explore
 import { pickDiscovery, pushTrail, trailBack, TRAIL_LIMIT } from "@/lib/explore/trail";
 import type { VisitorNote, VisitorSnapshot } from "@/lib/visitor/snapshot";
 
+import { EntryLabLogo } from "@/components/explore/entry-lab-logo";
 import { LabEntry, clearEntrySeen } from "@/components/explore/lab-entry";
 import { ProjectShowcase } from "@/components/explore/project-showcase";
 
@@ -18,9 +19,9 @@ const themeListeners = new Set<() => void>();
 function readTheme(): ThemeChoice {
   try {
     const stored = window.localStorage.getItem(THEME_KEY);
-    return stored === "a" || stored === "b" ? stored : "a";
+    return stored === "a" || stored === "b" ? stored : "b";
   } catch {
-    return "a";
+    return "b";
   }
 }
 
@@ -34,7 +35,7 @@ function subscribeTheme(listener: () => void) {
 export function ExploreExperience({ snapshot }: { snapshot: VisitorSnapshot }) {
   const router = useRouter();
   const notes = new Map(snapshot.notes.map((note) => [note.slug, note]));
-  const theme = useSyncExternalStore(subscribeTheme, readTheme, () => "a" as ThemeChoice);
+  const theme = useSyncExternalStore(subscribeTheme, readTheme, () => "b" as ThemeChoice);
   const [history, setHistory] = useState<string[]>([]);
   const [open, setOpen] = useState(false);
   const [motionReady, setMotionReady] = useState(false);
@@ -120,7 +121,7 @@ export function ExploreExperience({ snapshot }: { snapshot: VisitorSnapshot }) {
       <a className="skip-link" href="#projects">Skip to projects</a>
       <header className="site-header">
         <a className="brand" href="#intro-title" aria-label="WeaselNet Labs home">
-          <svg width="31" height="29" viewBox="0 0 31 29" fill="none" aria-hidden="true"><path d="m2 6 6 18 7.5-12L23 24l6-18M9 6l6.5 7L22 6" stroke="currentColor" strokeWidth="2.3" /></svg>
+          <EntryLabLogo placement="header" />
           <span>WEASELNET<span className="brand-labs"> LABS</span></span>
         </a>
         <nav aria-label="Main navigation">
@@ -175,6 +176,7 @@ export function ExploreExperience({ snapshot }: { snapshot: VisitorSnapshot }) {
         <section id="connections" className={`connections section-width ${revealClass("connections")}`} data-reveal="connections">
           <div className="rabbit-intro">
             <div className="eyebrow">02 / THE RABBIT HOLES</div>
+            <EntryLabLogo placement="rabbitHoles" />
             <h2>Nothing here<br />is <em>quite</em> separate.</h2>
             <p>Pull on an idea. See what it connects to.<br />There is no required reading order.</p>
             <button
@@ -206,6 +208,7 @@ export function ExploreExperience({ snapshot }: { snapshot: VisitorSnapshot }) {
         </section>
         <section id="builder" className={`builder section-width ${revealClass("builder")}`} data-reveal="builder">
           <div className="eyebrow">03 / THE HUMAN IN THE LOOP</div>
+          <EntryLabLogo placement="engineering" />
           <div className="builder-grid">
             <h2>Engineer by trade.<br /><em>“What if?”</em> by default.</h2>
             <div>
