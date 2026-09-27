@@ -26,9 +26,6 @@ export const metadata: Metadata = {
   },
   description:
     "Ops board for Josh's WeaselNet labs: VR, local AI, robotics, flight systems, and the publish bar that keeps side quests from becoming folklore.",
-  icons: {
-    icon: "/weaselnet-mark.svg",
-  },
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {

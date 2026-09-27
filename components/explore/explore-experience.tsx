@@ -9,6 +9,7 @@ import { publicNoteLabel, publicNoteText, publicThreadTags } from "@/lib/explore
 import { pickDiscovery, pushTrail, trailBack, TRAIL_LIMIT } from "@/lib/explore/trail";
 import type { VisitorNote, VisitorSnapshot } from "@/lib/visitor/snapshot";
 
+import { BlueprintField, PULSE, threadPulseRoute } from "@/components/explore/blueprint-field";
 import { LabEntry, clearEntrySeen } from "@/components/explore/lab-entry";
 import { ProjectShowcase } from "@/components/explore/project-showcase";
 
@@ -38,6 +39,9 @@ export function ExploreExperience({ snapshot }: { snapshot: VisitorSnapshot }) {
   const theme = useSyncExternalStore(subscribeTheme, readTheme, () => "a" as ThemeChoice);
   const [history, setHistory] = useState<string[]>([]);
   const [open, setOpen] = useState(false);
+  const [pulse, setPulse] = useState<{ d: string; w: number; h: number } | null>(null);
+  const [pulseFading, setPulseFading] = useState(false);
+  const [energized, setEnergized] = useState<string | null>(null);
   const [motionReady, setMotionReady] = useState(false);
   const [revealed, setRevealed] = useState<ReadonlySet<string>>(() => new Set());
   const rootRef = useRef<HTMLDivElement>(null);
@@ -46,6 +50,9 @@ export function ExploreExperience({ snapshot }: { snapshot: VisitorSnapshot }) {
   const dialogRef = useRef<HTMLDialogElement>(null);
   const scrollRef = useRef<HTMLDivElement>(null);
   const lastThread = useRef<string | null>(null);
+  const pulseSvgRef = useRef<SVGSVGElement>(null);
+  const pulseTimers = useRef<number[]>([]);
+  const pulseBusy = useRef(false);
 
   useEffect(() => {
     const dialog = dialogRef.current;
@@ -103,6 +110,82 @@ export function ExploreExperience({ snapshot }: { snapshot: VisitorSnapshot }) {
     setHistory((current) => pushTrail(current, slug));
   }
 
+  /**
+   * Rabbit holes open through the blueprint: one orange pulse travels the
+   * trunk line to the chosen thread, the row's border brightens on arrival,
+   * and only then does the field-notes transition begin. Reduced motion, a
+   * missing route, or a pulse already in flight all skip straight to open.
+   */
+  function energizeOpen(slug: string, thread: HTMLElement | null) {
+    if (!notes.has(slug)) return;
+    const root = rootRef.current;
+    const reduced = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+    const route = !reduced && root && thread && !pulseBusy.current ? threadPulseRoute(root, thread) : null;
+    if (!route) {
+      openNote(slug, true);
+      return;
+    }
+    pulseBusy.current = true;
+    setPulse(route);
+    setPulseFading(false);
+    pulseTimers.current.push(window.setTimeout(() => setEnergized(slug), PULSE.travel));
+    pulseTimers.current.push(
+      window.setTimeout(() => {
+        setPulseFading(true);
+        openNote(slug, true);
+      }, PULSE.travel + PULSE.hold),
+    );
+    pulseTimers.current.push(
+      window.setTimeout(() => {
+        setPulse(null);
+        setPulseFading(false);
+        setEnergized(null);
+        pulseBusy.current = false;
+      }, PULSE.travel + PULSE.hold + PULSE.fade),
+    );
+  }
+
+  // Drive the pulse along its route: draw-on trace, fading trail, bright head.
+  useEffect(() => {
+    if (!pulse) return;
+    const svg = pulseSvgRef.current;
+    const routePath = svg?.querySelector<SVGPathElement>(".pulse-route");
+    const trailPath = svg?.querySelector<SVGPathElement>(".pulse-trail");
+    const head = svg?.querySelector<SVGCircleElement>(".pulse-head");
+    const glow = svg?.querySelector<SVGCircleElement>(".pulse-head-glow");
+    if (!routePath || !trailPath || !head || !glow) return;
+    const length = routePath.getTotalLength();
+    const trail = Math.min(0.35, 96 / length);
+    trailPath.style.strokeDasharray = `${trail} 2`;
+    let frame = 0;
+    const start = performance.now();
+    const tick = (now: number) => {
+      const t = Math.min(1, (now - start) / PULSE.travel);
+      routePath.style.strokeDashoffset = String(1 - t);
+      trailPath.style.strokeDashoffset = String(trail - t);
+      const point = routePath.getPointAtLength(t * length);
+      for (const dot of [head, glow]) {
+        dot.setAttribute("cx", String(point.x));
+        dot.setAttribute("cy", String(point.y));
+      }
+      if (t < 1) {
+        frame = requestAnimationFrame(tick);
+      } else {
+        head.style.opacity = "0";
+        glow.style.opacity = "0";
+      }
+    };
+    frame = requestAnimationFrame(tick);
+    return () => cancelAnimationFrame(frame);
+  }, [pulse]);
+
+  useEffect(
+    () => () => {
+      pulseTimers.current.forEach((id) => window.clearTimeout(id));
+    },
+    [],
+  );
+
   function closeNotes() {
     setOpen(false);
     setHistory([]);
@@ -117,6 +200,7 @@ export function ExploreExperience({ snapshot }: { snapshot: VisitorSnapshot }) {
 
   return (
     <div ref={rootRef} className={motionReady ? "explore-root motion-ready" : "explore-root"} data-theme={theme}>
+      <BlueprintField rootRef={rootRef} />
       <LabEntry />
       <a className="skip-link" href="#projects">Skip to projects</a>
       <header className="site-header">
@@ -195,7 +279,8 @@ export function ExploreExperience({ snapshot }: { snapshot: VisitorSnapshot }) {
                 const pick = pickDiscovery(snapshot.discovery, lastThread.current);
                 if (!pick) return;
                 lastThread.current = pick;
-                openNote(pick, true);
+                const row = rootRef.current?.querySelector<HTMLElement>(`.thread[data-slug="${pick}"]`) ?? null;
+                energizeOpen(pick, row);
               }}
             >
               Pick a thread for me <span>↗</span>
@@ -203,7 +288,14 @@ export function ExploreExperience({ snapshot }: { snapshot: VisitorSnapshot }) {
           </div>
           <div className="threads">
             {snapshot.threads.map((thread) => (
-              <button key={thread.slug} className="thread" type="button" onClick={() => openNote(thread.slug, true)}>
+              <button
+                key={thread.slug}
+                className="thread"
+                type="button"
+                data-slug={thread.slug}
+                data-energized={energized === thread.slug ? "true" : undefined}
+                onClick={(event) => energizeOpen(thread.slug, event.currentTarget)}
+              >
                 <span className="thread-num">{thread.threadNum}</span>
                 <span className="thread-body">
                   <span className="thread-tags">{thread.threadTags ? publicThreadTags(thread.threadTags) : null}</span>
@@ -237,6 +329,21 @@ export function ExploreExperience({ snapshot }: { snapshot: VisitorSnapshot }) {
         <span>A WORKSHOP IN PROGRESS.</span>
         <a href="#intro-title">Back to the surface ↑</a>
       </footer>
+      {pulse ? (
+        <svg
+          ref={pulseSvgRef}
+          className="pulse-overlay"
+          viewBox={`0 0 ${pulse.w} ${pulse.h}`}
+          data-fading={pulseFading ? "true" : undefined}
+          aria-hidden="true"
+          focusable="false"
+        >
+          <path className="pulse-route" d={pulse.d} pathLength={1} strokeDasharray={1} strokeDashoffset={1} />
+          <path className="pulse-trail" d={pulse.d} pathLength={1} strokeDasharray="0 2" strokeDashoffset={0} />
+          <circle className="pulse-head-glow" cx="-20" cy="-20" r="5.5" />
+          <circle className="pulse-head" cx="-20" cy="-20" r="2.2" />
+        </svg>
+      ) : null}
       <dialog
         id="field-notes"
         ref={dialogRef}
