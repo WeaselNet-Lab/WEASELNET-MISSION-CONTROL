@@ -319,17 +319,17 @@ html.lab-entry-active { overflow: hidden; }
 .entry-lab-slot[data-align="center"] { justify-content: center; }
 .entry-lab-slot[data-align="start"] { justify-content: flex-start; }
 .entry-lab-slot-boot {
-  width: var(--boot-w-width);
-  min-height: calc(var(--boot-w-width) * 0.58);
+  width: max-content;
+  min-width: var(--boot-w-width);
 }
 .entry-lab-fallback {
   display: block;
   margin: 0;
   font-family: var(--font-barlow), "Arial Narrow", sans-serif;
   font-weight: 600;
-  font-size: calc(var(--boot-w-width) * 0.72);
-  line-height: 0.8;
-  letter-spacing: -0.06em;
+  font-size: calc(var(--boot-w-width) * 1.45);
+  line-height: 1.25;
+  letter-spacing: -0.04em;
   color: var(--boot-w-silver);
 }
 .entry-lab-logo {
